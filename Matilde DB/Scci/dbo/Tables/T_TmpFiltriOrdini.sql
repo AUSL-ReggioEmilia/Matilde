@@ -1,0 +1,6 @@
+﻿CREATE TABLE [dbo].[T_TmpFiltriOrdini] (
+    [IDSessione] UNIQUEIDENTIFIER NOT NULL,
+    [IDOrdine]   UNIQUEIDENTIFIER NOT NULL,
+    CONSTRAINT [PK_TmpFiltriOrdini] PRIMARY KEY NONCLUSTERED ([IDSessione] ASC, [IDOrdine] ASC)
+);
+

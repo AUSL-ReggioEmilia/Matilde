@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="5fd6879f-62b3-4203-a72b-85fa942f79a0" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://ws-di-oe-test.asmn.net/ws-di-oe-1_2/OE.Wcf.DataAccess.OrderEntry.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="OE6.xsd" MetadataType="Schema" ID="36a847eb-5138-4d50-8fce-8b9ff06452fc" SourceId="1" SourceUrl="https://ws-di-oe-test.asmn.net/WS-DI-OE-1_2/OE.Wcf.DataAccess.OrderEntry.svc?xsd=xsd1" />
+    <MetadataFile FileName="OrderEntry1.wsdl" MetadataType="Wsdl" ID="3a7513d5-0c75-41ee-9c6b-58598da873d7" SourceId="1" SourceUrl="https://ws-di-oe-test.asmn.net/WS-DI-OE-1_2/OE.Wcf.DataAccess.OrderEntry.svc?wsdl" />
+    <MetadataFile FileName="OE61.xsd" MetadataType="Schema" ID="fca0725d-8dc1-44a7-a0a4-9a913fd6e65f" SourceId="1" SourceUrl="https://ws-di-oe-test.asmn.net/WS-DI-OE-1_2/OE.Wcf.DataAccess.OrderEntry.svc?xsd=xsd0" />
+    <MetadataFile FileName="OE62.xsd" MetadataType="Schema" ID="d9b87f30-6b5f-43a7-ae6c-25904df2ec6d" SourceId="1" SourceUrl="https://ws-di-oe-test.asmn.net/WS-DI-OE-1_2/OE.Wcf.DataAccess.OrderEntry.svc?xsd=xsd3" />
+    <MetadataFile FileName="OE63.xsd" MetadataType="Schema" ID="0252b5f3-8a24-4e08-a4e0-ce1709456454" SourceId="1" SourceUrl="https://ws-di-oe-test.asmn.net/WS-DI-OE-1_2/OE.Wcf.DataAccess.OrderEntry.svc?xsd=xsd2" />
+    <MetadataFile FileName="OE64.xsd" MetadataType="Schema" ID="333c5574-1e00-48c8-a5c5-c596551e660f" SourceId="1" SourceUrl="https://ws-di-oe-test.asmn.net/WS-DI-OE-1_2/OE.Wcf.DataAccess.OrderEntry.svc?xsd=xsd5" />
+    <MetadataFile FileName="OE65.xsd" MetadataType="Schema" ID="12791bd4-7f2c-403d-b1fd-41efdc005148" SourceId="1" SourceUrl="https://ws-di-oe-test.asmn.net/WS-DI-OE-1_2/OE.Wcf.DataAccess.OrderEntry.svc?xsd=xsd4" />
+    <MetadataFile FileName="OE1.disco" MetadataType="Disco" ID="ce8b3b44-8e9d-40f7-af9d-fcce2c0e8c7c" SourceId="1" SourceUrl="https://ws-di-oe-test.asmn.net/WS-DI-OE-1_2/OE.Wcf.DataAccess.OrderEntry.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

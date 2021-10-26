@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/UnicodeSrl.Scci.DataContracts" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/UnicodeSrl.Scci.DataContracts" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfPazienteSac">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PazienteSac" nillable="true" type="tns:PazienteSac" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPazienteSac" nillable="true" type="tns:ArrayOfPazienteSac" />
+  <xs:complexType name="PazienteSac">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CapDom" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CodComuneNasc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ComuneDomCodice" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ComuneDomNome" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IndirizzoDom" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LocalitaDom" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NazionalitaNome" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PazCAPRes" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PazCF" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PazCodComuneRes" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PazCodProvinciaRes" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PazCodRegioneRes" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PazCodSAC" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PazCognome" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PazComuneNasc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PazComuneRes" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PazDataNasc" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="PazIndirizzoRes" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PazLocalitaRes" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PazNascDesc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PazNome" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PazProvinciaRes" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PazRegioneRes" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Paziente" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ProvinciaDomCodice" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ProvinciaDomNome" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ProvinciaNascitaCodice" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ProvinciaNascitaNome" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Sesso" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PazienteSac" nillable="true" type="tns:PazienteSac" />
+  <xs:complexType name="PazienteSacDatiAggiuntivi">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CodiceFiscaleMedicoDiBase" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CodiceMedicoDiBase" type="xs:int" />
+      <xs:element minOccurs="0" name="CognomeNomeMedicoDiBase" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DataSceltaMedicoDiBase" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="DistrettoMedicoDiBase" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Esenzioni" nillable="true" type="tns:ArrayOfPazienteSacEsenzioni" />
+      <xs:element minOccurs="0" name="Telefono1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Telefono2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Telefono3" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PazienteSacDatiAggiuntivi" nillable="true" type="tns:PazienteSacDatiAggiuntivi" />
+  <xs:complexType name="ArrayOfPazienteSacEsenzioni">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PazienteSacEsenzioni" nillable="true" type="tns:PazienteSacEsenzioni" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPazienteSacEsenzioni" nillable="true" type="tns:ArrayOfPazienteSacEsenzioni" />
+  <xs:complexType name="PazienteSacEsenzioni">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CodiceDiagnosi" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CodiceEsenzione" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DataFineValidita" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="DataInizioValidita" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="DecodificaEsenzioneDiagnosi" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TestoEsenzione" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PazienteSacEsenzioni" nillable="true" type="tns:PazienteSacEsenzioni" />
+</xs:schema>

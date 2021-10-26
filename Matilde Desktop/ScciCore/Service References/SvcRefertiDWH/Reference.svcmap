@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="ba6b016e-0323-437d-9f30-ef81ec17abfd" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://ws-scci-main-test/ScciRefertiDWH.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ScciRefertiDWH.disco" MetadataType="Disco" ID="8418df15-5a99-4f3f-8841-7f29b36170c2" SourceId="1" SourceUrl="http://ws-scci-main-test/ScciRefertiDWH.svc?disco" />
+    <MetadataFile FileName="ScciRefertiDWH2.xsd" MetadataType="Schema" ID="d4dd80d0-4334-442f-8f89-3036ae017383" SourceId="1" SourceUrl="http://ws-scci-main-test/ScciRefertiDWH.svc?xsd=xsd0" />
+    <MetadataFile FileName="ScciRefertiDWH3.xsd" MetadataType="Schema" ID="b0d3d76e-9526-41f7-9543-b64860435b57" SourceId="1" SourceUrl="http://ws-scci-main-test/ScciRefertiDWH.svc?xsd=xsd4" />
+    <MetadataFile FileName="ScciRefertiDWH.xsd" MetadataType="Schema" ID="f647447a-b793-433a-a6a1-7826f91dcabf" SourceId="1" SourceUrl="http://ws-scci-main-test/ScciRefertiDWH.svc?xsd=xsd2" />
+    <MetadataFile FileName="ScciRefertiDWH1.xsd" MetadataType="Schema" ID="81da19d2-a19a-4558-b614-830cb80c6324" SourceId="1" SourceUrl="http://ws-scci-main-test/ScciRefertiDWH.svc?xsd=xsd1" />
+    <MetadataFile FileName="ScciRefertiDWH.wsdl" MetadataType="Wsdl" ID="4036a200-a2fa-432b-af1b-88a97f95ab97" SourceId="1" SourceUrl="http://ws-scci-main-test/ScciRefertiDWH.svc?wsdl" />
+    <MetadataFile FileName="ScciRefertiDWH31.xsd" MetadataType="Schema" ID="c5b78b5d-4568-4d7c-8d21-0bd0da5c470e" SourceId="1" SourceUrl="http://ws-scci-main-test/ScciRefertiDWH.svc?xsd=xsd3" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

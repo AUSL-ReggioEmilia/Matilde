@@ -1,0 +1,27 @@
+Il sistema informativo Matilde, sviluppato da Unicode s.r.l., è un sistema di Cartella Clinica Informatizzata in grado di gestire in modalità totalmente paper-less, 
+con completa validità medico-legale, la documentazione sanitaria a supporto dei processi di cura in ogni regime (ricovero ordinario, day hospital, day service ambulatoriale, ambulatoriale, PDTA complessi).
+Il sistema è stato acquisito dall’Azienda Ospedaliera "Arcispedale Santa Maria Nuova" di Reggio Emilia (e successivamente esteso all’Azienda Sanitaria Locale di Reggio Emilia) di Reggio Emilia) tramite gara nel 2013, e consiste in una piattaforma completamente configurabile ed estensibile tramite moduli aggiuntivi.
+
+La direzione tecnica dell’ente sanitario ha sempre contribuito attivamente alle seguenti attività:
+
+• Progettazione funzionale dei moduli aggiuntivi di Matilde;
+
+• Definizione degli standard di riferimento tecnologico;
+
+• Valutazione di efficacia nell’esecuzione del percorso di attivazione e successive evoluzioni della Soluzione Matilde presso le unità operative convolte;
+
+• Analisi evolutiva per soddisfare le nuove esigenze operative;
+
+• Esecuzione dei test di corrispondenza della Soluzione applicativa alle esigenze funzionali dell’Organizzazione.
+
+
+La forma di collaborazione, ormai consolidata nel tempo, con l’Azienda Sanitaria Locale di Reggio Emilia ha trovato una regolare formalizzazione con l’adesione delle parti (Unicode s.r.l e AUSL RE) alla “normativa sul Riuso” del software (rif. CAD Decreto legislativo n. 235/2010 e successive integrazioni) che prevede quanto di seguito riportato:
+
+• Unicode s.r.l. è proprietaria dei componenti CORE di Matilde (denominati anche Unicode Framework). Unicode s.r.l. detiene quindi le competenze ed i sorgenti dei componenti CORE di Matilde e ne esegue l’evoluzione e la manutenzione in esclusiva;
+
+• L’Azienda Sanitaria Locale di Reggio Emilia detiene la proprietà di ogni componente di Matilde sviluppato a seguito di evolutive di cui fornisce l’analisi funzionale del progetto e ne richiede lo sviluppo (ad eccezione dei moduli che sono di proprietà di Unicode s.r.l.);
+
+I vincoli di riutilizzo previsti dalla normativa sul Riuso, prevedono la possibilità, per ogni altra azienda sanitaria pubblica, di acquisire a titolo non oneroso i componenti “riusabili” di interesse della Soluzione Matilde a semplice richiesta.
+
+Sulla base di quanto sopra esposto è lecito ritenere che la valutazione di appropriatezza ed efficacia di Matilde sia stata condotta da una organizzazione sanitaria competente come l’Azienda Sanitaria di Reggio Emila.
+

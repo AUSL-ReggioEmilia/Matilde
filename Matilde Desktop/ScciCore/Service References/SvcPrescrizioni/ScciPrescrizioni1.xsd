@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://172.29.10.14:81/ScciPrescrizioni.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/UnicodeSrl.Scci.Enums" />
+  <xs:import schemaLocation="http://172.29.10.14:81/ScciPrescrizioni.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/UnicodeSrl.Scci.DataContracts" />
+  <xs:element name="GeneraTaskDaPrescrizione">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="connectionString" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="idPrescrizione" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="idPrescrizionetempi" nillable="true" type="xs:string" />
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/UnicodeSrl.Scci.Enums" minOccurs="0" name="sistema" type="q1:EnumCodSistema" />
+        <xs:element minOccurs="0" name="codtipotaskinfermieristico" nillable="true" type="xs:string" />
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/UnicodeSrl.Scci.DataContracts" minOccurs="0" name="amb" nillable="true" type="q2:ScciAmbiente" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GeneraTaskDaPrescrizioneResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GeneraTaskDaPrescrizioneResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Test">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="value" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TestResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="TestResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

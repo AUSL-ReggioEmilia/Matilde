@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DiscoveryClientResultsFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Results>
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.ContractReference" url="http://dwh-clinico.asmn.net/Ws2/DataAccessTdsV2.asmx?wsdl" filename="DataAccessTdsV2.wsdl" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.DiscoveryDocumentReference" url="http://dwh-clinico.asmn.net/Ws2/DataAccessTdsV2.asmx?disco" filename="DataAccessTdsV2.disco" />
+  </Results>
+</DiscoveryClientResultsFile>

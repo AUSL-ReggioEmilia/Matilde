@@ -1,0 +1,252 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="UnicodeSrl.ScciCore.CoreApplicationContext" Collapsed="true">
+    <Position X="12.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>Common\CoreApplication.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnicodeSrl.ScciCore.CoreApplication">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAABAAAAAAAAAAIAAAAAACAEEoACAAAIAAAAA=</HashCode>
+      <FileName>Common\CoreApplication.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnicodeSrl.ScciCore.Sessione">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AACCBAAAAAAAAAEAAAAAAAQAAAAgABAAAAAAAAEAAAA=</HashCode>
+      <FileName>Common\CoreApplication.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnicodeSrl.ScciCore.Computer">
+    <Position X="2.5" Y="1.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAEAIAA=</HashCode>
+      <FileName>Common\CoreApplication.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnicodeSrl.ScciCore.Utente">
+    <Position X="2.5" Y="4" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAABQABAAAAAgAAQAAAAAAAAARAEAAYAABIAA=</HashCode>
+      <FileName>Common\CoreApplication.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnicodeSrl.ScciCore.Ruoli">
+    <Position X="4.5" Y="4.25" Width="2" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQBgAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAA=</HashCode>
+      <FileName>Common\CoreApplication.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnicodeSrl.ScciCore.Ruolo">
+    <Position X="6.25" Y="6.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>ABEAIAAAABQAAACAAAAAAAAAAAAAAAAAAAAAKAAAAAA=</HashCode>
+      <FileName>Common\CoreApplication.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnicodeSrl.ScciCore.Moduli">
+    <Position X="8.25" Y="6.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAA=</HashCode>
+      <FileName>Common\CoreApplication.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnicodeSrl.ScciCore.Modulo">
+    <Position X="10.25" Y="6.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAABQAAAAAAAgAAAAAAAAAAAAAAAAAIAAAIAA=</HashCode>
+      <FileName>Common\CoreApplication.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnicodeSrl.ScciCore.Navigazione">
+    <Position X="0.5" Y="9.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAABAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Common\CoreApplication.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnicodeSrl.ScciCore.Maschere">
+    <Position X="2.25" Y="9.25" Width="2" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AABQAAAABAAAACAAAAAAAABAAAEAAAAAAEAAQAAAQAA=</HashCode>
+      <FileName>Common\CoreApplication.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnicodeSrl.ScciCore.Maschera">
+    <Position X="4.5" Y="9.25" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>EDAAEAQRAAABgADCAABgAAIAAHQAAAAAgEAAIAAEABA=</HashCode>
+      <FileName>Common\CoreApplication.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnicodeSrl.ScciCore.Paziente" Collapsed="true">
+    <Position X="4.25" Y="16" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAwAAlAFIBABABAAAAAAAAAQAgMCAQAEBAAA=</HashCode>
+      <FileName>Common\CoreApplication.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnicodeSrl.ScciCore.Episodio" Collapsed="true">
+    <Position X="2.25" Y="15.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAgAEAQABAAAAAAAgAAAAAAEAAQABAAAA=</HashCode>
+      <FileName>Common\CoreApplication.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnicodeSrl.ScciCore.Allergie" Collapsed="true">
+    <Position X="2.25" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAABAAAAAAAAAAAAAAAAAAAAAAAAEAAAAABAAA=</HashCode>
+      <FileName>Common\CoreApplication.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnicodeSrl.ScciCore.Allergia" Collapsed="true">
+    <Position X="2.25" Y="16.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAABQAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>Common\CoreApplication.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnicodeSrl.ScciCore.AlertsGenerici" Collapsed="true">
+    <Position X="4.25" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAARAAAAAAAAAAAAAAAAAAAAAAAAEAAAAQBAAA=</HashCode>
+      <FileName>Common\CoreApplication.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnicodeSrl.ScciCore.AlertGenerico" Collapsed="true">
+    <Position X="6" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAABQAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>Common\CoreApplication.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnicodeSrl.ScciCore.EvidenzeCliniche" Collapsed="true">
+    <Position X="4.25" Y="14.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAARAAAAAAAAAAAAAAAAAAAAAAAAEAAAAQBAAA=</HashCode>
+      <FileName>Common\CoreApplication.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnicodeSrl.ScciCore.EvidenzaClinica" Collapsed="true">
+    <Position X="2.25" Y="14.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAABQAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>Common\CoreApplication.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnicodeSrl.ScciCore.Reports">
+    <Position X="7.25" Y="3.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAQAAABAAAAAAAAAAAAAAAAAAAAAAAAEAAAAABAAA=</HashCode>
+      <FileName>Common\CoreApplication.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnicodeSrl.ScciCore.Report">
+    <Position X="9.5" Y="3.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAABQAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>Common\CoreApplication.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnicodeSrl.ScciCore.Parametri" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="12.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAAAAAAAACAABAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>Common\CoreApplication.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="UnicodeSrl.ScciCore.Entitas">
+    <Position X="4.75" Y="0.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAQAAABAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAA=</HashCode>
+      <FileName>Common\CoreApplication.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnicodeSrl.ScciCore.Entita">
+    <Position X="6.75" Y="0.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>ABgAAAAAABQAAAAAAABAAAEAAAAAAAAAAAACIAAAAAA=</HashCode>
+      <FileName>Common\CoreApplication.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnicodeSrl.ScciCore.Azione">
+    <Position X="10.25" Y="1.25" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAgAQAAAABQAAAAAAABAAAEAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Common\CoreApplication.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnicodeSrl.ScciCore.Azioni">
+    <Position X="8.5" Y="1.25" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAQAAABAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAA=</HashCode>
+      <FileName>Common\CoreApplication.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnicodeSrl.ScciCore.ScciMain" Collapsed="true">
+    <Position X="12.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>Common\CoreApplication.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

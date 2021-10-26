@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="ScciRicercaSAC" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="WSHttpBinding_IScciRicercaSAC_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <wsoma:OptimizedMimeSerialization xmlns:wsoma="http://schemas.xmlsoap.org/ws/2004/09/policy/optimizedmimeserialization" />
+        <wsaw:UsingAddressing />
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://ws-scci-main-test/ScciRicercaSAC.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://ws-scci-main-test/ScciRicercaSAC.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://ws-scci-main-test/ScciRicercaSAC.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/UnicodeSrl.Scci.DataContracts" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IScciRicercaSAC_RicercaPazientiSAC_InputMessage">
+    <wsdl:part name="parameters" element="tns:RicercaPazientiSAC" />
+  </wsdl:message>
+  <wsdl:message name="IScciRicercaSAC_RicercaPazientiSAC_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RicercaPazientiSACResponse" />
+  </wsdl:message>
+  <wsdl:message name="IScciRicercaSAC_RicercaPazientiSACByID_InputMessage">
+    <wsdl:part name="parameters" element="tns:RicercaPazientiSACByID" />
+  </wsdl:message>
+  <wsdl:message name="IScciRicercaSAC_RicercaPazientiSACByID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RicercaPazientiSACByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IScciRicercaSAC_PazienteSacDatiAggiuntiviByID_InputMessage">
+    <wsdl:part name="parameters" element="tns:PazienteSacDatiAggiuntiviByID" />
+  </wsdl:message>
+  <wsdl:message name="IScciRicercaSAC_PazienteSacDatiAggiuntiviByID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PazienteSacDatiAggiuntiviByIDResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IScciRicercaSAC">
+    <wsdl:operation name="RicercaPazientiSAC">
+      <wsdl:input wsaw:Action="http://tempuri.org/IScciRicercaSAC/RicercaPazientiSAC" message="tns:IScciRicercaSAC_RicercaPazientiSAC_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IScciRicercaSAC/RicercaPazientiSACResponse" message="tns:IScciRicercaSAC_RicercaPazientiSAC_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RicercaPazientiSACByID">
+      <wsdl:input wsaw:Action="http://tempuri.org/IScciRicercaSAC/RicercaPazientiSACByID" message="tns:IScciRicercaSAC_RicercaPazientiSACByID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IScciRicercaSAC/RicercaPazientiSACByIDResponse" message="tns:IScciRicercaSAC_RicercaPazientiSACByID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PazienteSacDatiAggiuntiviByID">
+      <wsdl:input wsaw:Action="http://tempuri.org/IScciRicercaSAC/PazienteSacDatiAggiuntiviByID" message="tns:IScciRicercaSAC_PazienteSacDatiAggiuntiviByID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IScciRicercaSAC/PazienteSacDatiAggiuntiviByIDResponse" message="tns:IScciRicercaSAC_PazienteSacDatiAggiuntiviByID_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WSHttpBinding_IScciRicercaSAC" type="tns:IScciRicercaSAC">
+    <wsp:PolicyReference URI="#WSHttpBinding_IScciRicercaSAC_policy" />
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="RicercaPazientiSAC">
+      <soap12:operation soapAction="http://tempuri.org/IScciRicercaSAC/RicercaPazientiSAC" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RicercaPazientiSACByID">
+      <soap12:operation soapAction="http://tempuri.org/IScciRicercaSAC/RicercaPazientiSACByID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PazienteSacDatiAggiuntiviByID">
+      <soap12:operation soapAction="http://tempuri.org/IScciRicercaSAC/PazienteSacDatiAggiuntiviByID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ScciRicercaSAC">
+    <wsdl:port name="WSHttpBinding_IScciRicercaSAC" binding="tns:WSHttpBinding_IScciRicercaSAC">
+      <soap12:address location="http://ws-scci-main-test/ScciRicercaSAC.svc" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>http://ws-scci-main-test/ScciRicercaSAC.svc</wsa10:Address>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

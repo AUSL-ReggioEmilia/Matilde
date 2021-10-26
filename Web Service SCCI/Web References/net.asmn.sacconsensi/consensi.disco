@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<discovery xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/disco/">
+  <contractRef ref="https://ws-di-sac.asmn.net/ws-di-sac-2/consensi.asmx?wsdl" docRef="https://ws-di-sac.asmn.net/ws-di-sac-2/consensi.asmx" xmlns="http://schemas.xmlsoap.org/disco/scl/" />
+  <soap address="https://ws-di-sac.asmn.net/ws-di-sac-2/consensi.asmx" xmlns:q1="http://sac.org/Consensi" binding="q1:ConsensiSoap" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+  <soap address="https://ws-di-sac.asmn.net/ws-di-sac-2/consensi.asmx" xmlns:q2="http://sac.org/Consensi" binding="q2:ConsensiSoap12" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+</discovery>

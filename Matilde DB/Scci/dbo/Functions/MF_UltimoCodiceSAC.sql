@@ -1,0 +1,18 @@
+﻿CREATE FUNCTION dbo.MF_UltimoCodiceSAC(@uIDPaziente AS UNIQUEIDENTIFIER)
+RETURNS VARCHAR(50)
+AS
+BEGIN
+			
+DECLARE @uIDTemp AS UNIQUEIDENTIFIER
+DECLARE @sOut AS VARCHAR(50)
+
+SET @uIDTemp=(	SELECT TOP 1 IDPaziente
+				FROM T_PazientiAlias
+				WHERE IDPazienteVecchio=@uIDPaziente
+		   )
+
+SET @uIDTemp=ISNULL(@uIDTemp,@uIDPaziente)
+SET @sOut=(SELECT TOP 1 CodSAC FROM T_Pazienti WHERE ID=@uIDTemp)
+
+RETURN @sOut
+END

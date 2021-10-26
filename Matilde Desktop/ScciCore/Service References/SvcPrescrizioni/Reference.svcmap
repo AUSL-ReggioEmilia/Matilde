@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="e2e1cf8d-00e4-4e6d-b1f8-3cd1124877c2" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://172.29.10.14:81/ScciPrescrizioni.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ScciPrescrizioni.xsd" MetadataType="Schema" ID="7198141d-f928-4fe0-b13b-cebff874bfe6" SourceId="1" SourceUrl="http://172.29.10.14:81/ScciPrescrizioni.svc?xsd=xsd2" />
+    <MetadataFile FileName="ScciPrescrizioni1.xsd" MetadataType="Schema" ID="5d45dc47-96d4-4eb8-ad54-10a347bb3d46" SourceId="1" SourceUrl="http://172.29.10.14:81/ScciPrescrizioni.svc?xsd=xsd0" />
+    <MetadataFile FileName="ScciPrescrizioni.disco" MetadataType="Disco" ID="07465769-08ee-4730-b803-6f32c7e0c3fb" SourceId="1" SourceUrl="http://172.29.10.14:81/ScciPrescrizioni.svc?disco" />
+    <MetadataFile FileName="ScciPrescrizioni.wsdl" MetadataType="Wsdl" ID="b6acbde2-09cb-4a39-a92a-9bac5f2df52e" SourceId="1" SourceUrl="http://172.29.10.14:81/ScciPrescrizioni.svc?wsdl" />
+    <MetadataFile FileName="ScciPrescrizioni2.xsd" MetadataType="Schema" ID="65fb447d-27f9-459f-93f4-2a8de487dacc" SourceId="1" SourceUrl="http://172.29.10.14:81/ScciPrescrizioni.svc?xsd=xsd3" />
+    <MetadataFile FileName="ScciPrescrizioni3.xsd" MetadataType="Schema" ID="5ad7c68a-9832-4b8f-932f-80482b5af11c" SourceId="1" SourceUrl="http://172.29.10.14:81/ScciPrescrizioni.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

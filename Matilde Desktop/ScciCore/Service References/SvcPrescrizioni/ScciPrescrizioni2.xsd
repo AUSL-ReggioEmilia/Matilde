@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/UnicodeSrl.Scci.DataContracts" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/UnicodeSrl.Scci.DataContracts" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ScciAmbiente">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Codlogin" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Codruolo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IdTrasferimento" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Idepisodio" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Idpaziente" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Indirizzoip" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Nomepc" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ScciAmbiente" nillable="true" type="tns:ScciAmbiente" />
+</xs:schema>

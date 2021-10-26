@@ -1,0 +1,28 @@
+﻿CREATE TABLE [dbo].[T_BO_Appuntamenti] (
+    [IDNum]                 INT              IDENTITY (1, 1) NOT NULL,
+    [CodEntita]             VARCHAR (20)     NULL,
+    [IDPazienteRiferimento] UNIQUEIDENTIFIER NULL,
+    [NumeroNosologico]      VARCHAR (20)     NULL,
+    [NumeroListaAttesa]     VARCHAR (20)     NULL,
+    [CodUA]                 VARCHAR (20)     NULL,
+    [CodTipoAppuntamento]   VARCHAR (20)     NULL,
+    [CodStatoAppuntamento]  VARCHAR (20)     NULL,
+    [CodAgenda]             VARCHAR (20)     NULL,
+    [DataOraInizio]         DATETIME         NULL,
+    [DataOraFine]           DATETIME         NULL,
+    [CodScheda]             VARCHAR (20)     NULL,
+    [Versione]              INT              NULL,
+    [Valore]                VARCHAR (MAX)    NULL,
+    [CodCampoScheda]        VARCHAR (50)     NULL,
+    [CodStatoElaborazione]  VARCHAR (20)     NULL,
+    [DataElaborazione]      DATETIME         NULL,
+    [IDPaziente]            UNIQUEIDENTIFIER NULL,
+    [IDEpisodio]            UNIQUEIDENTIFIER NULL,
+    [IDTrasferimento]       UNIQUEIDENTIFIER NULL,
+    [IDAppuntamento]        UNIQUEIDENTIFIER NULL,
+    [IDAppuntamentoAgenda]  UNIQUEIDENTIFIER NULL,
+    [IDScheda]              UNIQUEIDENTIFIER NULL,
+    [Note]                  VARCHAR (MAX)    NULL,
+    CONSTRAINT [PK_T_BO_Appuntamenti] PRIMARY KEY CLUSTERED ([IDNum] ASC)
+);
+

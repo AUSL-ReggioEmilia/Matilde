@@ -1,0 +1,246 @@
+﻿namespace UnicodeSrl.ScciCore
+{
+    partial class ucEasyPDFViewer
+    {
+                                private System.ComponentModel.IContainer components = null;
+
+                                        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Component Designer generated code
+
+                                        private void InitializeComponent()
+        {
+            this.components = new System.ComponentModel.Container();
+            Infragistics.Win.Appearance appearance1 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance2 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance3 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance4 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance5 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance6 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance7 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance8 = new Infragistics.Win.Appearance();
+            this.ucEasyTableLayoutPanel = new UnicodeSrl.ScciCore.ucEasyTableLayoutPanel(this.components);
+            this.ubZoomIn = new UnicodeSrl.ScciCore.ucEasyButton();
+            this.ubZoomOut = new UnicodeSrl.ScciCore.ucEasyButton();
+            this.ubPageWidth = new UnicodeSrl.ScciCore.ucEasyButton();
+            this.ubWholePage = new UnicodeSrl.ScciCore.ucEasyButton();
+            this.ubPagUp = new UnicodeSrl.ScciCore.ucEasyButton();
+            this.ubPagDown = new UnicodeSrl.ScciCore.ucEasyButton();
+            this.ubPrint = new UnicodeSrl.ScciCore.ucEasyButton();
+            this.pdfViewer = new Spire.PdfViewer.Forms.PdfDocumentViewer();
+            this.ubShell = new UnicodeSrl.ScciCore.ucEasyButton();
+            this.ucEasyTableLayoutPanel.SuspendLayout();
+            this.SuspendLayout();
+                                                this.ucEasyTableLayoutPanel.ColumnCount = 2;
+            this.ucEasyTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 91F));
+            this.ucEasyTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9F));
+            this.ucEasyTableLayoutPanel.Controls.Add(this.ubZoomIn, 1, 0);
+            this.ucEasyTableLayoutPanel.Controls.Add(this.ubZoomOut, 1, 1);
+            this.ucEasyTableLayoutPanel.Controls.Add(this.ubPageWidth, 1, 2);
+            this.ucEasyTableLayoutPanel.Controls.Add(this.ubWholePage, 1, 3);
+            this.ucEasyTableLayoutPanel.Controls.Add(this.ubPagUp, 1, 4);
+            this.ucEasyTableLayoutPanel.Controls.Add(this.ubPagDown, 1, 5);
+            this.ucEasyTableLayoutPanel.Controls.Add(this.pdfViewer, 0, 0);
+            this.ucEasyTableLayoutPanel.Controls.Add(this.ubPrint, 1, 7);
+            this.ucEasyTableLayoutPanel.Controls.Add(this.ubShell, 1, 6);
+            this.ucEasyTableLayoutPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ucEasyTableLayoutPanel.Location = new System.Drawing.Point(0, 0);
+            this.ucEasyTableLayoutPanel.Name = "ucEasyTableLayoutPanel";
+            this.ucEasyTableLayoutPanel.RowCount = 8;
+            this.ucEasyTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13F));
+            this.ucEasyTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13F));
+            this.ucEasyTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13F));
+            this.ucEasyTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13F));
+            this.ucEasyTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13F));
+            this.ucEasyTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13F));
+            this.ucEasyTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13F));
+            this.ucEasyTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9F));
+            this.ucEasyTableLayoutPanel.Size = new System.Drawing.Size(815, 541);
+            this.ucEasyTableLayoutPanel.TabIndex = 0;
+                                                appearance1.ImageHAlign = Infragistics.Win.HAlign.Center;
+            appearance1.ImageVAlign = Infragistics.Win.VAlign.Middle;
+            appearance1.TextHAlignAsString = "Center";
+            appearance1.TextVAlignAsString = "Bottom";
+            this.ubZoomIn.Appearance = appearance1;
+            this.ubZoomIn.ButtonStyle = Infragistics.Win.UIElementButtonStyle.Office2003ToolbarButton;
+            this.ubZoomIn.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ubZoomIn.Location = new System.Drawing.Point(744, 3);
+            this.ubZoomIn.Name = "ubZoomIn";
+            this.ubZoomIn.PercImageFill = 0.75F;
+            this.ubZoomIn.ShortcutFontRelativeDimension = UnicodeSrl.ScciCore.easyStatics.easyRelativeDimensions.Small;
+            this.ubZoomIn.ShortcutKey = System.Windows.Forms.Keys.None;
+            this.ubZoomIn.ShortcutPosition = UnicodeSrl.ScciCore.easyStatics.easyShortcutPosition.top_right;
+            this.ubZoomIn.Size = new System.Drawing.Size(68, 64);
+            this.ubZoomIn.TabIndex = 1;
+            this.ubZoomIn.TextFontRelativeDimension = UnicodeSrl.ScciCore.easyStatics.easyRelativeDimensions._undefined;
+            this.ubZoomIn.UseOsThemes = Infragistics.Win.DefaultableBoolean.False;
+            this.ubZoomIn.Click += new System.EventHandler(this.ubZoomIn_Click);
+                                                appearance2.ImageHAlign = Infragistics.Win.HAlign.Center;
+            appearance2.ImageVAlign = Infragistics.Win.VAlign.Middle;
+            appearance2.TextHAlignAsString = "Center";
+            appearance2.TextVAlignAsString = "Bottom";
+            this.ubZoomOut.Appearance = appearance2;
+            this.ubZoomOut.ButtonStyle = Infragistics.Win.UIElementButtonStyle.Office2003ToolbarButton;
+            this.ubZoomOut.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ubZoomOut.Location = new System.Drawing.Point(744, 73);
+            this.ubZoomOut.Name = "ubZoomOut";
+            this.ubZoomOut.PercImageFill = 0.75F;
+            this.ubZoomOut.ShortcutFontRelativeDimension = UnicodeSrl.ScciCore.easyStatics.easyRelativeDimensions.Small;
+            this.ubZoomOut.ShortcutKey = System.Windows.Forms.Keys.None;
+            this.ubZoomOut.ShortcutPosition = UnicodeSrl.ScciCore.easyStatics.easyShortcutPosition.top_right;
+            this.ubZoomOut.Size = new System.Drawing.Size(68, 64);
+            this.ubZoomOut.TabIndex = 1;
+            this.ubZoomOut.TextFontRelativeDimension = UnicodeSrl.ScciCore.easyStatics.easyRelativeDimensions._undefined;
+            this.ubZoomOut.UseOsThemes = Infragistics.Win.DefaultableBoolean.False;
+            this.ubZoomOut.Click += new System.EventHandler(this.ubZoomOut_Click);
+                                                appearance3.ImageHAlign = Infragistics.Win.HAlign.Center;
+            appearance3.ImageVAlign = Infragistics.Win.VAlign.Middle;
+            appearance3.TextHAlignAsString = "Center";
+            appearance3.TextVAlignAsString = "Bottom";
+            this.ubPageWidth.Appearance = appearance3;
+            this.ubPageWidth.ButtonStyle = Infragistics.Win.UIElementButtonStyle.Office2003ToolbarButton;
+            this.ubPageWidth.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ubPageWidth.Location = new System.Drawing.Point(744, 143);
+            this.ubPageWidth.Name = "ubPageWidth";
+            this.ubPageWidth.PercImageFill = 0.75F;
+            this.ubPageWidth.ShortcutFontRelativeDimension = UnicodeSrl.ScciCore.easyStatics.easyRelativeDimensions.Small;
+            this.ubPageWidth.ShortcutKey = System.Windows.Forms.Keys.None;
+            this.ubPageWidth.ShortcutPosition = UnicodeSrl.ScciCore.easyStatics.easyShortcutPosition.top_right;
+            this.ubPageWidth.Size = new System.Drawing.Size(68, 64);
+            this.ubPageWidth.TabIndex = 1;
+            this.ubPageWidth.TextFontRelativeDimension = UnicodeSrl.ScciCore.easyStatics.easyRelativeDimensions._undefined;
+            this.ubPageWidth.UseOsThemes = Infragistics.Win.DefaultableBoolean.False;
+            this.ubPageWidth.Click += new System.EventHandler(this.ubPageWidth_Click);
+                                                appearance4.ImageHAlign = Infragistics.Win.HAlign.Center;
+            appearance4.ImageVAlign = Infragistics.Win.VAlign.Middle;
+            appearance4.TextHAlignAsString = "Center";
+            appearance4.TextVAlignAsString = "Bottom";
+            this.ubWholePage.Appearance = appearance4;
+            this.ubWholePage.ButtonStyle = Infragistics.Win.UIElementButtonStyle.Office2003ToolbarButton;
+            this.ubWholePage.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ubWholePage.Location = new System.Drawing.Point(744, 213);
+            this.ubWholePage.Name = "ubWholePage";
+            this.ubWholePage.PercImageFill = 0.75F;
+            this.ubWholePage.ShortcutFontRelativeDimension = UnicodeSrl.ScciCore.easyStatics.easyRelativeDimensions.Small;
+            this.ubWholePage.ShortcutKey = System.Windows.Forms.Keys.None;
+            this.ubWholePage.ShortcutPosition = UnicodeSrl.ScciCore.easyStatics.easyShortcutPosition.top_right;
+            this.ubWholePage.Size = new System.Drawing.Size(68, 64);
+            this.ubWholePage.TabIndex = 1;
+            this.ubWholePage.TextFontRelativeDimension = UnicodeSrl.ScciCore.easyStatics.easyRelativeDimensions._undefined;
+            this.ubWholePage.UseOsThemes = Infragistics.Win.DefaultableBoolean.False;
+            this.ubWholePage.Click += new System.EventHandler(this.ubWholePage_Click);
+                                                appearance5.ImageHAlign = Infragistics.Win.HAlign.Center;
+            appearance5.ImageVAlign = Infragistics.Win.VAlign.Middle;
+            appearance5.TextHAlignAsString = "Center";
+            appearance5.TextVAlignAsString = "Bottom";
+            this.ubPagUp.Appearance = appearance5;
+            this.ubPagUp.ButtonStyle = Infragistics.Win.UIElementButtonStyle.Office2003ToolbarButton;
+            this.ubPagUp.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ubPagUp.Location = new System.Drawing.Point(744, 283);
+            this.ubPagUp.Name = "ubPagUp";
+            this.ubPagUp.PercImageFill = 0.75F;
+            this.ubPagUp.ShortcutFontRelativeDimension = UnicodeSrl.ScciCore.easyStatics.easyRelativeDimensions.Small;
+            this.ubPagUp.ShortcutKey = System.Windows.Forms.Keys.None;
+            this.ubPagUp.ShortcutPosition = UnicodeSrl.ScciCore.easyStatics.easyShortcutPosition.top_right;
+            this.ubPagUp.Size = new System.Drawing.Size(68, 64);
+            this.ubPagUp.TabIndex = 1;
+            this.ubPagUp.TextFontRelativeDimension = UnicodeSrl.ScciCore.easyStatics.easyRelativeDimensions._undefined;
+            this.ubPagUp.UseOsThemes = Infragistics.Win.DefaultableBoolean.False;
+            this.ubPagUp.Click += new System.EventHandler(this.ubPagUp_Click);
+                                                appearance6.ImageHAlign = Infragistics.Win.HAlign.Center;
+            appearance6.ImageVAlign = Infragistics.Win.VAlign.Middle;
+            appearance6.TextHAlignAsString = "Center";
+            appearance6.TextVAlignAsString = "Bottom";
+            this.ubPagDown.Appearance = appearance6;
+            this.ubPagDown.ButtonStyle = Infragistics.Win.UIElementButtonStyle.Office2003ToolbarButton;
+            this.ubPagDown.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ubPagDown.Location = new System.Drawing.Point(744, 353);
+            this.ubPagDown.Name = "ubPagDown";
+            this.ubPagDown.PercImageFill = 0.75F;
+            this.ubPagDown.ShortcutFontRelativeDimension = UnicodeSrl.ScciCore.easyStatics.easyRelativeDimensions.Small;
+            this.ubPagDown.ShortcutKey = System.Windows.Forms.Keys.None;
+            this.ubPagDown.ShortcutPosition = UnicodeSrl.ScciCore.easyStatics.easyShortcutPosition.top_right;
+            this.ubPagDown.Size = new System.Drawing.Size(68, 64);
+            this.ubPagDown.TabIndex = 1;
+            this.ubPagDown.TextFontRelativeDimension = UnicodeSrl.ScciCore.easyStatics.easyRelativeDimensions._undefined;
+            this.ubPagDown.UseOsThemes = Infragistics.Win.DefaultableBoolean.False;
+            this.ubPagDown.Click += new System.EventHandler(this.ubPagDown_Click);
+                                                appearance7.ImageHAlign = Infragistics.Win.HAlign.Center;
+            appearance7.ImageVAlign = Infragistics.Win.VAlign.Middle;
+            appearance7.TextHAlignAsString = "Center";
+            appearance7.TextVAlignAsString = "Bottom";
+            this.ubPrint.Appearance = appearance7;
+            this.ubPrint.ButtonStyle = Infragistics.Win.UIElementButtonStyle.Office2003ToolbarButton;
+            this.ubPrint.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ubPrint.Location = new System.Drawing.Point(744, 493);
+            this.ubPrint.Name = "ubPrint";
+            this.ubPrint.PercImageFill = 0.75F;
+            this.ubPrint.ShortcutFontRelativeDimension = UnicodeSrl.ScciCore.easyStatics.easyRelativeDimensions.Small;
+            this.ubPrint.ShortcutKey = System.Windows.Forms.Keys.None;
+            this.ubPrint.ShortcutPosition = UnicodeSrl.ScciCore.easyStatics.easyShortcutPosition.top_right;
+            this.ubPrint.Size = new System.Drawing.Size(68, 45);
+            this.ubPrint.TabIndex = 1;
+            this.ubPrint.TextFontRelativeDimension = UnicodeSrl.ScciCore.easyStatics.easyRelativeDimensions._undefined;
+            this.ubPrint.UseOsThemes = Infragistics.Win.DefaultableBoolean.False;
+            this.ubPrint.Click += new System.EventHandler(this.ubPrint_Click);
+                                                this.pdfViewer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.pdfViewer.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pdfViewer.Location = new System.Drawing.Point(3, 3);
+            this.pdfViewer.MultiPagesThreshold = 60;
+            this.pdfViewer.Name = "pdfViewer";
+            this.ucEasyTableLayoutPanel.SetRowSpan(this.pdfViewer, 8);
+            this.pdfViewer.Size = new System.Drawing.Size(735, 535);
+            this.pdfViewer.TabIndex = 2;
+            this.pdfViewer.Threshold = 60;
+            this.pdfViewer.ZoomMode = Spire.PdfViewer.Forms.ZoomMode.Default;
+                                                appearance8.ImageHAlign = Infragistics.Win.HAlign.Center;
+            appearance8.ImageVAlign = Infragistics.Win.VAlign.Middle;
+            appearance8.TextHAlignAsString = "Center";
+            appearance8.TextVAlignAsString = "Bottom";
+            this.ubShell.Appearance = appearance8;
+            this.ubShell.ButtonStyle = Infragistics.Win.UIElementButtonStyle.Office2003ToolbarButton;
+            this.ubShell.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ubShell.Location = new System.Drawing.Point(744, 423);
+            this.ubShell.Name = "ubShell";
+            this.ubShell.PercImageFill = 0.75F;
+            this.ubShell.ShortcutFontRelativeDimension = UnicodeSrl.ScciCore.easyStatics.easyRelativeDimensions.Small;
+            this.ubShell.ShortcutKey = System.Windows.Forms.Keys.None;
+            this.ubShell.ShortcutPosition = UnicodeSrl.ScciCore.easyStatics.easyShortcutPosition.top_right;
+            this.ubShell.Size = new System.Drawing.Size(68, 64);
+            this.ubShell.TabIndex = 1;
+            this.ubShell.TextFontRelativeDimension = UnicodeSrl.ScciCore.easyStatics.easyRelativeDimensions._undefined;
+            this.ubShell.UseOsThemes = Infragistics.Win.DefaultableBoolean.False;
+            this.ubShell.Click += new System.EventHandler(this.ubShell_Click);
+                                                this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Transparent;
+            this.Controls.Add(this.ucEasyTableLayoutPanel);
+            this.Name = "ucEasyPDFViewer";
+            this.Size = new System.Drawing.Size(815, 541);
+            this.VisibleChanged += new System.EventHandler(this.ucEasyPDFViewer_VisibleChanged);
+            this.ucEasyTableLayoutPanel.ResumeLayout(false);
+            this.ResumeLayout(false);
+
+        }
+
+        #endregion
+
+        private ucEasyTableLayoutPanel ucEasyTableLayoutPanel;
+        private ucEasyButton ubZoomIn;
+        private ucEasyButton ubZoomOut;
+        private ucEasyButton ubPageWidth;
+        private ucEasyButton ubWholePage;
+        private ucEasyButton ubPagUp;
+        private ucEasyButton ubPagDown;
+        private ucEasyButton ubPrint;
+        private Spire.PdfViewer.Forms.PdfDocumentViewer pdfViewer;
+        private ucEasyButton ubShell;
+    }
+}

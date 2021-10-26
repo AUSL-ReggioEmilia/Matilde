@@ -1,0 +1,296 @@
+﻿namespace UnicodeSrl.ScciManagement
+{
+    partial class frmPUDizionariEsporta
+    {
+                                private System.ComponentModel.IContainer components = null;
+
+                                        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+                                        private void InitializeComponent()
+        {
+            this.components = new System.ComponentModel.Container();
+            Infragistics.Win.Appearance appearance13 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance1 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance2 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance3 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance4 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance5 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance6 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance7 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance8 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance9 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance10 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance11 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance12 = new Infragistics.Win.Appearance();
+            this.UltraToolbarsManager = new Infragistics.Win.UltraWinToolbars.UltraToolbarsManager(this.components);
+            this._frmPUView_Toolbars_Dock_Area_Top = new Infragistics.Win.UltraWinToolbars.UltraToolbarsDockArea();
+            this._frmPUView_Toolbars_Dock_Area_Bottom = new Infragistics.Win.UltraWinToolbars.UltraToolbarsDockArea();
+            this._frmPUView_Toolbars_Dock_Area_Left = new Infragistics.Win.UltraWinToolbars.UltraToolbarsDockArea();
+            this._frmPUView_Toolbars_Dock_Area_Right = new Infragistics.Win.UltraWinToolbars.UltraToolbarsDockArea();
+            this.saveFileDialog = new System.Windows.Forms.SaveFileDialog();
+            this.ultraGroupBoxForm = new Infragistics.Win.Misc.UltraGroupBox();
+            this.TableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
+            this.picView = new System.Windows.Forms.PictureBox();
+            this.pnlExportScheda = new System.Windows.Forms.Panel();
+            this.ubFilePath = new Infragistics.Win.Misc.UltraButton();
+            this.uteFilePath = new Infragistics.Win.UltraWinEditors.UltraTextEditor();
+            this.lblFilePath = new System.Windows.Forms.Label();
+            this.ugbDizionari = new Infragistics.Win.Misc.UltraGroupBox();
+            this.UltraGrid = new Infragistics.Win.UltraWinGrid.UltraGrid();
+            this.ubConferma = new Infragistics.Win.Misc.UltraButton();
+            this.ubAnnulla = new Infragistics.Win.Misc.UltraButton();
+            ((System.ComponentModel.ISupportInitialize)(this.UltraToolbarsManager)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ultraGroupBoxForm)).BeginInit();
+            this.ultraGroupBoxForm.SuspendLayout();
+            this.TableLayoutPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picView)).BeginInit();
+            this.pnlExportScheda.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.uteFilePath)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ugbDizionari)).BeginInit();
+            this.ugbDizionari.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.UltraGrid)).BeginInit();
+            this.SuspendLayout();
+                                                this.UltraToolbarsManager.DesignerFlags = 0;
+            this.UltraToolbarsManager.DockWithinContainer = this;
+            this.UltraToolbarsManager.DockWithinContainerBaseType = typeof(System.Windows.Forms.Form);
+                                                this._frmPUView_Toolbars_Dock_Area_Top.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping;
+            this._frmPUView_Toolbars_Dock_Area_Top.BackColor = System.Drawing.SystemColors.Control;
+            this._frmPUView_Toolbars_Dock_Area_Top.DockedPosition = Infragistics.Win.UltraWinToolbars.DockedPosition.Top;
+            this._frmPUView_Toolbars_Dock_Area_Top.ForeColor = System.Drawing.SystemColors.ControlText;
+            this._frmPUView_Toolbars_Dock_Area_Top.Location = new System.Drawing.Point(0, 0);
+            this._frmPUView_Toolbars_Dock_Area_Top.Name = "_frmPUView_Toolbars_Dock_Area_Top";
+            this._frmPUView_Toolbars_Dock_Area_Top.Size = new System.Drawing.Size(834, 0);
+            this._frmPUView_Toolbars_Dock_Area_Top.ToolbarsManager = this.UltraToolbarsManager;
+                                                this._frmPUView_Toolbars_Dock_Area_Bottom.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping;
+            this._frmPUView_Toolbars_Dock_Area_Bottom.BackColor = System.Drawing.SystemColors.Control;
+            this._frmPUView_Toolbars_Dock_Area_Bottom.DockedPosition = Infragistics.Win.UltraWinToolbars.DockedPosition.Bottom;
+            this._frmPUView_Toolbars_Dock_Area_Bottom.ForeColor = System.Drawing.SystemColors.ControlText;
+            this._frmPUView_Toolbars_Dock_Area_Bottom.Location = new System.Drawing.Point(0, 461);
+            this._frmPUView_Toolbars_Dock_Area_Bottom.Name = "_frmPUView_Toolbars_Dock_Area_Bottom";
+            this._frmPUView_Toolbars_Dock_Area_Bottom.Size = new System.Drawing.Size(834, 0);
+            this._frmPUView_Toolbars_Dock_Area_Bottom.ToolbarsManager = this.UltraToolbarsManager;
+                                                this._frmPUView_Toolbars_Dock_Area_Left.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping;
+            this._frmPUView_Toolbars_Dock_Area_Left.BackColor = System.Drawing.SystemColors.Control;
+            this._frmPUView_Toolbars_Dock_Area_Left.DockedPosition = Infragistics.Win.UltraWinToolbars.DockedPosition.Left;
+            this._frmPUView_Toolbars_Dock_Area_Left.ForeColor = System.Drawing.SystemColors.ControlText;
+            this._frmPUView_Toolbars_Dock_Area_Left.Location = new System.Drawing.Point(0, 0);
+            this._frmPUView_Toolbars_Dock_Area_Left.Name = "_frmPUView_Toolbars_Dock_Area_Left";
+            this._frmPUView_Toolbars_Dock_Area_Left.Size = new System.Drawing.Size(0, 461);
+            this._frmPUView_Toolbars_Dock_Area_Left.ToolbarsManager = this.UltraToolbarsManager;
+                                                this._frmPUView_Toolbars_Dock_Area_Right.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping;
+            this._frmPUView_Toolbars_Dock_Area_Right.BackColor = System.Drawing.SystemColors.Control;
+            this._frmPUView_Toolbars_Dock_Area_Right.DockedPosition = Infragistics.Win.UltraWinToolbars.DockedPosition.Right;
+            this._frmPUView_Toolbars_Dock_Area_Right.ForeColor = System.Drawing.SystemColors.ControlText;
+            this._frmPUView_Toolbars_Dock_Area_Right.Location = new System.Drawing.Point(834, 0);
+            this._frmPUView_Toolbars_Dock_Area_Right.Name = "_frmPUView_Toolbars_Dock_Area_Right";
+            this._frmPUView_Toolbars_Dock_Area_Right.Size = new System.Drawing.Size(0, 461);
+            this._frmPUView_Toolbars_Dock_Area_Right.ToolbarsManager = this.UltraToolbarsManager;
+                                                this.ultraGroupBoxForm.Controls.Add(this.TableLayoutPanel);
+            this.ultraGroupBoxForm.Controls.Add(this.ubConferma);
+            this.ultraGroupBoxForm.Controls.Add(this.ubAnnulla);
+            this.ultraGroupBoxForm.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ultraGroupBoxForm.Location = new System.Drawing.Point(0, 0);
+            this.ultraGroupBoxForm.Name = "ultraGroupBoxForm";
+            this.ultraGroupBoxForm.Size = new System.Drawing.Size(834, 461);
+            this.ultraGroupBoxForm.TabIndex = 8;
+            this.ultraGroupBoxForm.ViewStyle = Infragistics.Win.Misc.GroupBoxViewStyle.Office2007;
+                                                this.TableLayoutPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.TableLayoutPanel.BackColor = System.Drawing.Color.Transparent;
+            this.TableLayoutPanel.ColumnCount = 2;
+            this.TableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 140F));
+            this.TableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.TableLayoutPanel.Controls.Add(this.picView, 0, 1);
+            this.TableLayoutPanel.Controls.Add(this.pnlExportScheda, 1, 0);
+            this.TableLayoutPanel.Location = new System.Drawing.Point(6, 6);
+            this.TableLayoutPanel.Name = "TableLayoutPanel";
+            this.TableLayoutPanel.RowCount = 3;
+            this.TableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.TableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 128F));
+            this.TableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.TableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.TableLayoutPanel.Size = new System.Drawing.Size(822, 420);
+            this.TableLayoutPanel.TabIndex = 0;
+                                                this.picView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.picView.Location = new System.Drawing.Point(3, 149);
+            this.picView.Name = "picView";
+            this.picView.Size = new System.Drawing.Size(134, 122);
+            this.picView.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picView.TabIndex = 1;
+            this.picView.TabStop = false;
+                                                this.pnlExportScheda.Controls.Add(this.ubFilePath);
+            this.pnlExportScheda.Controls.Add(this.uteFilePath);
+            this.pnlExportScheda.Controls.Add(this.lblFilePath);
+            this.pnlExportScheda.Controls.Add(this.ugbDizionari);
+            this.pnlExportScheda.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlExportScheda.Location = new System.Drawing.Point(143, 3);
+            this.pnlExportScheda.Name = "pnlExportScheda";
+            this.TableLayoutPanel.SetRowSpan(this.pnlExportScheda, 3);
+            this.pnlExportScheda.Size = new System.Drawing.Size(676, 414);
+            this.pnlExportScheda.TabIndex = 0;
+                                                this.ubFilePath.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.ubFilePath.Location = new System.Drawing.Point(640, 13);
+            this.ubFilePath.Name = "ubFilePath";
+            this.ubFilePath.Size = new System.Drawing.Size(30, 21);
+            this.ubFilePath.TabIndex = 6;
+            this.ubFilePath.Text = "...";
+            this.ubFilePath.Click += new System.EventHandler(this.ubFilePath_Click);
+                                                this.uteFilePath.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.uteFilePath.Location = new System.Drawing.Point(87, 14);
+            this.uteFilePath.Name = "uteFilePath";
+            this.uteFilePath.Size = new System.Drawing.Size(547, 21);
+            this.uteFilePath.TabIndex = 5;
+                                                this.lblFilePath.BackColor = System.Drawing.Color.Transparent;
+            this.lblFilePath.Location = new System.Drawing.Point(10, 18);
+            this.lblFilePath.Name = "lblFilePath";
+            this.lblFilePath.Size = new System.Drawing.Size(71, 20);
+            this.lblFilePath.TabIndex = 4;
+            this.lblFilePath.Text = "File Export";
+                                                this.ugbDizionari.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.ugbDizionari.Controls.Add(this.UltraGrid);
+            appearance13.FontData.BoldAsString = "True";
+            this.ugbDizionari.HeaderAppearance = appearance13;
+            this.ugbDizionari.Location = new System.Drawing.Point(13, 41);
+            this.ugbDizionari.Name = "ugbDizionari";
+            this.ugbDizionari.Size = new System.Drawing.Size(657, 370);
+            this.ugbDizionari.TabIndex = 7;
+            this.ugbDizionari.Text = "Seleziona Dizionari";
+            this.ugbDizionari.ViewStyle = Infragistics.Win.Misc.GroupBoxViewStyle.Office2007;
+                                                appearance1.BackColor = System.Drawing.SystemColors.Window;
+            appearance1.BorderColor = System.Drawing.SystemColors.InactiveCaption;
+            this.UltraGrid.DisplayLayout.Appearance = appearance1;
+            this.UltraGrid.DisplayLayout.BorderStyle = Infragistics.Win.UIElementBorderStyle.Solid;
+            this.UltraGrid.DisplayLayout.CaptionVisible = Infragistics.Win.DefaultableBoolean.False;
+            appearance2.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            appearance2.BackColor2 = System.Drawing.SystemColors.ControlDark;
+            appearance2.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
+            appearance2.BorderColor = System.Drawing.SystemColors.Window;
+            this.UltraGrid.DisplayLayout.GroupByBox.Appearance = appearance2;
+            appearance3.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.UltraGrid.DisplayLayout.GroupByBox.BandLabelAppearance = appearance3;
+            this.UltraGrid.DisplayLayout.GroupByBox.BorderStyle = Infragistics.Win.UIElementBorderStyle.Solid;
+            appearance4.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            appearance4.BackColor2 = System.Drawing.SystemColors.Control;
+            appearance4.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance4.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.UltraGrid.DisplayLayout.GroupByBox.PromptAppearance = appearance4;
+            this.UltraGrid.DisplayLayout.MaxColScrollRegions = 1;
+            this.UltraGrid.DisplayLayout.MaxRowScrollRegions = 1;
+            appearance5.BackColor = System.Drawing.SystemColors.Window;
+            appearance5.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.UltraGrid.DisplayLayout.Override.ActiveCellAppearance = appearance5;
+            appearance6.BackColor = System.Drawing.SystemColors.Highlight;
+            appearance6.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.UltraGrid.DisplayLayout.Override.ActiveRowAppearance = appearance6;
+            this.UltraGrid.DisplayLayout.Override.BorderStyleCell = Infragistics.Win.UIElementBorderStyle.Dotted;
+            this.UltraGrid.DisplayLayout.Override.BorderStyleRow = Infragistics.Win.UIElementBorderStyle.Dotted;
+            appearance7.BackColor = System.Drawing.SystemColors.Window;
+            this.UltraGrid.DisplayLayout.Override.CardAreaAppearance = appearance7;
+            appearance8.BorderColor = System.Drawing.Color.Silver;
+            appearance8.TextTrimming = Infragistics.Win.TextTrimming.EllipsisCharacter;
+            this.UltraGrid.DisplayLayout.Override.CellAppearance = appearance8;
+            this.UltraGrid.DisplayLayout.Override.CellClickAction = Infragistics.Win.UltraWinGrid.CellClickAction.EditAndSelectText;
+            this.UltraGrid.DisplayLayout.Override.CellPadding = 0;
+            appearance9.BackColor = System.Drawing.SystemColors.Control;
+            appearance9.BackColor2 = System.Drawing.SystemColors.ControlDark;
+            appearance9.BackGradientAlignment = Infragistics.Win.GradientAlignment.Element;
+            appearance9.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance9.BorderColor = System.Drawing.SystemColors.Window;
+            this.UltraGrid.DisplayLayout.Override.GroupByRowAppearance = appearance9;
+            appearance10.TextHAlignAsString = "Left";
+            this.UltraGrid.DisplayLayout.Override.HeaderAppearance = appearance10;
+            this.UltraGrid.DisplayLayout.Override.HeaderClickAction = Infragistics.Win.UltraWinGrid.HeaderClickAction.SortMulti;
+            this.UltraGrid.DisplayLayout.Override.HeaderStyle = Infragistics.Win.HeaderStyle.WindowsXPCommand;
+            appearance11.BackColor = System.Drawing.SystemColors.Window;
+            appearance11.BorderColor = System.Drawing.Color.Silver;
+            this.UltraGrid.DisplayLayout.Override.RowAppearance = appearance11;
+            this.UltraGrid.DisplayLayout.Override.RowSelectors = Infragistics.Win.DefaultableBoolean.False;
+            appearance12.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.UltraGrid.DisplayLayout.Override.TemplateAddRowAppearance = appearance12;
+            this.UltraGrid.DisplayLayout.ScrollBounds = Infragistics.Win.UltraWinGrid.ScrollBounds.ScrollToFill;
+            this.UltraGrid.DisplayLayout.ScrollStyle = Infragistics.Win.UltraWinGrid.ScrollStyle.Immediate;
+            this.UltraGrid.DisplayLayout.ViewStyleBand = Infragistics.Win.UltraWinGrid.ViewStyleBand.OutlookGroupBy;
+            this.UltraGrid.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.UltraGrid.Location = new System.Drawing.Point(3, 16);
+            this.UltraGrid.Name = "UltraGrid";
+            this.UltraGrid.Size = new System.Drawing.Size(651, 351);
+            this.UltraGrid.TabIndex = 0;
+            this.UltraGrid.Text = "ultraGrid1";
+            this.UltraGrid.InitializeLayout += new Infragistics.Win.UltraWinGrid.InitializeLayoutEventHandler(this.UltraGrid_InitializeLayout);
+                                                this.ubConferma.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.ubConferma.ButtonStyle = Infragistics.Win.UIElementButtonStyle.WindowsVistaButton;
+            this.ubConferma.Location = new System.Drawing.Point(753, 432);
+            this.ubConferma.Name = "ubConferma";
+            this.ubConferma.Size = new System.Drawing.Size(75, 23);
+            this.ubConferma.TabIndex = 2;
+            this.ubConferma.Text = "&Conferma";
+            this.ubConferma.Click += new System.EventHandler(this.ubConferma_Click);
+                                                this.ubAnnulla.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.ubAnnulla.ButtonStyle = Infragistics.Win.UIElementButtonStyle.WindowsVistaButton;
+            this.ubAnnulla.Location = new System.Drawing.Point(5, 432);
+            this.ubAnnulla.Name = "ubAnnulla";
+            this.ubAnnulla.Size = new System.Drawing.Size(75, 23);
+            this.ubAnnulla.TabIndex = 1;
+            this.ubAnnulla.Text = "&Annulla";
+            this.ubAnnulla.Click += new System.EventHandler(this.ubAnnulla_Click);
+                                                this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(834, 461);
+            this.ControlBox = false;
+            this.Controls.Add(this.ultraGroupBoxForm);
+            this.Controls.Add(this._frmPUView_Toolbars_Dock_Area_Left);
+            this.Controls.Add(this._frmPUView_Toolbars_Dock_Area_Right);
+            this.Controls.Add(this._frmPUView_Toolbars_Dock_Area_Bottom);
+            this.Controls.Add(this._frmPUView_Toolbars_Dock_Area_Top);
+            this.Name = "frmPUDizionariEsporta";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "frmPUDizionariEsporta";
+            ((System.ComponentModel.ISupportInitialize)(this.UltraToolbarsManager)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ultraGroupBoxForm)).EndInit();
+            this.ultraGroupBoxForm.ResumeLayout(false);
+            this.TableLayoutPanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.picView)).EndInit();
+            this.pnlExportScheda.ResumeLayout(false);
+            this.pnlExportScheda.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.uteFilePath)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ugbDizionari)).EndInit();
+            this.ugbDizionari.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.UltraGrid)).EndInit();
+            this.ResumeLayout(false);
+
+        }
+
+        #endregion
+
+        private Infragistics.Win.UltraWinToolbars.UltraToolbarsManager UltraToolbarsManager;
+        private Infragistics.Win.UltraWinToolbars.UltraToolbarsDockArea _frmPUView_Toolbars_Dock_Area_Top;
+        private Infragistics.Win.UltraWinToolbars.UltraToolbarsDockArea _frmPUView_Toolbars_Dock_Area_Bottom;
+        private Infragistics.Win.UltraWinToolbars.UltraToolbarsDockArea _frmPUView_Toolbars_Dock_Area_Left;
+        private Infragistics.Win.UltraWinToolbars.UltraToolbarsDockArea _frmPUView_Toolbars_Dock_Area_Right;
+        private System.Windows.Forms.SaveFileDialog saveFileDialog;
+        private Infragistics.Win.Misc.UltraGroupBox ultraGroupBoxForm;
+        internal System.Windows.Forms.TableLayoutPanel TableLayoutPanel;
+        internal System.Windows.Forms.PictureBox picView;
+        private System.Windows.Forms.Panel pnlExportScheda;
+        private Infragistics.Win.Misc.UltraButton ubFilePath;
+        private Infragistics.Win.UltraWinEditors.UltraTextEditor uteFilePath;
+        private System.Windows.Forms.Label lblFilePath;
+        private Infragistics.Win.Misc.UltraGroupBox ugbDizionari;
+        private Infragistics.Win.UltraWinGrid.UltraGrid UltraGrid;
+        private Infragistics.Win.Misc.UltraButton ubConferma;
+        private Infragistics.Win.Misc.UltraButton ubAnnulla;
+    }
+}

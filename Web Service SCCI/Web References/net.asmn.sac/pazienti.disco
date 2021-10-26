@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<discovery xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/disco/">
+  <contractRef ref="http://sac.asmn.net/ws/pazienti.asmx?wsdl" docRef="http://sac.asmn.net/ws/pazienti.asmx" xmlns="http://schemas.xmlsoap.org/disco/scl/" />
+  <soap address="http://sac.asmn.net/ws/pazienti.asmx" xmlns:q1="http://sac.org/Pazienti" binding="q1:PazientiSoap" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+  <soap address="http://sac.asmn.net/ws/pazienti.asmx" xmlns:q2="http://sac.org/Pazienti" binding="q2:PazientiSoap12" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+</discovery>

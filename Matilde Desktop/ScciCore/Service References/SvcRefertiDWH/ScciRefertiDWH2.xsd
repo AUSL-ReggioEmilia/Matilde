@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://ws-scci-main-test/ScciRefertiDWH.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/UnicodeSrl.Scci.DataContracts" />
+  <xs:import schemaLocation="http://ws-scci-main-test/ScciRefertiDWH.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/UnicodeSrl.Scci.Enums" />
+  <xs:import schemaLocation="http://ws-scci-main-test/ScciRefertiDWH.svc?xsd=xsd4" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:element name="RicercaRefertiDWH">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="idsac" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="datainizio" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="datafine" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="tipoevidenzaclinica" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="statoevidenzaclinica" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RicercaRefertiDWHResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/UnicodeSrl.Scci.DataContracts" minOccurs="0" name="RicercaRefertiDWHResult" nillable="true" type="q1:ArrayOfRefertoDWH" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CaricaRefertoDWH">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="idreferto" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CaricaRefertoDWHResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/UnicodeSrl.Scci.DataContracts" minOccurs="0" name="CaricaRefertoDWHResult" nillable="true" type="q2:ArrayOfAllegatoRefertoDWH" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CaricaRefertoDWHDettaglio">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="idreferto" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CaricaRefertoDWHDettaglioResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/UnicodeSrl.Scci.DataContracts" minOccurs="0" name="CaricaRefertoDWHDettaglioResult" nillable="true" type="q3:RefertoDWHDetailed" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RicercaContenutiReferto">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="idreferto" nillable="true" type="xs:string" />
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/UnicodeSrl.Scci.Enums" minOccurs="0" name="tipo" type="q4:EnumTipoContenutiReferto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RicercaContenutiRefertoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="RicercaContenutiRefertoResult" nillable="true" type="q5:ArrayOfKeyValueOfstringstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CaricaContenutiDaListaID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="idreferto" nillable="true" type="xs:string" />
+        <xs:element xmlns:q6="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="idcontenuti" nillable="true" type="q6:ArrayOfstring" />
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/UnicodeSrl.Scci.Enums" minOccurs="0" name="tipo" type="q7:EnumTipoContenutiReferto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CaricaContenutiDaListaIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="CaricaContenutiDaListaIDResult" nillable="true" type="q8:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RicercaRefertiDWHTipi">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="idsac" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="datainizio" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="datafine" type="xs:dateTime" />
+        <xs:element xmlns:q9="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="tipievidenzaclinica" nillable="true" type="q9:ArrayOfstring" />
+        <xs:element xmlns:q10="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="statievidenzaclinica" nillable="true" type="q10:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RicercaRefertiDWHTipiResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/UnicodeSrl.Scci.DataContracts" minOccurs="0" name="RicercaRefertiDWHTipiResult" nillable="true" type="q11:ArrayOfRefertoDWH" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="e5c1df9e-81f4-4117-83e8-598cfe0b6a93" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:52485/ScciConsensiSAC.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ScciConsensiSAC.xsd" MetadataType="Schema" ID="01a0cce2-1be0-4427-b8ab-dfdec43774ec" SourceId="1" SourceUrl="http://localhost:52485/ScciConsensiSAC.svc?xsd=xsd0" />
+    <MetadataFile FileName="ScciConsensiSAC.disco" MetadataType="Disco" ID="9d43e081-35ab-4264-97df-8c0ad32b9bb9" SourceId="1" SourceUrl="http://localhost:52485/ScciConsensiSAC.svc?disco" />
+    <MetadataFile FileName="ScciConsensiSAC.wsdl" MetadataType="Wsdl" ID="d8a77ffa-d38c-4ef6-a580-c47ccaf75e9d" SourceId="1" SourceUrl="http://localhost:52485/ScciConsensiSAC.svc?wsdl" />
+    <MetadataFile FileName="ScciConsensiSAC1.xsd" MetadataType="Schema" ID="3f42c57b-8d1c-43c0-ae97-fde5cdb19064" SourceId="1" SourceUrl="http://localhost:52485/ScciConsensiSAC.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

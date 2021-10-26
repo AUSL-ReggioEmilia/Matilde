@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.progel.it/OE/Types/1.1" elementFormDefault="qualified" targetNamespace="http://schemas.progel.it/OE/Types/1.1" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:simpleType name="OperazioneRigaRichiestaOrderEntryEnum">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="IS" />
+      <xs:enumeration value="MD" />
+      <xs:enumeration value="CA" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="OperazioneRigaRichiestaOrderEntryEnum" nillable="true" type="tns:OperazioneRigaRichiestaOrderEntryEnum" />
+  <xs:complexType name="CodiceDescrizioneType">
+    <xs:sequence>
+      <xs:element name="Codice" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="Descrizione" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CodiceDescrizioneType" nillable="true" type="tns:CodiceDescrizioneType" />
+  <xs:complexType name="SistemaType">
+    <xs:sequence>
+      <xs:element name="Azienda" nillable="true" type="tns:CodiceDescrizioneType">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="Sistema" nillable="true" type="tns:CodiceDescrizioneType">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SistemaType" nillable="true" type="tns:SistemaType" />
+  <xs:complexType name="PrestazioneType">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Id" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="Codice" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="Descrizione" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PrestazioneType" nillable="true" type="tns:PrestazioneType" />
+  <xs:complexType name="ConsensiType">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Consenso" nillable="true" type="tns:ConsensoType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ConsensiType" nillable="true" type="tns:ConsensiType" />
+  <xs:complexType name="ConsensoType">
+    <xs:sequence>
+      <xs:element name="Tipo" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="Valore" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Data" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Operatore" nillable="true" type="tns:OperatoreType">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ConsensoType" nillable="true" type="tns:ConsensoType" />
+  <xs:complexType name="OperatoreType">
+    <xs:sequence>
+      <xs:element name="ID" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="Cognome" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="Nome" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="CodiceFiscale" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OperatoreType" nillable="true" type="tns:OperatoreType" />
+</xs:schema>

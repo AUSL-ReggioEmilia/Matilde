@@ -1,0 +1,18 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="WsSCCI.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="WsSCCI_net_asmn_sac_Pazienti" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://sac.asmn.net/ws/pazienti.asmx</Value>
+    </Setting>
+    <Setting Name="WsSCCI_net_asmn_dwhclinico_DataAccessTdsV2" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://dwh-clinico.asmn.net/Ws2/DataAccessTdsV2.asmx</Value>
+    </Setting>
+    <Setting Name="WsSCCI_net_asmn_dwhclinicolab_DataAccessV2" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://ws-di-dwh.asmn.net/WS-DI-DWH-2/DataAccessV2.asmx</Value>
+    </Setting>
+    <Setting Name="WsSCCI_net_asmn_sacconsensi_Consensi" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://ws-di-sac.asmn.net/ws-di-sac-2/consensi.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="eb04277a-6daf-43ff-a905-7f09a01a2c52" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:52485/ScciOrderEntry.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ScciOrderEntry1.xsd" MetadataType="Schema" ID="6ea2bf5f-b85f-4d87-b249-cf3451c69224" SourceId="1" SourceUrl="http://localhost:52485/ScciOrderEntry.svc?xsd=xsd0" />
+    <MetadataFile FileName="ScciOrderEntry7.xsd" MetadataType="Schema" ID="99438fac-6b55-4122-a435-7c9362829063" SourceId="1" SourceUrl="http://localhost:52485/ScciOrderEntry.svc?xsd=xsd3" />
+    <MetadataFile FileName="ScciOrderEntry8.xsd" MetadataType="Schema" ID="71a29c86-3132-451c-ad90-64e101d42b51" SourceId="1" SourceUrl="http://localhost:52485/ScciOrderEntry.svc?xsd=xsd2" />
+    <MetadataFile FileName="ScciOrderEntry12.xsd" MetadataType="Schema" ID="edc5a945-c536-4007-b6a5-6cc75fb2a1ff" SourceId="1" SourceUrl="http://localhost:52485/ScciOrderEntry.svc?xsd=xsd6" />
+    <MetadataFile FileName="ScciOrderEntry9.xsd" MetadataType="Schema" ID="b1d012fb-e302-4d2a-a583-1f6735a4fb5f" SourceId="1" SourceUrl="http://localhost:52485/ScciOrderEntry.svc?xsd=xsd5" />
+    <MetadataFile FileName="ScciOrderEntry10.xsd" MetadataType="Schema" ID="5a60988d-f2ee-4ce7-9091-fd72281c3758" SourceId="1" SourceUrl="http://localhost:52485/ScciOrderEntry.svc?xsd=xsd4" />
+    <MetadataFile FileName="ScciOrderEntry1.wsdl" MetadataType="Wsdl" ID="dd1961a0-b837-4852-b8cc-e60b408ea375" SourceId="1" SourceUrl="http://localhost:52485/ScciOrderEntry.svc?wsdl" />
+    <MetadataFile FileName="ScciOrderEntry1.disco" MetadataType="Disco" ID="e454c629-6d5c-4f29-8124-b38bbf0f8c30" SourceId="1" SourceUrl="http://localhost:52485/ScciOrderEntry.svc?disco" />
+    <MetadataFile FileName="ScciOrderEntry11.xsd" MetadataType="Schema" ID="b0f7fbd0-a2f9-4aae-a926-d10eccdeecac" SourceId="1" SourceUrl="http://localhost:52485/ScciOrderEntry.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

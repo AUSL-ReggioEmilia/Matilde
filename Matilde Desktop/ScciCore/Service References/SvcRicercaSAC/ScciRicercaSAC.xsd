@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://ws-scci-main-test/ScciRicercaSAC.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/UnicodeSrl.Scci.DataContracts" />
+  <xs:element name="RicercaPazientiSAC">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="cognome" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="nome" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="datanascita" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="luogonascita" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="codfiscale" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RicercaPazientiSACResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/UnicodeSrl.Scci.DataContracts" minOccurs="0" name="RicercaPazientiSACResult" nillable="true" type="q1:ArrayOfPazienteSac" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RicercaPazientiSACByID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="idsac" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RicercaPazientiSACByIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/UnicodeSrl.Scci.DataContracts" minOccurs="0" name="RicercaPazientiSACByIDResult" nillable="true" type="q2:PazienteSac" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PazienteSacDatiAggiuntiviByID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="idsac" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PazienteSacDatiAggiuntiviByIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/UnicodeSrl.Scci.DataContracts" minOccurs="0" name="PazienteSacDatiAggiuntiviByIDResult" nillable="true" type="q3:PazienteSacDatiAggiuntivi" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

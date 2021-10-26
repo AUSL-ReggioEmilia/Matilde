@@ -1,0 +1,272 @@
+﻿namespace UnicodeSrl.ScciCore
+{
+    partial class ucInfoSchede
+    {
+                                private System.ComponentModel.IContainer components = null;
+
+                                        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Component Designer generated code
+
+                                        private void InitializeComponent()
+        {
+            this.components = new System.ComponentModel.Container();
+            Infragistics.Win.Appearance appearance1 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance2 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance3 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance4 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance5 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance6 = new Infragistics.Win.Appearance();
+            this.UltraGroupBox = new Infragistics.Win.Misc.UltraGroupBox();
+            this.ucEasyTableLayoutPanel = new UnicodeSrl.ScciCore.ucEasyTableLayoutPanel(this.components);
+            this.ucEasyTreeView = new UnicodeSrl.ScciCore.ucEasyTreeView();
+            this.ucAnteprimaRtfStorico = new UnicodeSrl.ScciCore.ucAnteprimaRtfStorico();
+            this.object_a1a93781_56e0_47c0_a572_15ae2f806be8 = new UnicodeSrl.ScciCore.ucEasyTableLayoutPanel(this.components);
+            this.ucEasyTableLayoutPanelAzioni = new UnicodeSrl.ScciCore.ucEasyTableLayoutPanel(this.components);
+            this.ucEasyButtonModifica = new UnicodeSrl.ScciCore.ucEasyButton();
+            this.ultraPanelInfo = new Infragistics.Win.Misc.UltraPanel();
+            this.ucEasyTableLayoutPanelInfo = new UnicodeSrl.ScciCore.ucEasyTableLayoutPanel(this.components);
+            this.PictureBox = new UnicodeSrl.ScciCore.ucEasyPictureBox();
+            this.ucEasyLabelRiga1 = new UnicodeSrl.ScciCore.ucEasyLabel();
+            this.ucEasyLabelRiga2 = new UnicodeSrl.ScciCore.ucEasyLabel();
+            this.ucEasyLabelRiga3 = new UnicodeSrl.ScciCore.ucEasyLabel();
+            this.ucScrollBarVInfo = new ucScrollBarV();
+            this.ultraToolTipManager1 = new Infragistics.Win.UltraWinToolTip.UltraToolTipManager(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.UltraGroupBox)).BeginInit();
+            this.UltraGroupBox.SuspendLayout();
+            this.ucEasyTableLayoutPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ucEasyTreeView)).BeginInit();
+            this.ucAnteprimaRtfStorico.SuspendLayout();
+            this.ucEasyTableLayoutPanelAzioni.SuspendLayout();
+            this.ultraPanelInfo.ClientArea.SuspendLayout();
+            this.ultraPanelInfo.SuspendLayout();
+            this.ucEasyTableLayoutPanelInfo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBox)).BeginInit();
+            this.SuspendLayout();
+                                                this.UltraGroupBox.Controls.Add(this.ucEasyTableLayoutPanel);
+            this.UltraGroupBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.UltraGroupBox.Location = new System.Drawing.Point(0, 0);
+            this.UltraGroupBox.Name = "UltraGroupBox";
+            this.UltraGroupBox.Size = new System.Drawing.Size(800, 600);
+            this.UltraGroupBox.TabIndex = 5;
+            this.UltraGroupBox.ViewStyle = Infragistics.Win.Misc.GroupBoxViewStyle.Office2007;
+                                                this.ucEasyTableLayoutPanel.BackColor = System.Drawing.Color.Transparent;
+            this.ucEasyTableLayoutPanel.ColumnCount = 3;
+            this.ucEasyTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40F));
+            this.ucEasyTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 8F));
+            this.ucEasyTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 52F));
+            this.ucEasyTableLayoutPanel.Controls.Add(this.ucEasyTreeView, 0, 0);
+            this.ucEasyTableLayoutPanel.Controls.Add(this.ucAnteprimaRtfStorico, 2, 1);
+            this.ucEasyTableLayoutPanel.Controls.Add(this.ucEasyTableLayoutPanelAzioni, 1, 1);
+            this.ucEasyTableLayoutPanel.Controls.Add(this.ultraPanelInfo, 2, 0);
+            this.ucEasyTableLayoutPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ucEasyTableLayoutPanel.Location = new System.Drawing.Point(3, 3);
+            this.ucEasyTableLayoutPanel.Name = "ucEasyTableLayoutPanel";
+            this.ucEasyTableLayoutPanel.RowCount = 2;
+            this.ucEasyTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 18F));
+            this.ucEasyTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 82F));
+            this.ucEasyTableLayoutPanel.Size = new System.Drawing.Size(794, 594);
+            this.ucEasyTableLayoutPanel.TabIndex = 5;
+                                                appearance1.FontData.SizeInPoints = 14F;
+            this.ucEasyTreeView.Appearance = appearance1;
+            this.ucEasyTreeView.BorderStyle = Infragistics.Win.UIElementBorderStyle.None;
+            this.ucEasyTreeView.DisplayStyle = Infragistics.Win.UltraWinTree.UltraTreeDisplayStyle.WindowsVista;
+            this.ucEasyTreeView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ucEasyTreeView.HideSelection = false;
+            this.ucEasyTreeView.Location = new System.Drawing.Point(3, 3);
+            this.ucEasyTreeView.Name = "ucEasyTreeView";
+            this.ucEasyTableLayoutPanel.SetRowSpan(this.ucEasyTreeView, 2);
+            this.ucEasyTreeView.Scrollable = Infragistics.Win.UltraWinTree.Scrollbar.ShowIfNeeded;
+            this.ucEasyTreeView.Size = new System.Drawing.Size(311, 588);
+            this.ucEasyTreeView.TabIndex = 0;
+            this.ucEasyTreeView.TextFontRelativeDimension = UnicodeSrl.ScciCore.easyStatics.easyRelativeDimensions.Small;
+            this.ucEasyTreeView.UseOsThemes = Infragistics.Win.DefaultableBoolean.False;
+            this.ucEasyTreeView.AfterActivate += new Infragistics.Win.UltraWinTree.AfterNodeChangedEventHandler(this.ucEasyTreeView_AfterActivate);
+                                                this.ucAnteprimaRtfStorico.Controls.Add(this.object_a1a93781_56e0_47c0_a572_15ae2f806be8);
+            this.ucAnteprimaRtfStorico.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ucAnteprimaRtfStorico.Location = new System.Drawing.Point(383, 109);
+            this.ucAnteprimaRtfStorico.MovScheda = null;
+            this.ucAnteprimaRtfStorico.Name = "ucAnteprimaRtfStorico";
+            this.ucAnteprimaRtfStorico.Size = new System.Drawing.Size(408, 482);
+            this.ucAnteprimaRtfStorico.TabIndex = 1;
+            this.ucAnteprimaRtfStorico.StoricoChange += new UnicodeSrl.ScciCore.ChangeEventHandler(this.ucAnteprimaRtfStorico_StoricoChange);
+                                                this.object_a1a93781_56e0_47c0_a572_15ae2f806be8.ColumnCount = 1;
+            this.object_a1a93781_56e0_47c0_a572_15ae2f806be8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.object_a1a93781_56e0_47c0_a572_15ae2f806be8.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.object_a1a93781_56e0_47c0_a572_15ae2f806be8.Location = new System.Drawing.Point(0, 0);
+            this.object_a1a93781_56e0_47c0_a572_15ae2f806be8.Name = "object_a1a93781_56e0_47c0_a572_15ae2f806be8";
+            this.object_a1a93781_56e0_47c0_a572_15ae2f806be8.RowCount = 2;
+            this.object_a1a93781_56e0_47c0_a572_15ae2f806be8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.object_a1a93781_56e0_47c0_a572_15ae2f806be8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
+            this.object_a1a93781_56e0_47c0_a572_15ae2f806be8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.object_a1a93781_56e0_47c0_a572_15ae2f806be8.Size = new System.Drawing.Size(408, 482);
+            this.object_a1a93781_56e0_47c0_a572_15ae2f806be8.TabIndex = 3;
+                                                this.ucEasyTableLayoutPanelAzioni.ColumnCount = 1;
+            this.ucEasyTableLayoutPanelAzioni.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.ucEasyTableLayoutPanelAzioni.Controls.Add(this.ucEasyButtonModifica, 0, 0);
+            this.ucEasyTableLayoutPanelAzioni.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ucEasyTableLayoutPanelAzioni.Location = new System.Drawing.Point(317, 106);
+            this.ucEasyTableLayoutPanelAzioni.Margin = new System.Windows.Forms.Padding(0);
+            this.ucEasyTableLayoutPanelAzioni.Name = "ucEasyTableLayoutPanelAzioni";
+            this.ucEasyTableLayoutPanelAzioni.RowCount = 8;
+            this.ucEasyTableLayoutPanelAzioni.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.ucEasyTableLayoutPanelAzioni.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.ucEasyTableLayoutPanelAzioni.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.ucEasyTableLayoutPanelAzioni.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.ucEasyTableLayoutPanelAzioni.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.ucEasyTableLayoutPanelAzioni.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.ucEasyTableLayoutPanelAzioni.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.ucEasyTableLayoutPanelAzioni.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.ucEasyTableLayoutPanelAzioni.Size = new System.Drawing.Size(63, 488);
+            this.ucEasyTableLayoutPanelAzioni.TabIndex = 2;
+                                                appearance2.ImageHAlign = Infragistics.Win.HAlign.Center;
+            appearance2.ImageVAlign = Infragistics.Win.VAlign.Middle;
+            appearance2.TextHAlignAsString = "Center";
+            appearance2.TextVAlignAsString = "Bottom";
+            this.ucEasyButtonModifica.Appearance = appearance2;
+            this.ucEasyButtonModifica.ButtonStyle = Infragistics.Win.UIElementButtonStyle.Office2003ToolbarButton;
+            this.ucEasyButtonModifica.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ucEasyButtonModifica.Location = new System.Drawing.Point(3, 3);
+            this.ucEasyButtonModifica.Name = "ucEasyButtonModifica";
+            this.ucEasyButtonModifica.PercImageFill = 0.75F;
+            this.ucEasyButtonModifica.ShortcutFontRelativeDimension = UnicodeSrl.ScciCore.easyStatics.easyRelativeDimensions.Small;
+            this.ucEasyButtonModifica.ShortcutKey = System.Windows.Forms.Keys.None;
+            this.ucEasyButtonModifica.ShortcutPosition = UnicodeSrl.ScciCore.easyStatics.easyShortcutPosition.top_right;
+            this.ucEasyButtonModifica.Size = new System.Drawing.Size(57, 91);
+            this.ucEasyButtonModifica.TabIndex = 1;
+            this.ucEasyButtonModifica.TextFontRelativeDimension = UnicodeSrl.ScciCore.easyStatics.easyRelativeDimensions._undefined;
+            this.ucEasyButtonModifica.UseOsThemes = Infragistics.Win.DefaultableBoolean.False;
+            this.ucEasyButtonModifica.Click += new System.EventHandler(this.ucEasyButtonModifica_Click);
+                                                appearance3.BackColor = System.Drawing.Color.White;
+            this.ultraPanelInfo.Appearance = appearance3;
+            this.ultraPanelInfo.BorderStyle = Infragistics.Win.UIElementBorderStyle.Inset;
+                                                this.ultraPanelInfo.ClientArea.Controls.Add(this.ucEasyTableLayoutPanelInfo);
+            this.ultraPanelInfo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ultraPanelInfo.Location = new System.Drawing.Point(383, 3);
+            this.ultraPanelInfo.Name = "ultraPanelInfo";
+            this.ultraPanelInfo.Size = new System.Drawing.Size(408, 100);
+            this.ultraPanelInfo.TabIndex = 3;
+                                                this.ucEasyTableLayoutPanelInfo.BackColor = System.Drawing.Color.White;
+            this.ucEasyTableLayoutPanelInfo.ColumnCount = 3;
+            this.ucEasyTableLayoutPanelInfo.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 50F));
+            this.ucEasyTableLayoutPanelInfo.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 90F));
+            this.ucEasyTableLayoutPanelInfo.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.ucEasyTableLayoutPanelInfo.Controls.Add(this.PictureBox, 0, 2);
+            this.ucEasyTableLayoutPanelInfo.Controls.Add(this.ucEasyLabelRiga1, 0, 0);
+            this.ucEasyTableLayoutPanelInfo.Controls.Add(this.ucEasyLabelRiga2, 0, 1);
+            this.ucEasyTableLayoutPanelInfo.Controls.Add(this.ucEasyLabelRiga3, 1, 2);
+            this.ucEasyTableLayoutPanelInfo.Controls.Add(this.ucScrollBarVInfo, 2, 0);
+            this.ucEasyTableLayoutPanelInfo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ucEasyTableLayoutPanelInfo.Location = new System.Drawing.Point(0, 0);
+            this.ucEasyTableLayoutPanelInfo.Name = "ucEasyTableLayoutPanelInfo";
+            this.ucEasyTableLayoutPanelInfo.RowCount = 3;
+            this.ucEasyTableLayoutPanelInfo.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30F));
+            this.ucEasyTableLayoutPanelInfo.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.ucEasyTableLayoutPanelInfo.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.ucEasyTableLayoutPanelInfo.Size = new System.Drawing.Size(404, 96);
+            this.ucEasyTableLayoutPanelInfo.TabIndex = 4;
+                                                this.PictureBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.PictureBox.Location = new System.Drawing.Point(3, 50);
+            this.PictureBox.Name = "PictureBox";
+            this.PictureBox.ShortcutFontRelativeDimension = UnicodeSrl.ScciCore.easyStatics.easyRelativeDimensions.Small;
+            this.PictureBox.ShortcutKey = System.Windows.Forms.Keys.None;
+            this.PictureBox.ShortcutPosition = UnicodeSrl.ScciCore.easyStatics.easyShortcutPosition.top_right;
+            this.PictureBox.Size = new System.Drawing.Size(44, 43);
+            this.PictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PictureBox.TabIndex = 4;
+            this.PictureBox.TabStop = false;
+                                                appearance4.FontData.BoldAsString = "True";
+            appearance4.FontData.SizeInPoints = 18F;
+            this.ucEasyLabelRiga1.Appearance = appearance4;
+            this.ucEasyTableLayoutPanelInfo.SetColumnSpan(this.ucEasyLabelRiga1, 2);
+            this.ucEasyLabelRiga1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ucEasyLabelRiga1.Location = new System.Drawing.Point(3, 3);
+            this.ucEasyLabelRiga1.Name = "ucEasyLabelRiga1";
+            this.ucEasyLabelRiga1.ShortcutFontRelativeDimension = UnicodeSrl.ScciCore.easyStatics.easyRelativeDimensions.Small;
+            this.ucEasyLabelRiga1.ShortcutKey = System.Windows.Forms.Keys.None;
+            this.ucEasyLabelRiga1.ShortcutPosition = UnicodeSrl.ScciCore.easyStatics.easyShortcutPosition.top_right;
+            this.ucEasyLabelRiga1.Size = new System.Drawing.Size(362, 22);
+            this.ucEasyLabelRiga1.TabIndex = 0;
+            this.ucEasyLabelRiga1.TextFontRelativeDimension = UnicodeSrl.ScciCore.easyStatics.easyRelativeDimensions.Medium;
+                                                appearance5.FontData.BoldAsString = "True";
+            appearance5.FontData.SizeInPoints = 14F;
+            this.ucEasyLabelRiga2.Appearance = appearance5;
+            this.ucEasyTableLayoutPanelInfo.SetColumnSpan(this.ucEasyLabelRiga2, 2);
+            this.ucEasyLabelRiga2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ucEasyLabelRiga2.Location = new System.Drawing.Point(3, 31);
+            this.ucEasyLabelRiga2.Name = "ucEasyLabelRiga2";
+            this.ucEasyLabelRiga2.ShortcutFontRelativeDimension = UnicodeSrl.ScciCore.easyStatics.easyRelativeDimensions.Small;
+            this.ucEasyLabelRiga2.ShortcutKey = System.Windows.Forms.Keys.None;
+            this.ucEasyLabelRiga2.ShortcutPosition = UnicodeSrl.ScciCore.easyStatics.easyShortcutPosition.top_right;
+            this.ucEasyLabelRiga2.Size = new System.Drawing.Size(362, 13);
+            this.ucEasyLabelRiga2.TabIndex = 1;
+            this.ucEasyLabelRiga2.TextFontRelativeDimension = UnicodeSrl.ScciCore.easyStatics.easyRelativeDimensions.Small;
+                                                appearance6.FontData.SizeInPoints = 14F;
+            this.ucEasyLabelRiga3.Appearance = appearance6;
+            this.ucEasyLabelRiga3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ucEasyLabelRiga3.Location = new System.Drawing.Point(53, 50);
+            this.ucEasyLabelRiga3.Name = "ucEasyLabelRiga3";
+            this.ucEasyLabelRiga3.ShortcutFontRelativeDimension = UnicodeSrl.ScciCore.easyStatics.easyRelativeDimensions.Small;
+            this.ucEasyLabelRiga3.ShortcutKey = System.Windows.Forms.Keys.None;
+            this.ucEasyLabelRiga3.ShortcutPosition = UnicodeSrl.ScciCore.easyStatics.easyShortcutPosition.top_right;
+            this.ucEasyLabelRiga3.Size = new System.Drawing.Size(312, 43);
+            this.ucEasyLabelRiga3.TabIndex = 2;
+            this.ucEasyLabelRiga3.TextFontRelativeDimension = UnicodeSrl.ScciCore.easyStatics.easyRelativeDimensions.Small;
+                                                this.ucScrollBarVInfo.BackColor = System.Drawing.Color.Transparent;
+            this.ucScrollBarVInfo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ucScrollBarVInfo.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ucScrollBarVInfo.Location = new System.Drawing.Point(371, 3);
+            this.ucScrollBarVInfo.Name = "ucScrollBarVInfo";
+            this.ucEasyTableLayoutPanelInfo.SetRowSpan(this.ucScrollBarVInfo, 3);
+            this.ucScrollBarVInfo.Size = new System.Drawing.Size(30, 90);
+            this.ucScrollBarVInfo.TabIndex = 3;
+            this.ucScrollBarVInfo.Button += new ucScrollBarV.ButtonEventHandler(this.ucScrollBarVInfo_Button);
+                                                this.ultraToolTipManager1.ContainingControl = this;
+                                                this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.UltraGroupBox);
+            this.Name = "ucInfoSchede";
+            this.Size = new System.Drawing.Size(800, 600);
+            ((System.ComponentModel.ISupportInitialize)(this.UltraGroupBox)).EndInit();
+            this.UltraGroupBox.ResumeLayout(false);
+            this.ucEasyTableLayoutPanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.ucEasyTreeView)).EndInit();
+            this.ucAnteprimaRtfStorico.ResumeLayout(false);
+            this.ucEasyTableLayoutPanelAzioni.ResumeLayout(false);
+            this.ultraPanelInfo.ClientArea.ResumeLayout(false);
+            this.ultraPanelInfo.ResumeLayout(false);
+            this.ucEasyTableLayoutPanelInfo.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBox)).EndInit();
+            this.ResumeLayout(false);
+
+        }
+
+        #endregion
+
+        private Infragistics.Win.Misc.UltraGroupBox UltraGroupBox;
+        private ucEasyTableLayoutPanel ucEasyTableLayoutPanel;
+        private ucEasyTreeView ucEasyTreeView;
+        private ucAnteprimaRtfStorico ucAnteprimaRtfStorico;
+        private ucEasyTableLayoutPanel object_a1a93781_56e0_47c0_a572_15ae2f806be8;
+        private ucEasyTableLayoutPanel ucEasyTableLayoutPanelAzioni;
+        private ucEasyButton ucEasyButtonModifica;
+        private Infragistics.Win.Misc.UltraPanel ultraPanelInfo;
+        private ucEasyTableLayoutPanel ucEasyTableLayoutPanelInfo;
+        private ucEasyPictureBox PictureBox;
+        private ucEasyLabel ucEasyLabelRiga1;
+        private ucEasyLabel ucEasyLabelRiga2;
+        private ucEasyLabel ucEasyLabelRiga3;
+        private ucScrollBarV ucScrollBarVInfo;
+        private Infragistics.Win.UltraWinToolTip.UltraToolTipManager ultraToolTipManager1;
+
+    }
+}

@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <UseWindowsForms>true</UseWindowsForms>
+    <TargetFramework>net472</TargetFramework>
+    <Authors>Unicode Srl</Authors>
+    <Product>ScciCommon</Product>
+    <Description>ScciCommon Library</Description>
+    <Copyright>Unicode Srl</Copyright>
+    <Version>2021.07.15.120</Version>
+    <AssemblyVersion>2021.07.15.120</AssemblyVersion>
+    <FileVersion>2021.07.15.120</FileVersion>
+    <RootNamespace>ScciCommon</RootNamespace>
+    <TargetFrameworks>net472</TargetFrameworks>
+    <Company>Unicode Srl</Company>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <SignAssembly>false</SignAssembly>
+    <DelaySign>false</DelaySign>
+    <PackageReleaseNotes></PackageReleaseNotes>
+    <LangVersion>8.0</LangVersion>
+
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DocX" Version="1.6.0" />
+    <PackageReference Include="iTextSharp" Version="5.5.13.1" />
+    <PackageReference Include="Microsoft.CodeAnalysis.CSharp.Scripting" Version="3.5.0" />
+    <PackageReference Include="Microsoft.VisualBasic" Version="10.3.0" />
+    <PackageReference Include="System.Runtime.Caching" Version="4.7.0" />
+    <PackageReference Include="UnicodeSrl.DatiClinici472" Version="2021.8.11.108" />
+    <PackageReference Include="UnicodeSrl.Framework" Version="2020.5.20.297" />
+    <PackageReference Include="UnicodeSrl.RtfLibrary" Version="2020.1.31.102" />
+  </ItemGroup>
+
+</Project>

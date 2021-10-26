@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="AggiungiConsenso">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="idsac" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pazientecognome" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pazientenome" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pazientecodicefiscale" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="operatoreid" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="operatorecognome" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="operatorenome" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="operatorecomputer" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="tipoconsenso" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AggiungiConsensoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AggiungiConsensoResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

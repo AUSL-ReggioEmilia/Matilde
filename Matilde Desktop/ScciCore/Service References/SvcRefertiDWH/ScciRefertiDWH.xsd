@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/UnicodeSrl.Scci.DataContracts" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/UnicodeSrl.Scci.DataContracts" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfRefertoDWH">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="RefertoDWH" nillable="true" type="tns:RefertoDWH" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfRefertoDWH" nillable="true" type="tns:ArrayOfRefertoDWH" />
+  <xs:complexType name="RefertoDWH">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AziendaErogante" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CodStatoEvidenzaClinica" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CodTipoEvidenzaClinica" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DWHCodRepartoRichiedente" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DWHCodStatoRichiesta" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DWHCodTipoRichiesta" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DWHDescRepartoRichiedente" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DWHDescStatoRichiesta" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DWHDescTipoRichiesta" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DataEventoDWH" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="DataReferto" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="DescStatoEvidenzaClinica" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DescTipoEvidenzaClinica" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Firmato" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IDReferto" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NumeroNosologico" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NumeroPrenotazione" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NumeroReferto" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RepartoErogante" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SistemaErogante" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TestoAnteprima" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="RefertoDWH" nillable="true" type="tns:RefertoDWH" />
+  <xs:complexType name="ArrayOfAllegatoRefertoDWH">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="AllegatoRefertoDWH" nillable="true" type="tns:AllegatoRefertoDWH" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfAllegatoRefertoDWH" nillable="true" type="tns:ArrayOfAllegatoRefertoDWH" />
+  <xs:complexType name="AllegatoRefertoDWH">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CodStatoAllegato" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DataInserimento" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="DataModifica" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="DataReferto" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="DescrStatoAllegato" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DescrizioneFile" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FileData" nillable="true" type="xs:base64Binary" />
+      <xs:element minOccurs="0" name="IDAllegato" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IDReferto" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IdOrderEntry" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IdPaziente" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MimeType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NomeFile" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NumeroReferto" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="AllegatoRefertoDWH" nillable="true" type="tns:AllegatoRefertoDWH" />
+  <xs:complexType name="RefertoDWHDetailed">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:RefertoDWH">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AccessNumber" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CodiceSAUB" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CodiceSanitario" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="IdOrderEntry" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PrestazioniReferto" nillable="true" type="tns:ArrayOfPrestazioneReferto" />
+          <xs:element minOccurs="0" name="Priorita" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Sesso" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="RefertoDWHDetailed" nillable="true" type="tns:RefertoDWHDetailed" />
+  <xs:complexType name="ArrayOfPrestazioneReferto">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PrestazioneReferto" nillable="true" type="tns:PrestazioneReferto" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPrestazioneReferto" nillable="true" type="tns:ArrayOfPrestazioneReferto" />
+  <xs:complexType name="PrestazioneReferto">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AccessNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="GravitaDescrizione" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PrestazioneCodice" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PrestazioneDescrizione" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PrestazionePosizione" type="xs:int" />
+      <xs:element minOccurs="0" name="Risultato" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SezioneDescrizione" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SezionePosizione" type="xs:int" />
+      <xs:element minOccurs="0" name="ValoriRiferimento" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PrestazioneReferto" nillable="true" type="tns:PrestazioneReferto" />
+</xs:schema>

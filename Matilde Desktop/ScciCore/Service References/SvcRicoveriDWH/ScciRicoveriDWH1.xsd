@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/UnicodeSrl.Scci.DataContracts" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/UnicodeSrl.Scci.DataContracts" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="RicoveroDWH">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:RicoveroDWHSintetico">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="EpisodioOrigine" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="EventiDWH" nillable="true" type="tns:ArrayOfEventoDWH" />
+          <xs:element minOccurs="0" name="MotivoRicovero" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ProvenienzaPaziente" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="TipoRicovero" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="UltimoEvento" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="RicoveroDWH" nillable="true" type="tns:RicoveroDWH" />
+  <xs:complexType name="RicoveroDWHSintetico">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AziendaErogante" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DataFineRicovero" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="DataInizioRicovero" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="DescRepartoAmmissione" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DescRepartoDimissione" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DescTipoEpisodio" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Diagnosi" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IDPaziente" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IDRicovero" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Nosologico" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="RicoveroDWHSintetico" nillable="true" type="tns:RicoveroDWHSintetico" />
+  <xs:complexType name="ArrayOfEventoDWH">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="EventoDWH" nillable="true" type="tns:EventoDWH" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfEventoDWH" nillable="true" type="tns:ArrayOfEventoDWH" />
+  <xs:complexType name="EventoDWH">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AziendaErogante" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CodLetto" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CodReparto" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CodSettore" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CodTipoEpisodio" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CodTipoEvento" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DataEvento" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="DescLetto" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DescReparto" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DescSettore" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DescTipoEpisodio" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DescTipoEvento" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Diagnosi" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IDEvento" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Nosologico" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RepartoErogante" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SistemaErogante" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="EventoDWH" nillable="true" type="tns:EventoDWH" />
+  <xs:complexType name="ArrayOfRicoveroDWHSintetico">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="RicoveroDWHSintetico" nillable="true" type="tns:RicoveroDWHSintetico" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfRicoveroDWHSintetico" nillable="true" type="tns:ArrayOfRicoveroDWHSintetico" />
+  <xs:complexType name="ArrayOfRisultatiLab">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="RisultatiLab" nillable="true" type="tns:RisultatiLab" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfRisultatiLab" nillable="true" type="tns:ArrayOfRisultatiLab" />
+  <xs:complexType name="RisultatiLab">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CodPrescrizione" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CodSezione" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Data" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="DescPrescrizione" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DescrSezione" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IdReferto" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Quantita" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="RisultatiLab" nillable="true" type="tns:RisultatiLab" />
+  <xs:complexType name="ArrayOfRisultatiLabUm">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="RisultatiLabUm" nillable="true" type="tns:RisultatiLabUm" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfRisultatiLabUm" nillable="true" type="tns:ArrayOfRisultatiLabUm" />
+  <xs:complexType name="RisultatiLabUm">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CodPrescrizione" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CodSezione" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Data" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="DescPrescrizione" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DescrSezione" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IdReferto" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Quantita" type="xs:double" />
+      <xs:element minOccurs="0" name="UM" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="RisultatiLabUm" nillable="true" type="tns:RisultatiLabUm" />
+</xs:schema>

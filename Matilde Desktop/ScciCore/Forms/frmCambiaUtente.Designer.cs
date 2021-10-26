@@ -1,0 +1,251 @@
+﻿namespace UnicodeSrl.ScciCore
+{
+    partial class frmCambiaUtente
+    {
+                                private System.ComponentModel.IContainer components = null;
+
+                                        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+                                        private void InitializeComponent()
+        {
+            this.components = new System.ComponentModel.Container();
+            Infragistics.Win.Appearance appearance1 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance2 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance3 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance4 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance5 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance6 = new Infragistics.Win.Appearance();
+            this.UltraGroupBoxLeft = new Infragistics.Win.Misc.UltraGroupBox();
+            this.UltraGroupBoxZoom = new Infragistics.Win.Misc.UltraGroupBox();
+            this.TableLayoutPanelZoom = new UnicodeSrl.ScciCore.ucEasyTableLayoutPanel(this.components);
+            this.TableLayoutPanelRight = new UnicodeSrl.ScciCore.ucEasyTableLayoutPanel(this.components);
+            this.ucEasyLabelUtente = new UnicodeSrl.ScciCore.ucEasyLabel();
+            this.ucEasyLabelPassword = new UnicodeSrl.ScciCore.ucEasyLabel();
+            this.ucEasyLabelDominio = new UnicodeSrl.ScciCore.ucEasyLabel();
+            this.ucEasyTextBoxUtente = new UnicodeSrl.ScciCore.ucEasyTextBox();
+            this.ucEasyTextBoxPassword = new UnicodeSrl.ScciCore.ucEasyTextBox();
+            this.ucEasyComboEditorDominio = new UnicodeSrl.ScciCore.ucEasyComboEditor();
+            this.ucEasyTableLayoutImmagine = new UnicodeSrl.ScciCore.ucEasyTableLayoutPanel(this.components);
+            this.PictureBox = new UnicodeSrl.ScciCore.ucEasyPictureBox();
+            this.ultraToolTipManager1 = new Infragistics.Win.UltraWinToolTip.UltraToolTipManager(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.UltraGroupBoxLeft)).BeginInit();
+            this.UltraGroupBoxLeft.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.UltraGroupBoxZoom)).BeginInit();
+            this.UltraGroupBoxZoom.SuspendLayout();
+            this.TableLayoutPanelZoom.SuspendLayout();
+            this.TableLayoutPanelRight.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ucEasyTextBoxUtente)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ucEasyTextBoxPassword)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ucEasyComboEditorDominio)).BeginInit();
+            this.ucEasyTableLayoutImmagine.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBox)).BeginInit();
+            this.SuspendLayout();
+                                                this.UltraGroupBoxLeft.Controls.Add(this.UltraGroupBoxZoom);
+            this.UltraGroupBoxLeft.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.UltraGroupBoxLeft.Location = new System.Drawing.Point(0, 24);
+            this.UltraGroupBoxLeft.Margin = new System.Windows.Forms.Padding(0);
+            this.UltraGroupBoxLeft.Name = "UltraGroupBoxLeft";
+            this.UltraGroupBoxLeft.Size = new System.Drawing.Size(784, 514);
+            this.UltraGroupBoxLeft.TabIndex = 1;
+            this.UltraGroupBoxLeft.ViewStyle = Infragistics.Win.Misc.GroupBoxViewStyle.Office2007;
+                                                this.UltraGroupBoxZoom.Controls.Add(this.TableLayoutPanelZoom);
+            this.UltraGroupBoxZoom.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.UltraGroupBoxZoom.Location = new System.Drawing.Point(3, 3);
+            this.UltraGroupBoxZoom.Margin = new System.Windows.Forms.Padding(0);
+            this.UltraGroupBoxZoom.Name = "UltraGroupBoxZoom";
+            this.UltraGroupBoxZoom.Size = new System.Drawing.Size(778, 508);
+            this.UltraGroupBoxZoom.TabIndex = 2;
+            this.UltraGroupBoxZoom.ViewStyle = Infragistics.Win.Misc.GroupBoxViewStyle.Office2007;
+                                                this.TableLayoutPanelZoom.BackColor = System.Drawing.Color.Transparent;
+            this.TableLayoutPanelZoom.ColumnCount = 3;
+            this.TableLayoutPanelZoom.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 13F));
+            this.TableLayoutPanelZoom.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 77F));
+            this.TableLayoutPanelZoom.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.TableLayoutPanelZoom.Controls.Add(this.TableLayoutPanelRight, 1, 1);
+            this.TableLayoutPanelZoom.Controls.Add(this.ucEasyTableLayoutImmagine, 0, 1);
+            this.TableLayoutPanelZoom.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TableLayoutPanelZoom.Location = new System.Drawing.Point(3, 3);
+            this.TableLayoutPanelZoom.Name = "TableLayoutPanelZoom";
+            this.TableLayoutPanelZoom.RowCount = 3;
+            this.TableLayoutPanelZoom.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.TableLayoutPanelZoom.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 90F));
+            this.TableLayoutPanelZoom.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.TableLayoutPanelZoom.Size = new System.Drawing.Size(772, 502);
+            this.TableLayoutPanelZoom.TabIndex = 0;
+                                                this.TableLayoutPanelRight.BackColor = System.Drawing.Color.Transparent;
+            this.TableLayoutPanelRight.ColumnCount = 4;
+            this.TableLayoutPanelRight.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
+            this.TableLayoutPanelRight.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 18.18182F));
+            this.TableLayoutPanelRight.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 54.54546F));
+            this.TableLayoutPanelRight.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 18.18182F));
+            this.TableLayoutPanelRight.Controls.Add(this.ucEasyLabelUtente, 1, 1);
+            this.TableLayoutPanelRight.Controls.Add(this.ucEasyLabelPassword, 1, 3);
+            this.TableLayoutPanelRight.Controls.Add(this.ucEasyLabelDominio, 1, 5);
+            this.TableLayoutPanelRight.Controls.Add(this.ucEasyTextBoxUtente, 2, 1);
+            this.TableLayoutPanelRight.Controls.Add(this.ucEasyTextBoxPassword, 2, 3);
+            this.TableLayoutPanelRight.Controls.Add(this.ucEasyComboEditorDominio, 2, 5);
+            this.TableLayoutPanelRight.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TableLayoutPanelRight.Location = new System.Drawing.Point(103, 28);
+            this.TableLayoutPanelRight.Name = "TableLayoutPanelRight";
+            this.TableLayoutPanelRight.RowCount = 7;
+            this.TableLayoutPanelRight.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 45F));
+            this.TableLayoutPanelRight.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 70F));
+            this.TableLayoutPanelRight.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.TableLayoutPanelRight.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 70F));
+            this.TableLayoutPanelRight.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.TableLayoutPanelRight.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 70F));
+            this.TableLayoutPanelRight.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 45F));
+            this.TableLayoutPanelRight.Size = new System.Drawing.Size(588, 445);
+            this.TableLayoutPanelRight.TabIndex = 2;
+                                                appearance1.FontData.SizeInPoints = 20F;
+            appearance1.TextVAlignAsString = "Middle";
+            this.ucEasyLabelUtente.Appearance = appearance1;
+            this.ucEasyLabelUtente.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ucEasyLabelUtente.Location = new System.Drawing.Point(56, 108);
+            this.ucEasyLabelUtente.Name = "ucEasyLabelUtente";
+            this.ucEasyLabelUtente.ShortcutFontRelativeDimension = UnicodeSrl.ScciCore.easyStatics.easyRelativeDimensions.Small;
+            this.ucEasyLabelUtente.ShortcutKey = System.Windows.Forms.Keys.None;
+            this.ucEasyLabelUtente.ShortcutPosition = UnicodeSrl.ScciCore.easyStatics.easyShortcutPosition.top_right;
+            this.ucEasyLabelUtente.Size = new System.Drawing.Size(100, 64);
+            this.ucEasyLabelUtente.TabIndex = 0;
+            this.ucEasyLabelUtente.Text = "Utente";
+            this.ucEasyLabelUtente.TextFontRelativeDimension = UnicodeSrl.ScciCore.easyStatics.easyRelativeDimensions.Large;
+                                                appearance2.FontData.SizeInPoints = 20F;
+            appearance2.TextVAlignAsString = "Middle";
+            this.ucEasyLabelPassword.Appearance = appearance2;
+            this.ucEasyLabelPassword.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ucEasyLabelPassword.Location = new System.Drawing.Point(56, 189);
+            this.ucEasyLabelPassword.Name = "ucEasyLabelPassword";
+            this.ucEasyLabelPassword.ShortcutFontRelativeDimension = UnicodeSrl.ScciCore.easyStatics.easyRelativeDimensions.Small;
+            this.ucEasyLabelPassword.ShortcutKey = System.Windows.Forms.Keys.None;
+            this.ucEasyLabelPassword.ShortcutPosition = UnicodeSrl.ScciCore.easyStatics.easyShortcutPosition.top_right;
+            this.ucEasyLabelPassword.Size = new System.Drawing.Size(100, 64);
+            this.ucEasyLabelPassword.TabIndex = 1;
+            this.ucEasyLabelPassword.Text = "Password";
+            this.ucEasyLabelPassword.TextFontRelativeDimension = UnicodeSrl.ScciCore.easyStatics.easyRelativeDimensions.Large;
+                                                appearance3.FontData.SizeInPoints = 20F;
+            appearance3.TextVAlignAsString = "Middle";
+            this.ucEasyLabelDominio.Appearance = appearance3;
+            this.ucEasyLabelDominio.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ucEasyLabelDominio.Location = new System.Drawing.Point(56, 270);
+            this.ucEasyLabelDominio.Name = "ucEasyLabelDominio";
+            this.ucEasyLabelDominio.ShortcutFontRelativeDimension = UnicodeSrl.ScciCore.easyStatics.easyRelativeDimensions.Small;
+            this.ucEasyLabelDominio.ShortcutKey = System.Windows.Forms.Keys.None;
+            this.ucEasyLabelDominio.ShortcutPosition = UnicodeSrl.ScciCore.easyStatics.easyShortcutPosition.top_right;
+            this.ucEasyLabelDominio.Size = new System.Drawing.Size(100, 64);
+            this.ucEasyLabelDominio.TabIndex = 2;
+            this.ucEasyLabelDominio.Text = "Dominio";
+            this.ucEasyLabelDominio.TextFontRelativeDimension = UnicodeSrl.ScciCore.easyStatics.easyRelativeDimensions.Large;
+                                                this.ucEasyTextBoxUtente.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            appearance4.FontData.SizeInPoints = 20F;
+            this.ucEasyTextBoxUtente.Appearance = appearance4;
+            this.ucEasyTextBoxUtente.AutoSize = false;
+            this.ucEasyTextBoxUtente.DisplayStyle = Infragistics.Win.EmbeddableElementDisplayStyle.Office2007;
+            this.ucEasyTextBoxUtente.Location = new System.Drawing.Point(162, 116);
+            this.ucEasyTextBoxUtente.Name = "ucEasyTextBoxUtente";
+            this.ucEasyTextBoxUtente.Size = new System.Drawing.Size(314, 48);
+            this.ucEasyTextBoxUtente.TabIndex = 0;
+            this.ucEasyTextBoxUtente.TextFontRelativeDimension = UnicodeSrl.ScciCore.easyStatics.easyRelativeDimensions.Large;
+            this.ucEasyTextBoxUtente.UseOsThemes = Infragistics.Win.DefaultableBoolean.False;
+                                                this.ucEasyTextBoxPassword.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            appearance5.FontData.SizeInPoints = 20F;
+            this.ucEasyTextBoxPassword.Appearance = appearance5;
+            this.ucEasyTextBoxPassword.AutoSize = false;
+            this.ucEasyTextBoxPassword.DisplayStyle = Infragistics.Win.EmbeddableElementDisplayStyle.Office2007;
+            this.ucEasyTextBoxPassword.Location = new System.Drawing.Point(162, 197);
+            this.ucEasyTextBoxPassword.Name = "ucEasyTextBoxPassword";
+            this.ucEasyTextBoxPassword.PasswordChar = '*';
+            this.ucEasyTextBoxPassword.Size = new System.Drawing.Size(314, 48);
+            this.ucEasyTextBoxPassword.TabIndex = 1;
+            this.ucEasyTextBoxPassword.TextFontRelativeDimension = UnicodeSrl.ScciCore.easyStatics.easyRelativeDimensions.Large;
+            this.ucEasyTextBoxPassword.UseOsThemes = Infragistics.Win.DefaultableBoolean.False;
+                                                this.ucEasyComboEditorDominio.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            appearance6.FontData.SizeInPoints = 20F;
+            this.ucEasyComboEditorDominio.Appearance = appearance6;
+            this.ucEasyComboEditorDominio.AutoSize = false;
+            this.ucEasyComboEditorDominio.DisplayStyle = Infragistics.Win.EmbeddableElementDisplayStyle.Office2007;
+            this.ucEasyComboEditorDominio.DropDownStyle = Infragistics.Win.DropDownStyle.DropDownList;
+            this.ucEasyComboEditorDominio.Location = new System.Drawing.Point(162, 284);
+            this.ucEasyComboEditorDominio.Name = "ucEasyComboEditorDominio";
+            this.ucEasyComboEditorDominio.Size = new System.Drawing.Size(314, 35);
+            this.ucEasyComboEditorDominio.TabIndex = 2;
+            this.ucEasyComboEditorDominio.TextFontRelativeDimension = UnicodeSrl.ScciCore.easyStatics.easyRelativeDimensions.Large;
+            this.ucEasyComboEditorDominio.UseOsThemes = Infragistics.Win.DefaultableBoolean.False;
+                                                this.ucEasyTableLayoutImmagine.ColumnCount = 3;
+            this.ucEasyTableLayoutImmagine.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.ucEasyTableLayoutImmagine.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 71.42857F));
+            this.ucEasyTableLayoutImmagine.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.ucEasyTableLayoutImmagine.Controls.Add(this.PictureBox, 1, 1);
+            this.ucEasyTableLayoutImmagine.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ucEasyTableLayoutImmagine.Location = new System.Drawing.Point(3, 28);
+            this.ucEasyTableLayoutImmagine.Name = "ucEasyTableLayoutImmagine";
+            this.ucEasyTableLayoutImmagine.RowCount = 3;
+            this.ucEasyTableLayoutImmagine.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.ucEasyTableLayoutImmagine.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 60F));
+            this.ucEasyTableLayoutImmagine.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.ucEasyTableLayoutImmagine.Size = new System.Drawing.Size(94, 445);
+            this.ucEasyTableLayoutImmagine.TabIndex = 1;
+                                                this.PictureBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PictureBox.Location = new System.Drawing.Point(16, 92);
+            this.PictureBox.Name = "PictureBox";
+            this.PictureBox.ShortcutFontRelativeDimension = UnicodeSrl.ScciCore.easyStatics.easyRelativeDimensions.Small;
+            this.PictureBox.ShortcutKey = System.Windows.Forms.Keys.None;
+            this.PictureBox.ShortcutPosition = UnicodeSrl.ScciCore.easyStatics.easyShortcutPosition.top_right;
+            this.PictureBox.Size = new System.Drawing.Size(61, 261);
+            this.PictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PictureBox.TabIndex = 0;
+            this.PictureBox.TabStop = false;
+                                                this.ultraToolTipManager1.ContainingControl = this;
+                                                this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(784, 562);
+            this.Controls.Add(this.UltraGroupBoxLeft);
+            this.Name = "frmCambiaUtente";
+            this.PulsanteAvantiVisibile = true;
+            this.PulsanteIndietroVisibile = true;
+            this.Text = "frmCambiaUtente";
+            this.PulsanteIndietroClick += new UnicodeSrl.ScciCore.PulsanteBottomClickHandler(this.frmCambiaUtente_PulsanteIndietroClick);
+            this.PulsanteAvantiClick += new UnicodeSrl.ScciCore.PulsanteBottomClickHandler(this.frmCambiaUtente_PulsanteAvantiClick);
+            this.Controls.SetChildIndex(this.UltraGroupBoxLeft, 0);
+            ((System.ComponentModel.ISupportInitialize)(this.UltraGroupBoxLeft)).EndInit();
+            this.UltraGroupBoxLeft.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.UltraGroupBoxZoom)).EndInit();
+            this.UltraGroupBoxZoom.ResumeLayout(false);
+            this.TableLayoutPanelZoom.ResumeLayout(false);
+            this.TableLayoutPanelRight.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.ucEasyTextBoxUtente)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ucEasyTextBoxPassword)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ucEasyComboEditorDominio)).EndInit();
+            this.ucEasyTableLayoutImmagine.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBox)).EndInit();
+            this.ResumeLayout(false);
+
+        }
+
+        #endregion
+
+        private Infragistics.Win.Misc.UltraGroupBox UltraGroupBoxLeft;
+        private Infragistics.Win.Misc.UltraGroupBox UltraGroupBoxZoom;
+        private ucEasyTableLayoutPanel TableLayoutPanelZoom;
+        private ucEasyTableLayoutPanel TableLayoutPanelRight;
+        private ucEasyLabel ucEasyLabelUtente;
+        private ucEasyLabel ucEasyLabelPassword;
+        private ucEasyLabel ucEasyLabelDominio;
+        private ucEasyTextBox ucEasyTextBoxUtente;
+        private ucEasyTextBox ucEasyTextBoxPassword;
+        private ucEasyTableLayoutPanel ucEasyTableLayoutImmagine;
+        private ucEasyPictureBox PictureBox;
+        private Infragistics.Win.UltraWinToolTip.UltraToolTipManager ultraToolTipManager1;
+        private ucEasyComboEditor ucEasyComboEditorDominio;
+
+    }
+}

@@ -1,0 +1,555 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://172.29.10.14:81/ScciOrderEntry.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/UnicodeSrl.Scci.DataContracts" />
+  <xs:import schemaLocation="http://172.29.10.14:81/ScciOrderEntry.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/UnicodeSrl.Scci.Enums" />
+  <xs:import schemaLocation="http://172.29.10.14:81/ScciOrderEntry.svc?xsd=xsd4" namespace="http://schemas.progel.it/WCF/OE/WsTypes/1.1" />
+  <xs:element name="GetEroganti">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="s_user" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetErogantiResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/UnicodeSrl.Scci.DataContracts" minOccurs="0" name="GetErogantiResult" nillable="true" type="q1:ArrayOfOESistemaErogante" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPrestazioni">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="s_user" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="codiceregime" nillable="true" type="xs:string" />
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/UnicodeSrl.Scci.Enums" minOccurs="0" name="priorita" type="q2:OEPrioritaOrdine" />
+        <xs:element minOccurs="0" name="codiceAzienda" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="codiceUnita" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="codiceAziendaSistemaErogante" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="codiceSistemaErogante" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="filtro" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPrestazioniResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/UnicodeSrl.Scci.DataContracts" minOccurs="0" name="GetPrestazioniResult" nillable="true" type="q3:ArrayOfOEPrestazione" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetProfili">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="s_user" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="codiceregime" nillable="true" type="xs:string" />
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/UnicodeSrl.Scci.Enums" minOccurs="0" name="priorita" type="q4:OEPrioritaOrdine" />
+        <xs:element minOccurs="0" name="codiceAzienda" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="codiceUnita" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="codiceAziendaSistemaErogante" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="codiceSistemaErogante" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="filtro" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetProfiliResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/UnicodeSrl.Scci.DataContracts" minOccurs="0" name="GetProfiliResult" nillable="true" type="q5:ArrayOfOEPrestazione" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetProfiliUtente">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="s_user" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="codiceregime" nillable="true" type="xs:string" />
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/UnicodeSrl.Scci.Enums" minOccurs="0" name="priorita" type="q6:OEPrioritaOrdine" />
+        <xs:element minOccurs="0" name="codiceAzienda" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="codiceUnita" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="codiceAziendaSistemaErogante" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="codiceSistemaErogante" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="filtro" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetProfiliUtenteResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/UnicodeSrl.Scci.DataContracts" minOccurs="0" name="GetProfiliUtenteResult" nillable="true" type="q7:ArrayOfOEPrestazione" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPrestazioniInProfilo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="s_user" nillable="true" type="xs:string" />
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/UnicodeSrl.Scci.DataContracts" minOccurs="0" name="prestazione" nillable="true" type="q8:OEPrestazione" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPrestazioniInProfiloResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/UnicodeSrl.Scci.DataContracts" minOccurs="0" name="GetPrestazioniInProfiloResult" nillable="true" type="q9:ArrayOfOEPrestazione" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreaOrdine">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="s_user" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="idOrdine" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="nosologico" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="regime" nillable="true" type="xs:string" />
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/UnicodeSrl.Scci.Enums" minOccurs="0" name="priorita" type="q10:OEPrioritaOrdine" />
+        <xs:element minOccurs="0" name="codiceFiscale" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="idPaziente" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="cognome" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="nome" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="dataNascita" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="dataPrenotazione" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="codiceAzienda" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="codiceUnitaOperativa" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="s_workstation" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreaOrdineResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/UnicodeSrl.Scci.DataContracts" minOccurs="0" name="CreaOrdineResult" nillable="true" type="q11:OEOrdineTestata" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreaOrdineCopia">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="s_user" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="idOEorigine" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="idOrdineNuovo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="s_workstation" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreaOrdineCopiaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/UnicodeSrl.Scci.DataContracts" minOccurs="0" name="CreaOrdineCopiaResult" nillable="true" type="q12:OEOrdineTestata" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CancellaOrdine">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="s_user" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="idOE" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CancellaOrdineResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CancellaOrdineResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOrdineTestata">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="s_user" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="idOE" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOrdineTestataResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/UnicodeSrl.Scci.DataContracts" minOccurs="0" name="GetOrdineTestataResult" nillable="true" type="q13:OEOrdineTestata" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOrdineDettaglioPerTestata">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="s_user" nillable="true" type="xs:string" />
+        <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/UnicodeSrl.Scci.DataContracts" minOccurs="0" name="o_testata" nillable="true" type="q14:OEOrdineTestata" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOrdineDettaglioPerTestataResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q15="http://schemas.datacontract.org/2004/07/UnicodeSrl.Scci.DataContracts" minOccurs="0" name="GetOrdineDettaglioPerTestataResult" nillable="true" type="q15:OEOrdineDettaglio" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOrdineDettaglioPerNumeroOrdine">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="s_user" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="idOE" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOrdineDettaglioPerNumeroOrdineResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/UnicodeSrl.Scci.DataContracts" minOccurs="0" name="GetOrdineDettaglioPerNumeroOrdineResult" nillable="true" type="q16:OEOrdineDettaglio" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOrdineDettaglioPerID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="s_user" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="idOE" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOrdineDettaglioPerIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q17="http://schemas.datacontract.org/2004/07/UnicodeSrl.Scci.DataContracts" minOccurs="0" name="GetOrdineDettaglioPerIDResult" nillable="true" type="q17:OEOrdineDettaglio" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CercaOrdiniPerPaziente">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="s_user" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="dataInizio" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="dataFine" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="idSacPaziente" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CercaOrdiniPerPazienteResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q18="http://schemas.datacontract.org/2004/07/UnicodeSrl.Scci.DataContracts" minOccurs="0" name="CercaOrdiniPerPazienteResult" nillable="true" type="q18:ArrayOfOEOrdineTestata" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CercaOrdiniPerNosologico">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="s_user" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="dataInizio" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="dataFine" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="nosologico" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CercaOrdiniPerNosologicoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q19="http://schemas.datacontract.org/2004/07/UnicodeSrl.Scci.DataContracts" minOccurs="0" name="CercaOrdiniPerNosologicoResult" nillable="true" type="q19:ArrayOfOEOrdineTestata" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InoltraOrdine">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="s_user" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="idOE" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InoltraOrdineResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InoltraOrdineResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InserisciPrestazioni">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="s_user" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="idOE" nillable="true" type="xs:string" />
+        <xs:element xmlns:q20="http://schemas.datacontract.org/2004/07/UnicodeSrl.Scci.DataContracts" minOccurs="0" name="prestazioni" nillable="true" type="q20:ArrayOfOEPrestazione" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InserisciPrestazioniResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InserisciPrestazioniResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InserisciPrestazione">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="s_user" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="idOE" nillable="true" type="xs:string" />
+        <xs:element xmlns:q21="http://schemas.datacontract.org/2004/07/UnicodeSrl.Scci.DataContracts" minOccurs="0" name="prestazione" nillable="true" type="q21:OEPrestazione" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InserisciPrestazioneResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InserisciPrestazioneResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CancellaPrestazioni">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="s_user" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="idOE" nillable="true" type="xs:string" />
+        <xs:element xmlns:q22="http://schemas.datacontract.org/2004/07/UnicodeSrl.Scci.DataContracts" minOccurs="0" name="prestazioni" nillable="true" type="q22:ArrayOfOEPrestazione" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CancellaPrestazioniResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CancellaPrestazioniResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CancellaPrestazione">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="s_user" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="idOE" nillable="true" type="xs:string" />
+        <xs:element xmlns:q23="http://schemas.datacontract.org/2004/07/UnicodeSrl.Scci.DataContracts" minOccurs="0" name="prestazione" nillable="true" type="q23:OEPrestazione" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CancellaPrestazioneResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CancellaPrestazioneResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EsplodiProfilo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="s_user" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="idOE" nillable="true" type="xs:string" />
+        <xs:element xmlns:q24="http://schemas.datacontract.org/2004/07/UnicodeSrl.Scci.DataContracts" minOccurs="0" name="prestazione" nillable="true" type="q24:OEPrestazione" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EsplodiProfiloResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="EsplodiProfiloResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PrestazioniRecenti">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="s_user" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="regime" nillable="true" type="xs:string" />
+        <xs:element xmlns:q25="http://schemas.datacontract.org/2004/07/UnicodeSrl.Scci.Enums" minOccurs="0" name="priorita" type="q25:OEPrioritaOrdine" />
+        <xs:element minOccurs="0" name="codAzienda" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="codUnita" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="conAziendaRichiedente" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="codSistRichiedente" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="codAziendaSistErogante" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="codSistErogante" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="idSacPaziente" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="filtroCodiceDescrizione" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PrestazioniRecentiResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q26="http://schemas.datacontract.org/2004/07/UnicodeSrl.Scci.DataContracts" minOccurs="0" name="PrestazioniRecentiResult" nillable="true" type="q26:ArrayOfOEPrestazione" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TranslatePrioritaDescFromOE">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q27="http://schemas.datacontract.org/2004/07/UnicodeSrl.Scci.Enums" minOccurs="0" name="oepri" type="q27:OEPrioritaOrdine" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TranslatePrioritaDescFromOEResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="TranslatePrioritaDescFromOEResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreaProfilo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="s_user" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="descrizione" nillable="true" type="xs:string" />
+        <xs:element xmlns:q28="http://schemas.datacontract.org/2004/07/UnicodeSrl.Scci.DataContracts" minOccurs="0" name="prestazioni" nillable="true" type="q28:ArrayOfOEPrestazione" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreaProfiloResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CreaProfiloResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EliminaProfilo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="s_user" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CodiceProfilo" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EliminaProfiloResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="EliminaProfiloResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDatiAccessorNecessari">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="s_user" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="idOE" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDatiAccessorNecessariResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q29="http://schemas.datacontract.org/2004/07/UnicodeSrl.Scci.DataContracts" minOccurs="0" name="GetDatiAccessorNecessariResult" nillable="true" type="q29:ArrayOfOEDatiAccessoriDescrittore" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDatiAccessori">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="s_user" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="idOE" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDatiAccessoriResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q30="http://schemas.datacontract.org/2004/07/UnicodeSrl.Scci.DataContracts" minOccurs="0" name="GetDatiAccessoriResult" nillable="true" type="q30:ArrayOfOEDatoAccessorio" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FillDatiAccessori">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="s_user" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="idOE" nillable="true" type="xs:string" />
+        <xs:element xmlns:q31="http://schemas.datacontract.org/2004/07/UnicodeSrl.Scci.DataContracts" minOccurs="0" name="datiAggiuntivi" nillable="true" type="q31:ArrayOfOEDatoAccessorio" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FillDatiAccessoriResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="FillDatiAccessoriResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDatiAccessoriTestata">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="s_user" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="idOE" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDatiAccessoriTestataResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q32="http://schemas.datacontract.org/2004/07/UnicodeSrl.Scci.DataContracts" minOccurs="0" name="GetDatiAccessoriTestataResult" nillable="true" type="q32:ArrayOfOEDatoAccessorio" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDatiAccessoriPrestazione">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="s_user" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="idOE" nillable="true" type="xs:string" />
+        <xs:element xmlns:q33="http://schemas.datacontract.org/2004/07/UnicodeSrl.Scci.DataContracts" minOccurs="0" name="o_prestazione" nillable="true" type="q33:OEPrestazione" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDatiAccessoriPrestazioneResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q34="http://schemas.datacontract.org/2004/07/UnicodeSrl.Scci.DataContracts" minOccurs="0" name="GetDatiAccessoriPrestazioneResult" nillable="true" type="q34:ArrayOfOEDatoAccessorio" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDatiAccessoriErogante">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="s_user" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="idOE" nillable="true" type="xs:string" />
+        <xs:element xmlns:q35="http://schemas.datacontract.org/2004/07/UnicodeSrl.Scci.DataContracts" minOccurs="0" name="o_erogante" nillable="true" type="q35:OESistemaErogante" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDatiAccessoriEroganteResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q36="http://schemas.datacontract.org/2004/07/UnicodeSrl.Scci.DataContracts" minOccurs="0" name="GetDatiAccessoriEroganteResult" nillable="true" type="q36:ArrayOfOEDatoAccessorio" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDatiAccessoriEroganteTestata">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="s_user" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="idOE" nillable="true" type="xs:string" />
+        <xs:element xmlns:q37="http://schemas.datacontract.org/2004/07/UnicodeSrl.Scci.DataContracts" minOccurs="0" name="o_erogante" nillable="true" type="q37:OESistemaErogante" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDatiAccessoriEroganteTestataResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q38="http://schemas.datacontract.org/2004/07/UnicodeSrl.Scci.DataContracts" minOccurs="0" name="GetDatiAccessoriEroganteTestataResult" nillable="true" type="q38:ArrayOfOEDatoAccessorio" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDatiAccessoriErogantePrestazione">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="s_user" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="idOE" nillable="true" type="xs:string" />
+        <xs:element xmlns:q39="http://schemas.datacontract.org/2004/07/UnicodeSrl.Scci.DataContracts" minOccurs="0" name="o_prestazione" nillable="true" type="q39:OEPrestazione" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDatiAccessoriErogantePrestazioneResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q40="http://schemas.datacontract.org/2004/07/UnicodeSrl.Scci.DataContracts" minOccurs="0" name="GetDatiAccessoriErogantePrestazioneResult" nillable="true" type="q40:ArrayOfOEDatoAccessorio" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ComparePrestazione">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q41="http://schemas.datacontract.org/2004/07/UnicodeSrl.Scci.DataContracts" minOccurs="0" name="o_prestazione" nillable="true" type="q41:OEPrestazione" />
+        <xs:element xmlns:q42="http://schemas.progel.it/WCF/OE/WsTypes/1.1" minOccurs="0" name="o_prestazione_oe" nillable="true" type="q42:RigaRichiestaType" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ComparePrestazioneResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ComparePrestazioneResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

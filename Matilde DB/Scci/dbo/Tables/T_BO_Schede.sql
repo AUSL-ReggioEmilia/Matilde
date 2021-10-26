@@ -1,0 +1,25 @@
+﻿CREATE TABLE [dbo].[T_BO_Schede] (
+    [IDNum]                INT              IDENTITY (1, 1) NOT NULL,
+    [NumeroNosologico]     VARCHAR (20)     NULL,
+    [NumeroListaAttesa]    VARCHAR (20)     NULL,
+    [CodUA]                VARCHAR (20)     NULL,
+    [CodScheda]            VARCHAR (20)     NULL,
+    [Versione]             INT              NULL,
+    [Numero]               INT              NULL,
+    [Dati]                 XML              NULL,
+    [CodEntita]            VARCHAR (20)     NULL,
+    [CodSchedaPadre]       VARCHAR (20)     NULL,
+    [VersioneSchedaPadre]  VARCHAR (20)     NULL,
+    [NumeroSchedaPadre]    VARCHAR (20)     NULL,
+    [Aggiorna]             BIT              NULL,
+    [CodStatoElaborazione] VARCHAR (20)     NULL,
+    [DataElaborazione]     DATETIME         NULL,
+    [IDPaziente]           UNIQUEIDENTIFIER NULL,
+    [IDEpisodio]           UNIQUEIDENTIFIER NULL,
+    [IDTrasferimento]      UNIQUEIDENTIFIER NULL,
+    [IDScheda]             UNIQUEIDENTIFIER NULL,
+    [IDSchedaPadre]        UNIQUEIDENTIFIER NULL,
+    [Note]                 VARCHAR (MAX)    NULL,
+    CONSTRAINT [PK_T_BO_Schede] PRIMARY KEY CLUSTERED ([IDNum] ASC)
+);
+

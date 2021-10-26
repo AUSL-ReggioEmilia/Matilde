@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="c6fdeec6-13bf-417e-9e5b-df8e6ca7bf58" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://ws-scci-main-test/ScciRicoveriDWH.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ScciRicoveriDWH.xsd" MetadataType="Schema" ID="aa3fc729-d235-4c74-a51f-88fcb19ba736" SourceId="1" SourceUrl="http://ws-scci-main-test/ScciRicoveriDWH.svc?xsd=xsd3" />
+    <MetadataFile FileName="ScciRicoveriDWH1.xsd" MetadataType="Schema" ID="7e5cfaa3-fb27-4881-a89e-f0fba0b7c270" SourceId="1" SourceUrl="http://ws-scci-main-test/ScciRicoveriDWH.svc?xsd=xsd2" />
+    <MetadataFile FileName="ScciRicoveriDWH.disco" MetadataType="Disco" ID="875675a1-7861-4b97-9e96-43520fdb9499" SourceId="1" SourceUrl="http://ws-scci-main-test/ScciRicoveriDWH.svc?disco" />
+    <MetadataFile FileName="ScciRicoveriDWH2.xsd" MetadataType="Schema" ID="24594251-c434-4b82-a44a-725fbc6a7b01" SourceId="1" SourceUrl="http://ws-scci-main-test/ScciRicoveriDWH.svc?xsd=xsd0" />
+    <MetadataFile FileName="ScciRicoveriDWH.wsdl" MetadataType="Wsdl" ID="dbddb7b4-da75-40f5-9a35-c62c351b08d7" SourceId="1" SourceUrl="http://ws-scci-main-test/ScciRicoveriDWH.svc?wsdl" />
+    <MetadataFile FileName="ScciRicoveriDWH3.xsd" MetadataType="Schema" ID="b35fb0c9-fbbc-41a7-bebc-ad31df77a298" SourceId="1" SourceUrl="http://ws-scci-main-test/ScciRicoveriDWH.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

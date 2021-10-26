@@ -1,0 +1,662 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="ScciOrderEntry" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="WSHttpBinding_IScciOrderEntry_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <wsoma:OptimizedMimeSerialization xmlns:wsoma="http://schemas.xmlsoap.org/ws/2004/09/policy/optimizedmimeserialization" />
+        <wsaw:UsingAddressing />
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://172.29.10.14:81/ScciOrderEntry.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://172.29.10.14:81/ScciOrderEntry.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://172.29.10.14:81/ScciOrderEntry.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/UnicodeSrl.Scci.DataContracts" />
+      <xsd:import schemaLocation="http://172.29.10.14:81/ScciOrderEntry.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/UnicodeSrl.Scci.Enums" />
+      <xsd:import schemaLocation="http://172.29.10.14:81/ScciOrderEntry.svc?xsd=xsd4" namespace="http://schemas.progel.it/WCF/OE/WsTypes/1.1" />
+      <xsd:import schemaLocation="http://172.29.10.14:81/ScciOrderEntry.svc?xsd=xsd5" namespace="http://schemas.progel.it/OE/Types/1.1" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IScciOrderEntry_GetEroganti_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetEroganti" />
+  </wsdl:message>
+  <wsdl:message name="IScciOrderEntry_GetEroganti_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetErogantiResponse" />
+  </wsdl:message>
+  <wsdl:message name="IScciOrderEntry_GetPrestazioni_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPrestazioni" />
+  </wsdl:message>
+  <wsdl:message name="IScciOrderEntry_GetPrestazioni_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPrestazioniResponse" />
+  </wsdl:message>
+  <wsdl:message name="IScciOrderEntry_GetProfili_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetProfili" />
+  </wsdl:message>
+  <wsdl:message name="IScciOrderEntry_GetProfili_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetProfiliResponse" />
+  </wsdl:message>
+  <wsdl:message name="IScciOrderEntry_GetProfiliUtente_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetProfiliUtente" />
+  </wsdl:message>
+  <wsdl:message name="IScciOrderEntry_GetProfiliUtente_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetProfiliUtenteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IScciOrderEntry_GetPrestazioniInProfilo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPrestazioniInProfilo" />
+  </wsdl:message>
+  <wsdl:message name="IScciOrderEntry_GetPrestazioniInProfilo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPrestazioniInProfiloResponse" />
+  </wsdl:message>
+  <wsdl:message name="IScciOrderEntry_CreaOrdine_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreaOrdine" />
+  </wsdl:message>
+  <wsdl:message name="IScciOrderEntry_CreaOrdine_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreaOrdineResponse" />
+  </wsdl:message>
+  <wsdl:message name="IScciOrderEntry_CreaOrdineCopia_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreaOrdineCopia" />
+  </wsdl:message>
+  <wsdl:message name="IScciOrderEntry_CreaOrdineCopia_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreaOrdineCopiaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IScciOrderEntry_CancellaOrdine_InputMessage">
+    <wsdl:part name="parameters" element="tns:CancellaOrdine" />
+  </wsdl:message>
+  <wsdl:message name="IScciOrderEntry_CancellaOrdine_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CancellaOrdineResponse" />
+  </wsdl:message>
+  <wsdl:message name="IScciOrderEntry_GetOrdineTestata_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOrdineTestata" />
+  </wsdl:message>
+  <wsdl:message name="IScciOrderEntry_GetOrdineTestata_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOrdineTestataResponse" />
+  </wsdl:message>
+  <wsdl:message name="IScciOrderEntry_GetOrdineDettaglioPerTestata_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOrdineDettaglioPerTestata" />
+  </wsdl:message>
+  <wsdl:message name="IScciOrderEntry_GetOrdineDettaglioPerTestata_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOrdineDettaglioPerTestataResponse" />
+  </wsdl:message>
+  <wsdl:message name="IScciOrderEntry_GetOrdineDettaglioPerNumeroOrdine_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOrdineDettaglioPerNumeroOrdine" />
+  </wsdl:message>
+  <wsdl:message name="IScciOrderEntry_GetOrdineDettaglioPerNumeroOrdine_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOrdineDettaglioPerNumeroOrdineResponse" />
+  </wsdl:message>
+  <wsdl:message name="IScciOrderEntry_GetOrdineDettaglioPerID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOrdineDettaglioPerID" />
+  </wsdl:message>
+  <wsdl:message name="IScciOrderEntry_GetOrdineDettaglioPerID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOrdineDettaglioPerIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IScciOrderEntry_CercaOrdiniPerPaziente_InputMessage">
+    <wsdl:part name="parameters" element="tns:CercaOrdiniPerPaziente" />
+  </wsdl:message>
+  <wsdl:message name="IScciOrderEntry_CercaOrdiniPerPaziente_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CercaOrdiniPerPazienteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IScciOrderEntry_CercaOrdiniPerNosologico_InputMessage">
+    <wsdl:part name="parameters" element="tns:CercaOrdiniPerNosologico" />
+  </wsdl:message>
+  <wsdl:message name="IScciOrderEntry_CercaOrdiniPerNosologico_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CercaOrdiniPerNosologicoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IScciOrderEntry_InoltraOrdine_InputMessage">
+    <wsdl:part name="parameters" element="tns:InoltraOrdine" />
+  </wsdl:message>
+  <wsdl:message name="IScciOrderEntry_InoltraOrdine_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InoltraOrdineResponse" />
+  </wsdl:message>
+  <wsdl:message name="IScciOrderEntry_InserisciPrestazioni_InputMessage">
+    <wsdl:part name="parameters" element="tns:InserisciPrestazioni" />
+  </wsdl:message>
+  <wsdl:message name="IScciOrderEntry_InserisciPrestazioni_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InserisciPrestazioniResponse" />
+  </wsdl:message>
+  <wsdl:message name="IScciOrderEntry_InserisciPrestazione_InputMessage">
+    <wsdl:part name="parameters" element="tns:InserisciPrestazione" />
+  </wsdl:message>
+  <wsdl:message name="IScciOrderEntry_InserisciPrestazione_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InserisciPrestazioneResponse" />
+  </wsdl:message>
+  <wsdl:message name="IScciOrderEntry_CancellaPrestazioni_InputMessage">
+    <wsdl:part name="parameters" element="tns:CancellaPrestazioni" />
+  </wsdl:message>
+  <wsdl:message name="IScciOrderEntry_CancellaPrestazioni_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CancellaPrestazioniResponse" />
+  </wsdl:message>
+  <wsdl:message name="IScciOrderEntry_CancellaPrestazione_InputMessage">
+    <wsdl:part name="parameters" element="tns:CancellaPrestazione" />
+  </wsdl:message>
+  <wsdl:message name="IScciOrderEntry_CancellaPrestazione_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CancellaPrestazioneResponse" />
+  </wsdl:message>
+  <wsdl:message name="IScciOrderEntry_EsplodiProfilo_InputMessage">
+    <wsdl:part name="parameters" element="tns:EsplodiProfilo" />
+  </wsdl:message>
+  <wsdl:message name="IScciOrderEntry_EsplodiProfilo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EsplodiProfiloResponse" />
+  </wsdl:message>
+  <wsdl:message name="IScciOrderEntry_PrestazioniRecenti_InputMessage">
+    <wsdl:part name="parameters" element="tns:PrestazioniRecenti" />
+  </wsdl:message>
+  <wsdl:message name="IScciOrderEntry_PrestazioniRecenti_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PrestazioniRecentiResponse" />
+  </wsdl:message>
+  <wsdl:message name="IScciOrderEntry_TranslatePrioritaDescFromOE_InputMessage">
+    <wsdl:part name="parameters" element="tns:TranslatePrioritaDescFromOE" />
+  </wsdl:message>
+  <wsdl:message name="IScciOrderEntry_TranslatePrioritaDescFromOE_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TranslatePrioritaDescFromOEResponse" />
+  </wsdl:message>
+  <wsdl:message name="IScciOrderEntry_CreaProfilo_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreaProfilo" />
+  </wsdl:message>
+  <wsdl:message name="IScciOrderEntry_CreaProfilo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreaProfiloResponse" />
+  </wsdl:message>
+  <wsdl:message name="IScciOrderEntry_EliminaProfilo_InputMessage">
+    <wsdl:part name="parameters" element="tns:EliminaProfilo" />
+  </wsdl:message>
+  <wsdl:message name="IScciOrderEntry_EliminaProfilo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EliminaProfiloResponse" />
+  </wsdl:message>
+  <wsdl:message name="IScciOrderEntry_GetDatiAccessorNecessari_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDatiAccessorNecessari" />
+  </wsdl:message>
+  <wsdl:message name="IScciOrderEntry_GetDatiAccessorNecessari_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDatiAccessorNecessariResponse" />
+  </wsdl:message>
+  <wsdl:message name="IScciOrderEntry_GetDatiAccessori_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDatiAccessori" />
+  </wsdl:message>
+  <wsdl:message name="IScciOrderEntry_GetDatiAccessori_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDatiAccessoriResponse" />
+  </wsdl:message>
+  <wsdl:message name="IScciOrderEntry_FillDatiAccessori_InputMessage">
+    <wsdl:part name="parameters" element="tns:FillDatiAccessori" />
+  </wsdl:message>
+  <wsdl:message name="IScciOrderEntry_FillDatiAccessori_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FillDatiAccessoriResponse" />
+  </wsdl:message>
+  <wsdl:message name="IScciOrderEntry_GetDatiAccessoriTestata_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDatiAccessoriTestata" />
+  </wsdl:message>
+  <wsdl:message name="IScciOrderEntry_GetDatiAccessoriTestata_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDatiAccessoriTestataResponse" />
+  </wsdl:message>
+  <wsdl:message name="IScciOrderEntry_GetDatiAccessoriPrestazione_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDatiAccessoriPrestazione" />
+  </wsdl:message>
+  <wsdl:message name="IScciOrderEntry_GetDatiAccessoriPrestazione_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDatiAccessoriPrestazioneResponse" />
+  </wsdl:message>
+  <wsdl:message name="IScciOrderEntry_GetDatiAccessoriErogante_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDatiAccessoriErogante" />
+  </wsdl:message>
+  <wsdl:message name="IScciOrderEntry_GetDatiAccessoriErogante_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDatiAccessoriEroganteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IScciOrderEntry_GetDatiAccessoriEroganteTestata_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDatiAccessoriEroganteTestata" />
+  </wsdl:message>
+  <wsdl:message name="IScciOrderEntry_GetDatiAccessoriEroganteTestata_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDatiAccessoriEroganteTestataResponse" />
+  </wsdl:message>
+  <wsdl:message name="IScciOrderEntry_GetDatiAccessoriErogantePrestazione_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDatiAccessoriErogantePrestazione" />
+  </wsdl:message>
+  <wsdl:message name="IScciOrderEntry_GetDatiAccessoriErogantePrestazione_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDatiAccessoriErogantePrestazioneResponse" />
+  </wsdl:message>
+  <wsdl:message name="IScciOrderEntry_ComparePrestazione_InputMessage">
+    <wsdl:part name="parameters" element="tns:ComparePrestazione" />
+  </wsdl:message>
+  <wsdl:message name="IScciOrderEntry_ComparePrestazione_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ComparePrestazioneResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IScciOrderEntry">
+    <wsdl:operation name="GetEroganti">
+      <wsdl:input wsaw:Action="http://tempuri.org/IScciOrderEntry/GetEroganti" message="tns:IScciOrderEntry_GetEroganti_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IScciOrderEntry/GetErogantiResponse" message="tns:IScciOrderEntry_GetEroganti_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPrestazioni">
+      <wsdl:input wsaw:Action="http://tempuri.org/IScciOrderEntry/GetPrestazioni" message="tns:IScciOrderEntry_GetPrestazioni_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IScciOrderEntry/GetPrestazioniResponse" message="tns:IScciOrderEntry_GetPrestazioni_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProfili">
+      <wsdl:input wsaw:Action="http://tempuri.org/IScciOrderEntry/GetProfili" message="tns:IScciOrderEntry_GetProfili_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IScciOrderEntry/GetProfiliResponse" message="tns:IScciOrderEntry_GetProfili_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProfiliUtente">
+      <wsdl:input wsaw:Action="http://tempuri.org/IScciOrderEntry/GetProfiliUtente" message="tns:IScciOrderEntry_GetProfiliUtente_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IScciOrderEntry/GetProfiliUtenteResponse" message="tns:IScciOrderEntry_GetProfiliUtente_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPrestazioniInProfilo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IScciOrderEntry/GetPrestazioniInProfilo" message="tns:IScciOrderEntry_GetPrestazioniInProfilo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IScciOrderEntry/GetPrestazioniInProfiloResponse" message="tns:IScciOrderEntry_GetPrestazioniInProfilo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreaOrdine">
+      <wsdl:input wsaw:Action="http://tempuri.org/IScciOrderEntry/CreaOrdine" message="tns:IScciOrderEntry_CreaOrdine_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IScciOrderEntry/CreaOrdineResponse" message="tns:IScciOrderEntry_CreaOrdine_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreaOrdineCopia">
+      <wsdl:input wsaw:Action="http://tempuri.org/IScciOrderEntry/CreaOrdineCopia" message="tns:IScciOrderEntry_CreaOrdineCopia_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IScciOrderEntry/CreaOrdineCopiaResponse" message="tns:IScciOrderEntry_CreaOrdineCopia_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CancellaOrdine">
+      <wsdl:input wsaw:Action="http://tempuri.org/IScciOrderEntry/CancellaOrdine" message="tns:IScciOrderEntry_CancellaOrdine_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IScciOrderEntry/CancellaOrdineResponse" message="tns:IScciOrderEntry_CancellaOrdine_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOrdineTestata">
+      <wsdl:input wsaw:Action="http://tempuri.org/IScciOrderEntry/GetOrdineTestata" message="tns:IScciOrderEntry_GetOrdineTestata_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IScciOrderEntry/GetOrdineTestataResponse" message="tns:IScciOrderEntry_GetOrdineTestata_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOrdineDettaglioPerTestata">
+      <wsdl:input wsaw:Action="http://tempuri.org/IScciOrderEntry/GetOrdineDettaglioPerTestata" message="tns:IScciOrderEntry_GetOrdineDettaglioPerTestata_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IScciOrderEntry/GetOrdineDettaglioPerTestataResponse" message="tns:IScciOrderEntry_GetOrdineDettaglioPerTestata_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOrdineDettaglioPerNumeroOrdine">
+      <wsdl:input wsaw:Action="http://tempuri.org/IScciOrderEntry/GetOrdineDettaglioPerNumeroOrdine" message="tns:IScciOrderEntry_GetOrdineDettaglioPerNumeroOrdine_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IScciOrderEntry/GetOrdineDettaglioPerNumeroOrdineResponse" message="tns:IScciOrderEntry_GetOrdineDettaglioPerNumeroOrdine_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOrdineDettaglioPerID">
+      <wsdl:input wsaw:Action="http://tempuri.org/IScciOrderEntry/GetOrdineDettaglioPerID" message="tns:IScciOrderEntry_GetOrdineDettaglioPerID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IScciOrderEntry/GetOrdineDettaglioPerIDResponse" message="tns:IScciOrderEntry_GetOrdineDettaglioPerID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CercaOrdiniPerPaziente">
+      <wsdl:input wsaw:Action="http://tempuri.org/IScciOrderEntry/CercaOrdiniPerPaziente" message="tns:IScciOrderEntry_CercaOrdiniPerPaziente_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IScciOrderEntry/CercaOrdiniPerPazienteResponse" message="tns:IScciOrderEntry_CercaOrdiniPerPaziente_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CercaOrdiniPerNosologico">
+      <wsdl:input wsaw:Action="http://tempuri.org/IScciOrderEntry/CercaOrdiniPerNosologico" message="tns:IScciOrderEntry_CercaOrdiniPerNosologico_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IScciOrderEntry/CercaOrdiniPerNosologicoResponse" message="tns:IScciOrderEntry_CercaOrdiniPerNosologico_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InoltraOrdine">
+      <wsdl:input wsaw:Action="http://tempuri.org/IScciOrderEntry/InoltraOrdine" message="tns:IScciOrderEntry_InoltraOrdine_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IScciOrderEntry/InoltraOrdineResponse" message="tns:IScciOrderEntry_InoltraOrdine_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InserisciPrestazioni">
+      <wsdl:input wsaw:Action="http://tempuri.org/IScciOrderEntry/InserisciPrestazioni" message="tns:IScciOrderEntry_InserisciPrestazioni_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IScciOrderEntry/InserisciPrestazioniResponse" message="tns:IScciOrderEntry_InserisciPrestazioni_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InserisciPrestazione">
+      <wsdl:input wsaw:Action="http://tempuri.org/IScciOrderEntry/InserisciPrestazione" message="tns:IScciOrderEntry_InserisciPrestazione_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IScciOrderEntry/InserisciPrestazioneResponse" message="tns:IScciOrderEntry_InserisciPrestazione_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CancellaPrestazioni">
+      <wsdl:input wsaw:Action="http://tempuri.org/IScciOrderEntry/CancellaPrestazioni" message="tns:IScciOrderEntry_CancellaPrestazioni_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IScciOrderEntry/CancellaPrestazioniResponse" message="tns:IScciOrderEntry_CancellaPrestazioni_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CancellaPrestazione">
+      <wsdl:input wsaw:Action="http://tempuri.org/IScciOrderEntry/CancellaPrestazione" message="tns:IScciOrderEntry_CancellaPrestazione_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IScciOrderEntry/CancellaPrestazioneResponse" message="tns:IScciOrderEntry_CancellaPrestazione_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EsplodiProfilo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IScciOrderEntry/EsplodiProfilo" message="tns:IScciOrderEntry_EsplodiProfilo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IScciOrderEntry/EsplodiProfiloResponse" message="tns:IScciOrderEntry_EsplodiProfilo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PrestazioniRecenti">
+      <wsdl:input wsaw:Action="http://tempuri.org/IScciOrderEntry/PrestazioniRecenti" message="tns:IScciOrderEntry_PrestazioniRecenti_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IScciOrderEntry/PrestazioniRecentiResponse" message="tns:IScciOrderEntry_PrestazioniRecenti_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TranslatePrioritaDescFromOE">
+      <wsdl:input wsaw:Action="http://tempuri.org/IScciOrderEntry/TranslatePrioritaDescFromOE" message="tns:IScciOrderEntry_TranslatePrioritaDescFromOE_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IScciOrderEntry/TranslatePrioritaDescFromOEResponse" message="tns:IScciOrderEntry_TranslatePrioritaDescFromOE_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreaProfilo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IScciOrderEntry/CreaProfilo" message="tns:IScciOrderEntry_CreaProfilo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IScciOrderEntry/CreaProfiloResponse" message="tns:IScciOrderEntry_CreaProfilo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EliminaProfilo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IScciOrderEntry/EliminaProfilo" message="tns:IScciOrderEntry_EliminaProfilo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IScciOrderEntry/EliminaProfiloResponse" message="tns:IScciOrderEntry_EliminaProfilo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDatiAccessorNecessari">
+      <wsdl:input wsaw:Action="http://tempuri.org/IScciOrderEntry/GetDatiAccessorNecessari" message="tns:IScciOrderEntry_GetDatiAccessorNecessari_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IScciOrderEntry/GetDatiAccessorNecessariResponse" message="tns:IScciOrderEntry_GetDatiAccessorNecessari_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDatiAccessori">
+      <wsdl:input wsaw:Action="http://tempuri.org/IScciOrderEntry/GetDatiAccessori" message="tns:IScciOrderEntry_GetDatiAccessori_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IScciOrderEntry/GetDatiAccessoriResponse" message="tns:IScciOrderEntry_GetDatiAccessori_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FillDatiAccessori">
+      <wsdl:input wsaw:Action="http://tempuri.org/IScciOrderEntry/FillDatiAccessori" message="tns:IScciOrderEntry_FillDatiAccessori_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IScciOrderEntry/FillDatiAccessoriResponse" message="tns:IScciOrderEntry_FillDatiAccessori_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDatiAccessoriTestata">
+      <wsdl:input wsaw:Action="http://tempuri.org/IScciOrderEntry/GetDatiAccessoriTestata" message="tns:IScciOrderEntry_GetDatiAccessoriTestata_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IScciOrderEntry/GetDatiAccessoriTestataResponse" message="tns:IScciOrderEntry_GetDatiAccessoriTestata_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDatiAccessoriPrestazione">
+      <wsdl:input wsaw:Action="http://tempuri.org/IScciOrderEntry/GetDatiAccessoriPrestazione" message="tns:IScciOrderEntry_GetDatiAccessoriPrestazione_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IScciOrderEntry/GetDatiAccessoriPrestazioneResponse" message="tns:IScciOrderEntry_GetDatiAccessoriPrestazione_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDatiAccessoriErogante">
+      <wsdl:input wsaw:Action="http://tempuri.org/IScciOrderEntry/GetDatiAccessoriErogante" message="tns:IScciOrderEntry_GetDatiAccessoriErogante_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IScciOrderEntry/GetDatiAccessoriEroganteResponse" message="tns:IScciOrderEntry_GetDatiAccessoriErogante_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDatiAccessoriEroganteTestata">
+      <wsdl:input wsaw:Action="http://tempuri.org/IScciOrderEntry/GetDatiAccessoriEroganteTestata" message="tns:IScciOrderEntry_GetDatiAccessoriEroganteTestata_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IScciOrderEntry/GetDatiAccessoriEroganteTestataResponse" message="tns:IScciOrderEntry_GetDatiAccessoriEroganteTestata_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDatiAccessoriErogantePrestazione">
+      <wsdl:input wsaw:Action="http://tempuri.org/IScciOrderEntry/GetDatiAccessoriErogantePrestazione" message="tns:IScciOrderEntry_GetDatiAccessoriErogantePrestazione_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IScciOrderEntry/GetDatiAccessoriErogantePrestazioneResponse" message="tns:IScciOrderEntry_GetDatiAccessoriErogantePrestazione_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ComparePrestazione">
+      <wsdl:input wsaw:Action="http://tempuri.org/IScciOrderEntry/ComparePrestazione" message="tns:IScciOrderEntry_ComparePrestazione_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IScciOrderEntry/ComparePrestazioneResponse" message="tns:IScciOrderEntry_ComparePrestazione_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WSHttpBinding_IScciOrderEntry" type="tns:IScciOrderEntry">
+    <wsp:PolicyReference URI="#WSHttpBinding_IScciOrderEntry_policy" />
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetEroganti">
+      <soap12:operation soapAction="http://tempuri.org/IScciOrderEntry/GetEroganti" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPrestazioni">
+      <soap12:operation soapAction="http://tempuri.org/IScciOrderEntry/GetPrestazioni" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProfili">
+      <soap12:operation soapAction="http://tempuri.org/IScciOrderEntry/GetProfili" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProfiliUtente">
+      <soap12:operation soapAction="http://tempuri.org/IScciOrderEntry/GetProfiliUtente" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPrestazioniInProfilo">
+      <soap12:operation soapAction="http://tempuri.org/IScciOrderEntry/GetPrestazioniInProfilo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreaOrdine">
+      <soap12:operation soapAction="http://tempuri.org/IScciOrderEntry/CreaOrdine" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreaOrdineCopia">
+      <soap12:operation soapAction="http://tempuri.org/IScciOrderEntry/CreaOrdineCopia" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CancellaOrdine">
+      <soap12:operation soapAction="http://tempuri.org/IScciOrderEntry/CancellaOrdine" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOrdineTestata">
+      <soap12:operation soapAction="http://tempuri.org/IScciOrderEntry/GetOrdineTestata" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOrdineDettaglioPerTestata">
+      <soap12:operation soapAction="http://tempuri.org/IScciOrderEntry/GetOrdineDettaglioPerTestata" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOrdineDettaglioPerNumeroOrdine">
+      <soap12:operation soapAction="http://tempuri.org/IScciOrderEntry/GetOrdineDettaglioPerNumeroOrdine" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOrdineDettaglioPerID">
+      <soap12:operation soapAction="http://tempuri.org/IScciOrderEntry/GetOrdineDettaglioPerID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CercaOrdiniPerPaziente">
+      <soap12:operation soapAction="http://tempuri.org/IScciOrderEntry/CercaOrdiniPerPaziente" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CercaOrdiniPerNosologico">
+      <soap12:operation soapAction="http://tempuri.org/IScciOrderEntry/CercaOrdiniPerNosologico" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InoltraOrdine">
+      <soap12:operation soapAction="http://tempuri.org/IScciOrderEntry/InoltraOrdine" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InserisciPrestazioni">
+      <soap12:operation soapAction="http://tempuri.org/IScciOrderEntry/InserisciPrestazioni" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InserisciPrestazione">
+      <soap12:operation soapAction="http://tempuri.org/IScciOrderEntry/InserisciPrestazione" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CancellaPrestazioni">
+      <soap12:operation soapAction="http://tempuri.org/IScciOrderEntry/CancellaPrestazioni" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CancellaPrestazione">
+      <soap12:operation soapAction="http://tempuri.org/IScciOrderEntry/CancellaPrestazione" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EsplodiProfilo">
+      <soap12:operation soapAction="http://tempuri.org/IScciOrderEntry/EsplodiProfilo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PrestazioniRecenti">
+      <soap12:operation soapAction="http://tempuri.org/IScciOrderEntry/PrestazioniRecenti" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TranslatePrioritaDescFromOE">
+      <soap12:operation soapAction="http://tempuri.org/IScciOrderEntry/TranslatePrioritaDescFromOE" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreaProfilo">
+      <soap12:operation soapAction="http://tempuri.org/IScciOrderEntry/CreaProfilo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EliminaProfilo">
+      <soap12:operation soapAction="http://tempuri.org/IScciOrderEntry/EliminaProfilo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDatiAccessorNecessari">
+      <soap12:operation soapAction="http://tempuri.org/IScciOrderEntry/GetDatiAccessorNecessari" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDatiAccessori">
+      <soap12:operation soapAction="http://tempuri.org/IScciOrderEntry/GetDatiAccessori" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FillDatiAccessori">
+      <soap12:operation soapAction="http://tempuri.org/IScciOrderEntry/FillDatiAccessori" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDatiAccessoriTestata">
+      <soap12:operation soapAction="http://tempuri.org/IScciOrderEntry/GetDatiAccessoriTestata" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDatiAccessoriPrestazione">
+      <soap12:operation soapAction="http://tempuri.org/IScciOrderEntry/GetDatiAccessoriPrestazione" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDatiAccessoriErogante">
+      <soap12:operation soapAction="http://tempuri.org/IScciOrderEntry/GetDatiAccessoriErogante" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDatiAccessoriEroganteTestata">
+      <soap12:operation soapAction="http://tempuri.org/IScciOrderEntry/GetDatiAccessoriEroganteTestata" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDatiAccessoriErogantePrestazione">
+      <soap12:operation soapAction="http://tempuri.org/IScciOrderEntry/GetDatiAccessoriErogantePrestazione" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ComparePrestazione">
+      <soap12:operation soapAction="http://tempuri.org/IScciOrderEntry/ComparePrestazione" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ScciOrderEntry">
+    <wsdl:port name="WSHttpBinding_IScciOrderEntry" binding="tns:WSHttpBinding_IScciOrderEntry">
+      <soap12:address location="http://172.29.10.14:81/ScciOrderEntry.svc" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>http://172.29.10.14:81/ScciOrderEntry.svc</wsa10:Address>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

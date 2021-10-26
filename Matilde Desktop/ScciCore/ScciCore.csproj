@@ -1,0 +1,2663 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <CefSharpAnyCpuSupport>true</CefSharpAnyCpuSupport>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{292ADBEF-C8A9-4D60-9A9A-EB30B0C3C099}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UnicodeSrl.ScciCore</RootNamespace>
+    <AssemblyName>ScciCore</AssemblyName>
+    <DefineConstants>DEBUG;TRACE;NET472</DefineConstants>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug472' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CefSharpAnyCpuSupport>true</CefSharpAnyCpuSupport>
+    <Framework>NET472</Framework>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\$(Configuration)\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NET472</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Release472'">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CefSharpAnyCpuSupport>true</CefSharpAnyCpuSupport>
+    <Framework>NET472</Framework>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\$(Configuration)\</OutputPath>
+    <DefineConstants>TRACE;NET472</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Pdf.v18.2.Drawing, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPdfViewer.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinSchedule.v18.2, Version=18.2.20182.175, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinMaskedEdit.v18.2, Version=18.2.20182.175, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinGanttView.v18.2, Version=18.2.20182.175, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinDock.v18.2, Version=18.2.20182.175, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Charts.v18.2.Core, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Office.v18.2.Core, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Pdf.v18.2.Core, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v18.2.Core, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v18.2.Core, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v18.2.Core, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v18.2.Export, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v18.2.Core, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGauges.v18.2.Core, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.CodeParser.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraTreeList.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Progel.Crypto">
+      <HintPath>K:\Common\Compilazioni.NET\Interni\DigitalSign\BouncyCastle.Progel.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="BouncyCastle.Progel.Crypto.Sign">
+      <HintPath>K:\Common\Compilazioni.NET\Interni\DigitalSign\BouncyCastle.Progel.Crypto.Sign.dll</HintPath>
+    </Reference>
+    <Reference Include="ExtendedRichTextBox">
+      <HintPath>K:\Common\Compilazioni.NET\Interni\ExtendedRichTextBox.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="NTwain">
+      <HintPath>K:\Common\Twain\nTwain\Debug\NTwain.dll</HintPath>
+    </Reference>
+    <Reference Include="O2S.Components.PDFRender4NET">
+      <HintPath>K:\Common\Compilazioni.NET\SCCI\_references\O2S.Components.PDFRender4NET.dll</HintPath>
+    </Reference>
+    <Reference Include="O2S.Components.PDFView4NET">
+      <HintPath>K:\Common\Compilazioni.NET\SCCI\_references\O2S.Components.PDFView4NET.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="Progel.Cryptography">
+      <HintPath>K:\Common\Compilazioni.NET\Interni\DigitalSign\Progel.Cryptography.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.DirectoryServices.AccountManagement" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.IdentityModel" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="UIAutomationTypes" />
+    <Reference Include="UnicodeSrl.SmartCard, Version=1.2018.2.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>K:\Common\Compilazioni.NET\Interni\DigitalSign\UnicodeSrl.SmartCard.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+    <Reference Include="Xceed.Wpf.Toolkit, Version=2.0.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>K:\Common\Compilazioni.NET\ExtendedWPFToolkit\Xceed.Wpf.Toolkit.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\AppClasses\AppDataMarshaler.cs" />
+    <Compile Include="Common\AppClasses\CDSSClient.cs" />
+    <Compile Include="Common\AppClasses\SelectionStrategyExtended_NoControlKey.cs" />
+    <Compile Include="Common\DifferenceEngine\BinaryFile.cs" />
+    <Compile Include="Common\DifferenceEngine\CharData.cs" />
+    <Compile Include="Common\DifferenceEngine\Engine.cs" />
+    <Compile Include="Common\DifferenceEngine\Structures.cs" />
+    <Compile Include="Common\DifferenceEngine\TextFile.cs" />
+    <Compile Include="Common\Extensions\ExtMovAppuntamento.cs" />
+    <Compile Include="Common\Extensions\ExtSchedeDati.cs" />
+    <Compile Include="Common\AppClasses\Maschere.cs" />
+    <Compile Include="Common\AppClasses\MovAlertAllergieAnamnesi.cs" />
+    <Compile Include="Common\AppClasses\MovOrdine.cs" />
+    <Compile Include="Common\CollegaCartella.cs" />
+    <Compile Include="Common\DataBase.cs" />
+    <Compile Include="Common\DatiClinici.cs" />
+    <Compile Include="Common\Delegate.cs" />
+    <Compile Include="Common\EasyStatics.cs" />
+    <Compile Include="Common\Extensions\ExtDataTable.cs" />
+    <Compile Include="Common\Extensions\ExtMovTaskInfermieristico.cs" />
+    <Compile Include="Common\InfragisticsFilters.cs" />
+    <Compile Include="Common\Interfacce.cs" />
+    <Compile Include="Common\CoreApplication.cs" />
+    <Compile Include="Common\CoreStatics.cs" />
+    <Compile Include="Common\MT\InterfacesAndDelegates.cs" />
+    <Compile Include="Common\MT\ScciWebSvcMT.cs" />
+    <Compile Include="Common\NativeMethods.cs" />
+    <Compile Include="Common\OSVersionHelper.cs" />
+    <Compile Include="Common\PluginCaller.cs" />
+    <Compile Include="Common\ProtocolliPrescrizioni\ModelloPrescrizioneTempo.cs" />
+    <Compile Include="Common\ProtocolliPrescrizioni\ModelloPrescrizione.cs" />
+    <Compile Include="Common\ProtocolliPrescrizioni\ModelloTempoManuale.cs" />
+    <Compile Include="Common\ProtocolliPrescrizioni\ProtocolloPrescrizioni.cs" />
+    <Compile Include="Common\ProtocolliPrescrizioni\SerializerProtocolli.cs" />
+    <Compile Include="Common\ScciMain.cs" />
+    <Compile Include="Common\Twain\ScciTwain.cs" />
+    <Compile Include="Common\Twain\ScciTwainData.cs" />
+    <Compile Include="Common\Twain\ScciTwainEventArgs.cs" />
+    <Compile Include="Common\TimersCB\Interfaces.cs" />
+    <Compile Include="Common\TimersCB\TimersCB_Structs.cs" />
+    <Compile Include="Common\Twain\ScciTwainStruct.cs" />
+    <Compile Include="CustomControls\Infra\Common.cs" />
+    <Compile Include="CustomControls\Infra\EmbeddableRichTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomControls\Infra\NativeWindowMethods.cs" />
+    <Compile Include="CustomControls\Infra\RichTextEditor.cs" />
+    <Compile Include="CustomControls\Infra\RichTextEditor.KeyActionMappings.cs" />
+    <Compile Include="Debugger\Trace.cs" />
+    <Compile Include="Extensions\ExtGrid.cs" />
+    <Compile Include="Extensions\ExtRichTextBox.cs" />
+    <Compile Include="Forms\frmAlertAllergie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmAlertAllergie.Designer.cs">
+      <DependentUpon>frmAlertAllergie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmConsegnePazienteCartella.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmConsegnePazienteCartella.Designer.cs">
+      <DependentUpon>frmConsegnePazienteCartella.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmAlertGenerici.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmAlertGenerici.Designer.cs">
+      <DependentUpon>frmAlertGenerici.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmBaseModale.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmBaseModale.Designer.cs">
+      <DependentUpon>frmBaseModale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmBaseNonModale.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmBaseNonModale.Designer.cs">
+      <DependentUpon>frmBaseNonModale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmCambiaUtente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmCambiaUtente.Designer.cs">
+      <DependentUpon>frmCambiaUtente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmCartellaChiusa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmCartellaChiusa.Designer.cs">
+      <DependentUpon>frmCartellaChiusa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmConnettivita.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmConnettivita.Designer.cs">
+      <DependentUpon>frmConnettivita.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmCopiaPrescrizioni.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmCopiaPrescrizioni.Designer.cs">
+      <DependentUpon>frmCopiaPrescrizioni.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmDettaglioNews.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmDettaglioNews.Designer.cs">
+      <DependentUpon>frmDettaglioNews.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmDocxStampa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmDocxStampa.Designer.cs">
+      <DependentUpon>frmDocxStampa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmFotoPaziente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmFotoPaziente.Designer.cs">
+      <DependentUpon>frmFotoPaziente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmIdentificazioneIterataPaziente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmIdentificazioneIterataPaziente.Designer.cs">
+      <DependentUpon>frmIdentificazioneIterataPaziente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmImmagine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmImmagine.Designer.cs">
+      <DependentUpon>frmImmagine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmInattivita.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmInattivita.Designer.cs">
+      <DependentUpon>frmInattivita.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmInfoPaziente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmInfoPaziente.Designer.cs">
+      <DependentUpon>frmInfoPaziente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmInputBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmInputBox.Designer.cs">
+      <DependentUpon>frmInputBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmLoginConsulente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmLoginConsulente.Designer.cs">
+      <DependentUpon>frmLoginConsulente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmMessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmMessageBox.Designer.cs">
+      <DependentUpon>frmMessageBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmMessageBoxInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmMessageBoxInfo.Designer.cs">
+      <DependentUpon>frmMessageBoxInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmOeCercaCopiaPrec.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmOeCercaCopiaPrec.Designer.cs">
+      <DependentUpon>frmOeCercaCopiaPrec.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmPDFViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmPDFViewer.Designer.cs">
+      <DependentUpon>frmPDFViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmProgress.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmProgress.Designer.cs">
+      <DependentUpon>frmProgress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmPUAcquisizione.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmPUAcquisizione.Designer.cs">
+      <DependentUpon>frmPUAcquisizione.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmPUAlertAllergie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmPUAlertAllergie.Designer.cs">
+      <DependentUpon>frmPUAlertAllergie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmPUAperturaCartellaAmbulatoriale.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmPUAperturaCartellaAmbulatoriale.Designer.cs">
+      <DependentUpon>frmPUAperturaCartellaAmbulatoriale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmPUConsegnePazienteCartella.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmPUConsegnePazienteCartella.Designer.cs">
+      <DependentUpon>frmPUConsegnePazienteCartella.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmPUAlertGenerico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmPUAlertGenerico.Designer.cs">
+      <DependentUpon>frmPUAlertGenerico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmPUAllegato.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmPUAllegato.Designer.cs">
+      <DependentUpon>frmPUAllegato.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmPUAnnullaPrescrizioneTempi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmPUAnnullaPrescrizioneTempi.Designer.cs">
+      <DependentUpon>frmPUAnnullaPrescrizioneTempi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmPUAperturaCartella.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmPUAperturaCartella.Designer.cs">
+      <DependentUpon>frmPUAperturaCartella.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmPUCartellaInVisione.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmPUCartellaInVisione.Designer.cs">
+      <DependentUpon>frmPUCartellaInVisione.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmPUConsegna.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmPUConsegna.Designer.cs">
+      <DependentUpon>frmPUConsegna.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmPUConsulenza.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmPUConsulenza.Designer.cs">
+      <DependentUpon>frmPUConsulenza.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmPUDiarioClinico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmPUDiarioClinico.Designer.cs">
+      <DependentUpon>frmPUDiarioClinico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmPUDiarioClinicoNM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmPUDiarioClinicoNM.Designer.cs">
+      <DependentUpon>frmPUDiarioClinicoNM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmPUEvidenzaClinica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmPUEvidenzaClinica.Designer.cs">
+      <DependentUpon>frmPUEvidenzaClinica.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmPUFarmaci.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmPUFarmaci.Designer.cs">
+      <DependentUpon>frmPUFarmaci.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmPUGestioneAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmPUGestioneAccount.Designer.cs">
+      <DependentUpon>frmPUGestioneAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmPUGrafico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmPUGrafico.Designer.cs">
+      <DependentUpon>frmPUGrafico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmPULettaraDimissioni.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmPULettaraDimissioni.Designer.cs">
+      <DependentUpon>frmPULettaraDimissioni.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmPUMow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmPUMow.Designer.cs">
+      <DependentUpon>frmPUMow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmPUMultiTaskInfermieristici.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmPUMultiTaskInfermieristici.Designer.cs">
+      <DependentUpon>frmPUMultiTaskInfermieristici.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmPUNota.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmPUNota.Designer.cs">
+      <DependentUpon>frmPUNota.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmPUOrdine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmPUOrdine.Designer.cs">
+      <DependentUpon>frmPUOrdine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmPUOrdineDatiAggiuntivi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmPUOrdineDatiAggiuntivi.Designer.cs">
+      <DependentUpon>frmPUOrdineDatiAggiuntivi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmPUOrdineVisualizza.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmPUOrdineVisualizza.Designer.cs">
+      <DependentUpon>frmPUOrdineVisualizza.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmPUPACS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmPUPACS.Designer.cs">
+      <DependentUpon>frmPUPACS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmPUParametriVitali.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmPUParametriVitali.Designer.cs">
+      <DependentUpon>frmPUParametriVitali.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmPUPazienteInVisione.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmPUPazienteInVisione.Designer.cs">
+      <DependentUpon>frmPUPazienteInVisione.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmPUPDFReferto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmPUPDFReferto.Designer.cs">
+      <DependentUpon>frmPUPDFReferto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmPUPrescrizioni.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmPUPrescrizioni.Designer.cs">
+      <DependentUpon>frmPUPrescrizioni.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmPUPrescrizioniProtocolloGenerate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmPUPrescrizioniProtocolloGenerate.Designer.cs">
+      <DependentUpon>frmPUPrescrizioniProtocolloGenerate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmPUPrescrizioniScheda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmPUPrescrizioniScheda.Designer.cs">
+      <DependentUpon>frmPUPrescrizioniScheda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmPUPrescrizioniTempi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmPUPrescrizioniTempi.Designer.cs">
+      <DependentUpon>frmPUPrescrizioniTempi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmPUProseguiTerapia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmPUProseguiTerapia.Designer.cs">
+      <DependentUpon>frmPUProseguiTerapia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmPUProtocolloAttivita.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmPUProtocolloAttivita.Designer.cs">
+      <DependentUpon>frmPUProtocolloAttivita.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmPURicorrenza.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmPURicorrenza.Designer.cs">
+      <DependentUpon>frmPURicorrenza.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmPUScheda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmPUScheda.Designer.cs">
+      <DependentUpon>frmPUScheda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmPUSchedaNM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmPUSchedaNM.Designer.cs">
+      <DependentUpon>frmPUSchedaNM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmPUSchede.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmPUSchede.Designer.cs">
+      <DependentUpon>frmPUSchede.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmPUTaskInfermieristici.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmPUTaskInfermieristici.Designer.cs">
+      <DependentUpon>frmPUTaskInfermieristici.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmPUTaskInfermieristiciEroga.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmPUTaskInfermieristiciEroga.Designer.cs">
+      <DependentUpon>frmPUTaskInfermieristiciEroga.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmPUZoomScheda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmPUZoomScheda.Designer.cs">
+      <DependentUpon>frmPUZoomScheda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmReport.Designer.cs">
+      <DependentUpon>frmReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmRicercaSAC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmRicercaSAC.Designer.cs">
+      <DependentUpon>frmRicercaSAC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmRichiediPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmRichiediPassword.Designer.cs">
+      <DependentUpon>frmRichiediPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmRichiestaConsenso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmRichiestaConsenso.Designer.cs">
+      <DependentUpon>frmRichiestaConsenso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmSelezionaAgendeAppuntamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmSelezionaAgendeAppuntamento.Designer.cs">
+      <DependentUpon>frmSelezionaAgendeAppuntamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmSelezionaAgendeDisponibilita.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmSelezionaAgendeDisponibilita.Designer.cs">
+      <DependentUpon>frmSelezionaAgendeDisponibilita.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmSelezionaAppuntamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmSelezionaAppuntamento.Designer.cs">
+      <DependentUpon>frmSelezionaAppuntamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmSelezionaCartella.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmSelezionaCartella.Designer.cs">
+      <DependentUpon>frmSelezionaCartella.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmSelezionaCartellaCollegabile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmSelezionaCartellaCollegabile.Designer.cs">
+      <DependentUpon>frmSelezionaCartellaCollegabile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmSelezionaTestiNotePredefiniti.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmSelezionaTestiNotePredefiniti.Designer.cs">
+      <DependentUpon>frmSelezionaTestiNotePredefiniti.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmSelezionaTipoConsegnaPaziente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmSelezionaTipoConsegnaPaziente.Designer.cs">
+      <DependentUpon>frmSelezionaTipoConsegnaPaziente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmSelezionaTipoConsegna.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmSelezionaTipoConsegna.Designer.cs">
+      <DependentUpon>frmSelezionaTipoConsegna.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmSelezionaUAConsegne.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmSelezionaUAConsegne.Designer.cs">
+      <DependentUpon>frmSelezionaUAConsegne.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmSelezionaUA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmSelezionaUA.Designer.cs">
+      <DependentUpon>frmSelezionaUA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmSelezionaUAUO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmSelezionaUAUO.Designer.cs">
+      <DependentUpon>frmSelezionaUAUO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmSmartCardProgress.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmSmartCardProgress.Designer.cs">
+      <DependentUpon>frmSmartCardProgress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmSpostaTaskInAltraCartella.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmSpostaTaskInAltraCartella.Designer.cs">
+      <DependentUpon>frmSpostaTaskInAltraCartella.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmSelezionaReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmSelezionaReport.Designer.cs">
+      <DependentUpon>frmSelezionaReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmSelezionaRuolo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmSelezionaRuolo.Designer.cs">
+      <DependentUpon>frmSelezionaRuolo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmSelezionaStatoAppuntamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmSelezionaStatoAppuntamento.Designer.cs">
+      <DependentUpon>frmSelezionaStatoAppuntamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmSelezionaTipoAlertAllergie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmSelezionaTipoAlertAllergie.Designer.cs">
+      <DependentUpon>frmSelezionaTipoAlertAllergie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmSelezionaTipoAlertGenerico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmSelezionaTipoAlertGenerico.Designer.cs">
+      <DependentUpon>frmSelezionaTipoAlertGenerico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmSelezionaTipoAllegato.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmSelezionaTipoAllegato.Designer.cs">
+      <DependentUpon>frmSelezionaTipoAllegato.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmSelezionaTipoAppuntamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmSelezionaTipoAppuntamento.Designer.cs">
+      <DependentUpon>frmSelezionaTipoAppuntamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmSelezionaTipoParametroVitale.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmSelezionaTipoParametroVitale.Designer.cs">
+      <DependentUpon>frmSelezionaTipoParametroVitale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmSelezionaTipoPrescrizione.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmSelezionaTipoPrescrizione.Designer.cs">
+      <DependentUpon>frmSelezionaTipoPrescrizione.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmSelezionaTipoScheda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmSelezionaTipoScheda.Designer.cs">
+      <DependentUpon>frmSelezionaTipoScheda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmSelezionaTipoTaskInfermieristico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmSelezionaTipoTaskInfermieristico.Designer.cs">
+      <DependentUpon>frmSelezionaTipoTaskInfermieristico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmSelezionaTipoVoceDiario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmSelezionaTipoVoceDiario.Designer.cs">
+      <DependentUpon>frmSelezionaTipoVoceDiario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmSelezionaUO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmSelezionaUO.Designer.cs">
+      <DependentUpon>frmSelezionaUO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmSelezionaViaSomministrazione.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmSelezionaViaSomministrazione.Designer.cs">
+      <DependentUpon>frmSelezionaViaSomministrazione.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmSplash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmSplash.Designer.cs">
+      <DependentUpon>frmSplash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmStoricoReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmStoricoReport.Designer.cs">
+      <DependentUpon>frmStoricoReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmTestiTipo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmTestiTipo.Designer.cs">
+      <DependentUpon>frmTestiTipo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmTracker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmTracker.Designer.cs">
+      <DependentUpon>frmTracker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmValidazioni.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmValidazioni.Designer.cs">
+      <DependentUpon>frmValidazioni.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmWebBrowser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmWebBrowser.Designer.cs">
+      <DependentUpon>frmWebBrowser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmZoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmZoom.Designer.cs">
+      <DependentUpon>frmZoom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\SvcConsensiSAC\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\SvcOrderEntry\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\SvcPrescrizioni\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\SvcRefertiDWH\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\SvcRicercaSAC\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\SvcRicoveriDWH\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="ThreadingObjects\WorkerRunStoredProcedure.cs" />
+    <Compile Include="ThreadingObjects\_Delegates.cs" />
+    <Compile Include="UserControls\Easy\EasyControls.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UserControls\Easy\ucAgendePaziente.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Easy\ucAgendePaziente.Designer.cs">
+      <DependentUpon>ucAgendePaziente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Easy\ucAgendeTrasversale.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Easy\ucAgendeTrasversale.Designer.cs">
+      <DependentUpon>ucAgendeTrasversale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Easy\ucAllegati.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Easy\ucAllegati.Designer.cs">
+      <DependentUpon>ucAllegati.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Easy\ucAnteprimaRtf.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Easy\ucAnteprimaRtf.Designer.cs">
+      <DependentUpon>ucAnteprimaRtf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Easy\ucAnteprimaRtfStorico.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Easy\ucAnteprimaRtfStorico.Designer.cs">
+      <DependentUpon>ucAnteprimaRtfStorico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Easy\ucBancheDati.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Easy\ucBancheDati.Designer.cs">
+      <DependentUpon>ucBancheDati.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Easy\ucCartellaAmbulatoriale.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Easy\ucCartellaAmbulatoriale.Designer.cs">
+      <DependentUpon>ucCartellaAmbulatoriale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Easy\ucCartellaPaziente.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Easy\ucCartellaPaziente.Designer.cs">
+      <DependentUpon>ucCartellaPaziente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Easy\ucCartelleInVisione.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Easy\ucCartelleInVisione.Designer.cs">
+      <DependentUpon>ucCartelleInVisione.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Easy\ucCartelleInVisioneMenu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Easy\ucCartelleInVisioneMenu.Designer.cs">
+      <DependentUpon>ucCartelleInVisioneMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Easy\ucChiusuraCartelle.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Easy\ucChiusuraCartelle.Designer.cs">
+      <DependentUpon>ucChiusuraCartelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Easy\ucConsegnePaziente.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Easy\ucConsegnePaziente.Designer.cs">
+      <DependentUpon>ucConsegnePaziente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Easy\ucConsegne.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Easy\ucConsegne.Designer.cs">
+      <DependentUpon>ucConsegne.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Easy\ucConsulenzeTrasversali.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Easy\ucConsulenzeTrasversali.Designer.cs">
+      <DependentUpon>ucConsulenzeTrasversali.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Easy\ucDifferenceEngine.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Easy\ucDifferenceEngine.Designer.cs">
+      <DependentUpon>ucDifferenceEngine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Easy\ucEasyActiveReportViewer.cs" />
+    <Compile Include="UserControls\Easy\ucEasyActiveReportViewer.Designer.cs">
+      <DependentUpon>ucEasyActiveReportViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Easy\ucEasyDevExpressViewer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Easy\ucEasyDevExpressViewer.Designer.cs">
+      <DependentUpon>ucEasyDevExpressViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Easy\ucEasyDOCXViewer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Easy\ucEasyDOCXViewer.Designer.cs">
+      <DependentUpon>ucEasyDOCXViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Easy\ucEasyMultiSelect.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Easy\ucEasyMultiSelect.Designer.cs">
+      <DependentUpon>ucEasyMultiSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Easy\ucEasyO2SPDFView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Easy\ucEasyO2SPDFView.Designer.cs">
+      <DependentUpon>ucEasyO2SPDFView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Easy\ucEasyPopUpData.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Easy\ucEasyPopUpData.Designer.cs">
+      <DependentUpon>ucEasyPopUpData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Easy\ucEasyPopUpFolder.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Easy\ucEasyPopUpFolder.Designer.cs">
+      <DependentUpon>ucEasyPopUpFolder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Easy\ucEasyPopUpMHContatti.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Easy\ucEasyPopUpMHContatti.Designer.cs">
+      <DependentUpon>ucEasyPopUpMHContatti.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Easy\ucEasyPopUpNota.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Easy\ucEasyPopUpNota.Designer.cs">
+      <DependentUpon>ucEasyPopUpNota.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Easy\ucEasyPopUpOrario.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Easy\ucEasyPopUpOrario.Designer.cs">
+      <DependentUpon>ucEasyPopUpOrario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Easy\ucEasyPopUpTerapiaRapida.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Easy\ucEasyPopUpTerapiaRapida.Designer.cs">
+      <DependentUpon>ucEasyPopUpTerapiaRapida.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Easy\ucEvidenzaClinica.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Easy\ucEvidenzaClinica.Designer.cs">
+      <DependentUpon>ucEvidenzaClinica.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Easy\ucEvidenzaClinicaTrasversale.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Easy\ucEvidenzaClinicaTrasversale.Designer.cs">
+      <DependentUpon>ucEvidenzaClinicaTrasversale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Easy\ucFirmaCartelleAperte.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Easy\ucFirmaCartelleAperte.Designer.cs">
+      <DependentUpon>ucFirmaCartelleAperte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Easy\ucFoglioUnico.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Easy\ucFoglioUnico.Designer.cs">
+      <DependentUpon>ucFoglioUnico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Easy\ucHelp.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Easy\ucHelp.Designer.cs">
+      <DependentUpon>ucHelp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Easy\ucInfoSchede.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Easy\ucInfoSchede.Designer.cs">
+      <DependentUpon>ucInfoSchede.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Easy\ucMenu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Easy\ucMenu.Designer.cs">
+      <DependentUpon>ucMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Easy\ucNews.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Easy\ucNews.Designer.cs">
+      <DependentUpon>ucNews.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Easy\ucOrderEntry.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Easy\ucOrderEntry.Designer.cs">
+      <DependentUpon>ucOrderEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Easy\ucOrderEntryMonitorTrasversale.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Easy\ucOrderEntryMonitorTrasversale.Designer.cs">
+      <DependentUpon>ucOrderEntryMonitorTrasversale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Easy\ucOrderEntryTrasversale.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Easy\ucOrderEntryTrasversale.Designer.cs">
+      <DependentUpon>ucOrderEntryTrasversale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Easy\ucParametriVitali.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Easy\ucParametriVitali.Designer.cs">
+      <DependentUpon>ucParametriVitali.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Easy\ucParametriVitaliTrasversali.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Easy\ucParametriVitaliTrasversali.Designer.cs">
+      <DependentUpon>ucParametriVitaliTrasversali.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Easy\ucPazientiInVisione.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Easy\ucPazientiInVisione.Designer.cs">
+      <DependentUpon>ucPazientiInVisione.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Easy\ucPazientiSeguiti.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Easy\ucPazientiSeguiti.Designer.cs">
+      <DependentUpon>ucPazientiSeguiti.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Easy\ucPercorsoAmbulatoriale.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Easy\ucPercorsoAmbulatoriale.Designer.cs">
+      <DependentUpon>ucPercorsoAmbulatoriale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Easy\ucRicercaPazienti.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Easy\ucRicercaPazienti.Designer.cs">
+      <DependentUpon>ucRicercaPazienti.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Easy\ucRicercaPreTrasferimenti.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Easy\ucRicercaPreTrasferimenti.Designer.cs">
+      <DependentUpon>ucRicercaPreTrasferimenti.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Easy\ucRicercaSAC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Easy\ucRicercaSAC.Designer.cs">
+      <DependentUpon>ucRicercaSAC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Easy\ucRtf.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Easy\ucRtf.Designer.cs">
+      <DependentUpon>ucRtf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Easy\ucSCCIScatterChart.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Easy\ucSCCIScatterChart.Designer.cs">
+      <DependentUpon>ucSCCIScatterChart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Easy\ucSchedaAllegati.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Easy\ucSchedaAllegati.Designer.cs">
+      <DependentUpon>ucSchedaAllegati.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Easy\ucSchede.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Easy\ucSchede.Designer.cs">
+      <DependentUpon>ucSchede.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ScreenAndTiles\Base\BaseTileControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ScreenAndTiles\Base\BaseTileControl.Designer.cs">
+      <DependentUpon>BaseTileControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ScreenAndTiles\Strutture\Delegates.cs" />
+    <Compile Include="UserControls\ScreenAndTiles\Strutture\Enums.cs" />
+    <Compile Include="UserControls\ScreenAndTiles\Strutture\ScreenColumnsState.cs" />
+    <Compile Include="UserControls\ScreenAndTiles\Strutture\TileColumnState.cs" />
+    <Compile Include="UserControls\ScreenAndTiles\ucTileHeader.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ScreenAndTiles\ucTileHeader.Designer.cs">
+      <DependentUpon>ucTileHeader.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ScreenAndTiles\ucTileSelector.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ScreenAndTiles\ucTileSelector.Designer.cs">
+      <DependentUpon>ucTileSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ScreenAndTiles\Interfaces\ITileUserCtl.cs" />
+    <Compile Include="UserControls\ScreenAndTiles\Strutture\ExtensionsTLP.cs" />
+    <Compile Include="UserControls\ScreenAndTiles\Strutture\TileContolFactory.cs" />
+    <Compile Include="UserControls\ScreenAndTiles\Strutture\TilePluginLoader.cs" />
+    <Compile Include="UserControls\ScreenAndTiles\ucScreenGridView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ScreenAndTiles\ucScreenGridView.Designer.cs">
+      <DependentUpon>ucScreenGridView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ScreenAndTiles\ucScreenView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ScreenAndTiles\ucScreenView.Designer.cs">
+      <DependentUpon>ucScreenView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Easy\ucSegnalibri.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Easy\ucSegnalibri.Designer.cs">
+      <DependentUpon>ucSegnalibri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Easy\ucStampaCartelleChiuse.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Easy\ucStampaCartelleChiuse.Designer.cs">
+      <DependentUpon>ucStampaCartelleChiuse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Easy\ucTerapieFarmacologiche.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Easy\ucTerapieFarmacologiche.Designer.cs">
+      <DependentUpon>ucTerapieFarmacologiche.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Easy\ucWorkListInfermieristica.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Easy\ucWorkListInfermieristica.Designer.cs">
+      <DependentUpon>ucWorkListInfermieristica.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Easy\ucWorkListInfermieristicaTrasversale.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Easy\ucWorkListInfermieristicaTrasversale.Designer.cs">
+      <DependentUpon>ucWorkListInfermieristicaTrasversale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\SupportStruct\ChartMarker.cs" />
+    <Compile Include="UserControls\SupportStruct\ChartTooltip.cs" />
+    <Compile Include="UserControls\SupportStruct\Structs.cs" />
+    <Compile Include="UserControls\ucAgendaListaView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucAgendaListaView.Designer.cs">
+      <DependentUpon>ucAgendaListaView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucAgende.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucAgende.Designer.cs">
+      <DependentUpon>ucAgende.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucBottom.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucBottom.Designer.cs">
+      <DependentUpon>ucBottom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucBottomModale.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucBottomModale.Designer.cs">
+      <DependentUpon>ucBottomModale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucBottomNonModale.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucBottomNonModale.Designer.cs">
+      <DependentUpon>ucBottomNonModale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucCalendario.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucCalendario.Designer.cs">
+      <DependentUpon>ucCalendario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Easy\ucDiarioClinicoPaziente.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Easy\ucDiarioClinicoPaziente.Designer.cs">
+      <DependentUpon>ucDiarioClinicoPaziente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucDatiAggiuntiviPopUp.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucDatiAggiuntiviPopUp.Designer.cs">
+      <DependentUpon>ucDatiAggiuntiviPopUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucEasyScrollbar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucEasyScrollbar.Designer.cs">
+      <DependentUpon>ucEasyScrollbar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucListboxSearch.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucListboxSearch.Designer.cs">
+      <DependentUpon>ucListboxSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucMultiSelect.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucMultiSelect.Designer.cs">
+      <DependentUpon>ucMultiSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucPictureSelect.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucPictureSelect.Designer.cs">
+      <DependentUpon>ucPictureSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucRichTextBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucRichTextBox.Designer.cs">
+      <DependentUpon>ucRichTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucScrollBarV.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucScrollBarV.Designer.cs">
+      <DependentUpon>ucScrollBarV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucSelNumero.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucSelNumero.Designer.cs">
+      <DependentUpon>ucSelNumero.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucTop.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucTop.Designer.cs">
+      <DependentUpon>ucTop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucTopModale.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucTopModale.Designer.cs">
+      <DependentUpon>ucTopModale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucTopNonModale.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucTopNonModale.Designer.cs">
+      <DependentUpon>ucTopNonModale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucUltraMonthViewMulti.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucUltraMonthViewMulti.Designer.cs">
+      <DependentUpon>ucUltraMonthViewMulti.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewController\IViewController.cs" />
+    <Compile Include="ViewController\ViewController.cs" />
+    <Compile Include="WebChrome\ChromeDownloadHandler.cs" />
+    <Compile Include="WebChrome\ChromeMenuHandler.cs" />
+    <Compile Include="WebChrome\ChromeRequestHandler.cs" />
+    <Compile Include="WebChrome\ScciChromeBrowser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WebChrome\ScciChromeBrowser.Designer.cs">
+      <DependentUpon>ScciChromeBrowser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebSvc\ScciSvcRef.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CustomControls\Infra\EmbeddableRichTextBox.resx">
+      <DependentUpon>EmbeddableRichTextBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmAlertAllergie.resx">
+      <DependentUpon>frmAlertAllergie.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmConsegnePazienteCartella.resx">
+      <DependentUpon>frmConsegnePazienteCartella.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmAlertGenerici.resx">
+      <DependentUpon>frmAlertGenerici.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmBaseModale.resx">
+      <DependentUpon>frmBaseModale.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmBaseNonModale.resx">
+      <DependentUpon>frmBaseNonModale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmCambiaUtente.resx">
+      <DependentUpon>frmCambiaUtente.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmCartellaChiusa.resx">
+      <DependentUpon>frmCartellaChiusa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmConnettivita.resx">
+      <DependentUpon>frmConnettivita.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmCopiaPrescrizioni.resx">
+      <DependentUpon>frmCopiaPrescrizioni.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmDettaglioNews.resx">
+      <DependentUpon>frmDettaglioNews.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmDocxStampa.resx">
+      <DependentUpon>frmDocxStampa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmFotoPaziente.resx">
+      <DependentUpon>frmFotoPaziente.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmIdentificazioneIterataPaziente.resx">
+      <DependentUpon>frmIdentificazioneIterataPaziente.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmImmagine.resx">
+      <DependentUpon>frmImmagine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmInattivita.resx">
+      <DependentUpon>frmInattivita.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmInfoPaziente.resx">
+      <DependentUpon>frmInfoPaziente.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmInputBox.resx">
+      <DependentUpon>frmInputBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmLoginConsulente.resx">
+      <DependentUpon>frmLoginConsulente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmMessageBox.resx">
+      <DependentUpon>frmMessageBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmMessageBoxInfo.resx">
+      <DependentUpon>frmMessageBoxInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmOeCercaCopiaPrec.resx">
+      <DependentUpon>frmOeCercaCopiaPrec.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPDFViewer.resx">
+      <DependentUpon>frmPDFViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmProgress.resx">
+      <DependentUpon>frmProgress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPUAcquisizione.resx">
+      <DependentUpon>frmPUAcquisizione.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPUAlertAllergie.resx">
+      <DependentUpon>frmPUAlertAllergie.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPUAperturaCartellaAmbulatoriale.resx">
+      <DependentUpon>frmPUAperturaCartellaAmbulatoriale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPUConsegnePazienteCartella.resx">
+      <DependentUpon>frmPUConsegnePazienteCartella.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPUAlertGenerico.resx">
+      <DependentUpon>frmPUAlertGenerico.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPUAllegato.resx">
+      <DependentUpon>frmPUAllegato.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPUAnnullaPrescrizioneTempi.resx">
+      <DependentUpon>frmPUAnnullaPrescrizioneTempi.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPUAperturaCartella.resx">
+      <DependentUpon>frmPUAperturaCartella.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPUCartellaInVisione.resx">
+      <DependentUpon>frmPUCartellaInVisione.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPUConsegna.resx">
+      <DependentUpon>frmPUConsegna.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPUConsulenza.resx">
+      <DependentUpon>frmPUConsulenza.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPUDiarioClinico.resx">
+      <DependentUpon>frmPUDiarioClinico.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPUDiarioClinicoNM.resx">
+      <DependentUpon>frmPUDiarioClinicoNM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPUEvidenzaClinica.resx">
+      <DependentUpon>frmPUEvidenzaClinica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPUFarmaci.resx">
+      <DependentUpon>frmPUFarmaci.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPUGestioneAccount.resx">
+      <DependentUpon>frmPUGestioneAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPUGrafico.resx">
+      <DependentUpon>frmPUGrafico.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPULettaraDimissioni.resx">
+      <DependentUpon>frmPULettaraDimissioni.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPUMow.resx">
+      <DependentUpon>frmPUMow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPUMultiTaskInfermieristici.resx">
+      <DependentUpon>frmPUMultiTaskInfermieristici.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPUNota.resx">
+      <DependentUpon>frmPUNota.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPUOrdine.resx">
+      <DependentUpon>frmPUOrdine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPUOrdineDatiAggiuntivi.resx">
+      <DependentUpon>frmPUOrdineDatiAggiuntivi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPUOrdineVisualizza.resx">
+      <DependentUpon>frmPUOrdineVisualizza.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPUPACS.resx">
+      <DependentUpon>frmPUPACS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPUPazienteInVisione.resx">
+      <DependentUpon>frmPUPazienteInVisione.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPUPDFReferto.resx">
+      <DependentUpon>frmPUPDFReferto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPUPrescrizioni.resx">
+      <DependentUpon>frmPUPrescrizioni.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPUPrescrizioniProtocolloGenerate.resx">
+      <DependentUpon>frmPUPrescrizioniProtocolloGenerate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPUPrescrizioniTempi.resx">
+      <DependentUpon>frmPUPrescrizioniTempi.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPUProseguiTerapia.resx">
+      <DependentUpon>frmPUProseguiTerapia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPUProtocolloAttivita.resx">
+      <DependentUpon>frmPUProtocolloAttivita.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPURicorrenza.resx">
+      <DependentUpon>frmPURicorrenza.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPUScheda.resx">
+      <DependentUpon>frmPUScheda.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPUParametriVitali.resx">
+      <DependentUpon>frmPUParametriVitali.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPUSchedaNM.resx">
+      <DependentUpon>frmPUSchedaNM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPUSchede.resx">
+      <DependentUpon>frmPUSchede.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPUTaskInfermieristici.resx">
+      <DependentUpon>frmPUTaskInfermieristici.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPUTaskInfermieristiciEroga.resx">
+      <DependentUpon>frmPUTaskInfermieristiciEroga.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPUZoomScheda.resx">
+      <DependentUpon>frmPUZoomScheda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmReport.resx">
+      <DependentUpon>frmReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmRicercaSAC.resx">
+      <DependentUpon>frmRicercaSAC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmRichiediPassword.resx">
+      <DependentUpon>frmRichiediPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmRichiestaConsenso.resx">
+      <DependentUpon>frmRichiestaConsenso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmSelezionaAgendeAppuntamento.resx">
+      <DependentUpon>frmSelezionaAgendeAppuntamento.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmSelezionaAgendeDisponibilita.resx">
+      <DependentUpon>frmSelezionaAgendeDisponibilita.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmSelezionaAppuntamento.resx">
+      <DependentUpon>frmSelezionaAppuntamento.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmSelezionaCartella.resx">
+      <DependentUpon>frmSelezionaCartella.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmSelezionaCartellaCollegabile.resx">
+      <DependentUpon>frmSelezionaCartellaCollegabile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmSelezionaTestiNotePredefiniti.resx">
+      <DependentUpon>frmSelezionaTestiNotePredefiniti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmSelezionaTipoConsegnaPaziente.resx">
+      <DependentUpon>frmSelezionaTipoConsegnaPaziente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmSelezionaTipoConsegna.resx">
+      <DependentUpon>frmSelezionaTipoConsegna.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmSelezionaUAConsegne.resx">
+      <DependentUpon>frmSelezionaUAConsegne.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmSelezionaUA.resx">
+      <DependentUpon>frmSelezionaUA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmSelezionaUAUO.resx">
+      <DependentUpon>frmSelezionaUAUO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmSmartCardProgress.resx">
+      <DependentUpon>frmSmartCardProgress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmSpostaTaskInAltraCartella.resx">
+      <DependentUpon>frmSpostaTaskInAltraCartella.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmSelezionaReport.resx">
+      <DependentUpon>frmSelezionaReport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmSelezionaRuolo.resx">
+      <DependentUpon>frmSelezionaRuolo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmSelezionaTipoAlertAllergie.resx">
+      <DependentUpon>frmSelezionaTipoAlertAllergie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmSelezionaTipoAlertGenerico.resx">
+      <DependentUpon>frmSelezionaTipoAlertGenerico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmSelezionaTipoAllegato.resx">
+      <DependentUpon>frmSelezionaTipoAllegato.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmSelezionaTipoAppuntamento.resx">
+      <DependentUpon>frmSelezionaTipoAppuntamento.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmSelezionaTipoParametroVitale.resx">
+      <DependentUpon>frmSelezionaTipoParametroVitale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmSelezionaTipoPrescrizione.resx">
+      <DependentUpon>frmSelezionaTipoPrescrizione.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmSelezionaTipoScheda.resx">
+      <DependentUpon>frmSelezionaTipoScheda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmSelezionaTipoTaskInfermieristico.resx">
+      <DependentUpon>frmSelezionaTipoTaskInfermieristico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmSelezionaTipoVoceDiario.resx">
+      <DependentUpon>frmSelezionaTipoVoceDiario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmSelezionaUO.resx">
+      <DependentUpon>frmSelezionaUO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmSelezionaViaSomministrazione.resx">
+      <DependentUpon>frmSelezionaViaSomministrazione.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmSplash.resx">
+      <DependentUpon>frmSplash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmStoricoReport.resx">
+      <DependentUpon>frmStoricoReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmTestiTipo.resx">
+      <DependentUpon>frmTestiTipo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmTracker.resx">
+      <DependentUpon>frmTracker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmValidazioni.resx">
+      <DependentUpon>frmValidazioni.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmWebBrowser.resx">
+      <DependentUpon>frmWebBrowser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmZoom.resx">
+      <DependentUpon>frmZoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Easy\EasyControls.resx">
+      <DependentUpon>EasyControls.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Easy\ucAgendePaziente.resx">
+      <DependentUpon>ucAgendePaziente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Easy\ucAgendeTrasversale.resx">
+      <DependentUpon>ucAgendeTrasversale.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Easy\ucAllegati.resx">
+      <DependentUpon>ucAllegati.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Easy\ucAnteprimaRtf.resx">
+      <DependentUpon>ucAnteprimaRtf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Easy\ucAnteprimaRtfStorico.resx">
+      <DependentUpon>ucAnteprimaRtfStorico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Easy\ucBancheDati.resx">
+      <DependentUpon>ucBancheDati.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Easy\ucCartellaAmbulatoriale.resx">
+      <DependentUpon>ucCartellaAmbulatoriale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Easy\ucCartellaPaziente.resx">
+      <DependentUpon>ucCartellaPaziente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Easy\ucCartelleInVisione.resx">
+      <DependentUpon>ucCartelleInVisione.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Easy\ucCartelleInVisioneMenu.resx">
+      <DependentUpon>ucCartelleInVisioneMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Easy\ucChiusuraCartelle.resx">
+      <DependentUpon>ucChiusuraCartelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Easy\ucConsegnePaziente.resx">
+      <DependentUpon>ucConsegnePaziente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Easy\ucConsegne.resx">
+      <DependentUpon>ucConsegne.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Easy\ucDiarioClinicoPaziente.resx">
+      <DependentUpon>ucDiarioClinicoPaziente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Easy\ucConsulenzeTrasversali.resx">
+      <DependentUpon>ucConsulenzeTrasversali.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Easy\ucDifferenceEngine.resx">
+      <DependentUpon>ucDifferenceEngine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Easy\ucEasyActiveReportViewer.resx">
+      <DependentUpon>ucEasyActiveReportViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Easy\ucEasyDevExpressViewer.resx">
+      <DependentUpon>ucEasyDevExpressViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Easy\ucEasyDOCXViewer.resx">
+      <DependentUpon>ucEasyDOCXViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Easy\ucEasyMultiSelect.resx">
+      <DependentUpon>ucEasyMultiSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Easy\ucEasyO2SPDFView.resx">
+      <DependentUpon>ucEasyO2SPDFView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Easy\ucEasyPopUpData.resx">
+      <DependentUpon>ucEasyPopUpData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Easy\ucEasyPopUpFolder.resx">
+      <DependentUpon>ucEasyPopUpFolder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Easy\ucEasyPopUpMHContatti.resx">
+      <DependentUpon>ucEasyPopUpMHContatti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Easy\ucEasyPopUpNota.resx">
+      <DependentUpon>ucEasyPopUpNota.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Easy\ucEasyPopUpOrario.resx">
+      <DependentUpon>ucEasyPopUpOrario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Easy\ucEasyPopUpTerapiaRapida.resx">
+      <DependentUpon>ucEasyPopUpTerapiaRapida.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Easy\ucEvidenzaClinica.resx">
+      <DependentUpon>ucEvidenzaClinica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Easy\ucEvidenzaClinicaTrasversale.resx">
+      <DependentUpon>ucEvidenzaClinicaTrasversale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Easy\ucFirmaCartelleAperte.resx">
+      <DependentUpon>ucFirmaCartelleAperte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Easy\ucFoglioUnico.resx">
+      <DependentUpon>ucFoglioUnico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Easy\ucHelp.resx">
+      <DependentUpon>ucHelp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Easy\ucInfoSchede.resx">
+      <DependentUpon>ucInfoSchede.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Easy\ucMenu.resx">
+      <DependentUpon>ucMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Easy\ucNews.resx">
+      <DependentUpon>ucNews.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Easy\ucOrderEntry.resx">
+      <DependentUpon>ucOrderEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Easy\ucOrderEntryMonitorTrasversale.resx">
+      <DependentUpon>ucOrderEntryMonitorTrasversale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Easy\ucOrderEntryTrasversale.resx">
+      <DependentUpon>ucOrderEntryTrasversale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Easy\ucParametriVitali.resx">
+      <DependentUpon>ucParametriVitali.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Easy\ucParametriVitaliTrasversali.resx">
+      <DependentUpon>ucParametriVitaliTrasversali.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Easy\ucPazientiInVisione.resx">
+      <DependentUpon>ucPazientiInVisione.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Easy\ucPazientiSeguiti.resx">
+      <DependentUpon>ucPazientiSeguiti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Easy\ucPercorsoAmbulatoriale.resx">
+      <DependentUpon>ucPercorsoAmbulatoriale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Easy\ucRicercaPazienti.resx">
+      <DependentUpon>ucRicercaPazienti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Easy\ucRicercaPreTrasferimenti.resx">
+      <DependentUpon>ucRicercaPreTrasferimenti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Easy\ucRicercaSAC.resx">
+      <DependentUpon>ucRicercaSAC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Easy\ucRtf.resx">
+      <DependentUpon>ucRtf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Easy\ucSCCIScatterChart.resx">
+      <DependentUpon>ucSCCIScatterChart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Easy\ucSchedaAllegati.resx">
+      <DependentUpon>ucSchedaAllegati.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Easy\ucSchede.resx">
+      <DependentUpon>ucSchede.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ScreenAndTiles\Base\BaseTileControl.resx">
+      <DependentUpon>BaseTileControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ScreenAndTiles\ucScreenGridView.resx">
+      <DependentUpon>ucScreenGridView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ScreenAndTiles\ucScreenView.resx">
+      <DependentUpon>ucScreenView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Easy\ucSegnalibri.resx">
+      <DependentUpon>ucSegnalibri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Easy\ucStampaCartelleChiuse.resx">
+      <DependentUpon>ucStampaCartelleChiuse.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Easy\ucTerapieFarmacologiche.resx">
+      <DependentUpon>ucTerapieFarmacologiche.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Easy\ucWorkListInfermieristica.resx">
+      <DependentUpon>ucWorkListInfermieristica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Easy\ucWorkListInfermieristicaTrasversale.resx">
+      <DependentUpon>ucWorkListInfermieristicaTrasversale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ScreenAndTiles\ucTileHeader.resx">
+      <DependentUpon>ucTileHeader.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ScreenAndTiles\ucTileSelector.resx">
+      <DependentUpon>ucTileSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucAgendaListaView.resx">
+      <DependentUpon>ucAgendaListaView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucAgende.resx">
+      <DependentUpon>ucAgende.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucBottom.resx">
+      <DependentUpon>ucBottom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucBottomModale.resx">
+      <DependentUpon>ucBottomModale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucBottomNonModale.resx">
+      <DependentUpon>ucBottomNonModale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucCalendario.resx">
+      <DependentUpon>ucCalendario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucDatiAggiuntiviPopUp.resx">
+      <DependentUpon>ucDatiAggiuntiviPopUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucEasyScrollbar.resx">
+      <DependentUpon>ucEasyScrollbar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucListboxSearch.resx">
+      <DependentUpon>ucListboxSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucMultiSelect.resx">
+      <DependentUpon>ucMultiSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucPictureSelect.resx">
+      <DependentUpon>ucPictureSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucRichTextBox.resx">
+      <DependentUpon>ucRichTextBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucScrollBarV.resx">
+      <DependentUpon>ucScrollBarV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucSelNumero.resx">
+      <DependentUpon>ucSelNumero.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucTop.resx">
+      <DependentUpon>ucTop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucTopModale.resx">
+      <DependentUpon>ucTopModale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucTopNonModale.resx">
+      <DependentUpon>ucTopNonModale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucUltraMonthViewMulti.resx">
+      <DependentUpon>ucUltraMonthViewMulti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WebChrome\ScciChromeBrowser.resx">
+      <DependentUpon>ScciChromeBrowser.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\SpostaDx.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\SpostaDxTutto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\SpostaSx.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\SpostaSxTutto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\FontColor_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\FontColor_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Login_256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\EvidenzaClinica_256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\FontCambia_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\FontCambia_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\FontAllineaCentrato_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\FontAllineaCentrato_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\FontAllineaDx_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\FontAllineaDx_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\FontAllineaSx_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\FontAllineaSx_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\FontIndentaMeno_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\FontIndentaMeno_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\FontIndentaPiu_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\FontIndentaPiu_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\FontPunti_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\FontPunti_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Immagine_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Immagine_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\FontPuntiRimuovi_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\FontPuntiRimuovi_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Copia_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Copia_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Incolla_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Incolla_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Modifica_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Modifica_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Taglia_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Taglia_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Annulla_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Annulla_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Ripristina_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Ripristina_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\FontSelezionaTutti_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\FontSelezionaTutti_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\ZoomIn_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\ZoomIn_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\ZoomIn_256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\ZoomOut_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\ZoomOut_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\ZoomOut_256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Salva_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Salva_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Salva_256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Cancella_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Cancella_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Cancella_256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Fit_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Fit_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Fit_256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Zoom100_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Zoom100_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Zoom100_256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Aggiungi_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Aggiungi_256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\No_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\No_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\No_256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Si_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Si_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Si_256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Aggiungi_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\FrecciaGiu_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\FrecciaGiu_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\FrecciaGiu_256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\FrecciaSu_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\FrecciaSu_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\FrecciaSu_256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DiagrammaClassi.cd" />
+    <None Include="Properties\DataSources\System.Data.DataSet.datasource" />
+    <None Include="Properties\DataSources\UnicodeSrl.Scci.DataContracts.AllegatoRefertoDWH.datasource" />
+    <None Include="Properties\DataSources\UnicodeSrl.Scci.DataContracts.EventoDWH.datasource" />
+    <None Include="Properties\DataSources\UnicodeSrl.Scci.DataContracts.OEDatiAccessoriDescrittore.datasource" />
+    <None Include="Properties\DataSources\UnicodeSrl.Scci.DataContracts.OEDatoAccessorio.datasource" />
+    <None Include="Properties\DataSources\UnicodeSrl.Scci.DataContracts.OEGruppoPrestazione.datasource" />
+    <None Include="Properties\DataSources\UnicodeSrl.Scci.DataContracts.OEOrdineDettaglio.datasource" />
+    <None Include="Properties\DataSources\UnicodeSrl.Scci.DataContracts.OEOrdineTestata.datasource" />
+    <None Include="Properties\DataSources\UnicodeSrl.Scci.DataContracts.OEPrestazione.datasource" />
+    <None Include="Properties\DataSources\UnicodeSrl.Scci.DataContracts.OESistemaErogante.datasource" />
+    <None Include="Properties\DataSources\UnicodeSrl.Scci.DataContracts.PazienteSac.datasource" />
+    <None Include="Properties\DataSources\UnicodeSrl.Scci.DataContracts.PazienteSacDatiAggiuntivi.datasource" />
+    <None Include="Properties\DataSources\UnicodeSrl.Scci.DataContracts.RefertoDWH.datasource" />
+    <None Include="Properties\DataSources\UnicodeSrl.Scci.DataContracts.RefertoDWHDetailed.datasource" />
+    <None Include="Properties\DataSources\UnicodeSrl.Scci.DataContracts.RicoveroDWH.datasource" />
+    <None Include="Properties\DataSources\UnicodeSrl.Scci.DataContracts.RicoveroDWHSintetico.datasource" />
+    <None Include="Properties\DataSources\UnicodeSrl.Scci.DataContracts.RisultatiLab.datasource" />
+    <None Include="Properties\DataSources\UnicodeSrl.Scci.DataContracts.RisultatiLabUM.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\SvcConsensiSAC\ScciConsensiSAC.wsdl" />
+    <None Include="Service References\SvcConsensiSAC\ScciConsensiSAC.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SvcConsensiSAC\ScciConsensiSAC1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SvcOrderEntry\OE.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SvcOrderEntry\OE1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SvcOrderEntry\OE2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SvcOrderEntry\OE3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SvcOrderEntry\OE4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SvcOrderEntry\OE5.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SvcOrderEntry\OrderEntry.wsdl" />
+    <None Include="Service References\SvcOrderEntry\ScciOrderEntry1.wsdl" />
+    <None Include="Service References\SvcOrderEntry\ScciOrderEntry1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SvcOrderEntry\ScciOrderEntry10.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SvcOrderEntry\ScciOrderEntry11.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SvcOrderEntry\ScciOrderEntry12.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SvcOrderEntry\ScciOrderEntry7.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SvcOrderEntry\ScciOrderEntry8.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SvcOrderEntry\ScciOrderEntry9.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SvcPrescrizioni\ScciPrescrizioni.wsdl" />
+    <None Include="Service References\SvcPrescrizioni\ScciPrescrizioni.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SvcPrescrizioni\ScciPrescrizioni1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SvcPrescrizioni\ScciPrescrizioni2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SvcPrescrizioni\ScciPrescrizioni3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SvcRefertiDWH\ScciRefertiDWH.wsdl" />
+    <None Include="Service References\SvcRefertiDWH\ScciRefertiDWH.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SvcRefertiDWH\ScciRefertiDWH1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SvcRefertiDWH\ScciRefertiDWH2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SvcRefertiDWH\ScciRefertiDWH3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SvcRefertiDWH\ScciRefertiDWH31.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SvcRicercaSAC\ScciRicercaSAC.wsdl" />
+    <None Include="Service References\SvcRicercaSAC\ScciRicercaSAC.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SvcRicercaSAC\ScciRicercaSAC1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SvcRicercaSAC\ScciRicercaSAC2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SvcRicoveriDWH\ScciRicoveriDWH.wsdl" />
+    <None Include="Service References\SvcRicoveriDWH\ScciRicoveriDWH.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SvcRicoveriDWH\ScciRicoveriDWH1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SvcRicoveriDWH\ScciRicoveriDWH2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SvcRicoveriDWH\ScciRicoveriDWH3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SvcRicoveriDWH\UnicodeSrl.ScciCore.SvcRicoveriDWH.RisultatiLabAll.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\msg_question.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\msg_warning.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\msg_error.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\msg_info.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Campo_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Campo_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Campo_256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\FirmaMultipla_256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\FirmaMultipla_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\FirmaMultipla_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\SelettoreSlider.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Diario_ClinicoFiltro_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Diario_ClinicoFiltro_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Diario_ClinicoFiltro_256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Diario_InfermieristicoFiltro_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Diario_InfermieristicoFiltro_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Diario_InfermieristicoFiltro_256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\FirmaEseguita_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\FirmaEseguita_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\FirmaEseguita_256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\arrow-down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\arrow-up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Checked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\unChecked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\SvcConsensiSAC\" />
+    <WCFMetadataStorage Include="Service References\SvcOrderEntry\" />
+    <WCFMetadataStorage Include="Service References\SvcPrescrizioni\" />
+    <WCFMetadataStorage Include="Service References\SvcRefertiDWH\" />
+    <WCFMetadataStorage Include="Service References\SvcRicercaSAC\" />
+    <WCFMetadataStorage Include="Service References\SvcRicoveriDWH\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\SvcPrescrizioni\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\SvcPrescrizioni\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\SvcPrescrizioni\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\SvcPrescrizioni\ScciPrescrizioni.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\SvcRicercaSAC\ScciRicercaSAC.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\SvcRicercaSAC\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\SvcRicercaSAC\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\SvcRicercaSAC\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\SvcRefertiDWH\ScciRefertiDWH.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\SvcRefertiDWH\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\SvcRefertiDWH\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\SvcRefertiDWH\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\SvcRicoveriDWH\ScciRicoveriDWH.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\SvcRicoveriDWH\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\SvcRicoveriDWH\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\SvcRicoveriDWH\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\SplashManagement.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\SvcOrderEntry\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\SvcOrderEntry\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\SvcOrderEntry\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\SvcOrderEntry\OE.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\license.elic.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\SelettoreSliderH.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\SvcOrderEntry\ScciOrderEntry1.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\LoadingAnim.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\msg_warning_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\GrigliaContinua_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\GrigliaContinua_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\msg_warning_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\ContinuaPuntini_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\FontItalico_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\FontItalico_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\FontSottolineato_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\FontBold_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\FontBold_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\RTFCancellaFormato_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\RTFCancellaFormato_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\FontSottolineato_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\FontEvidenzia_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\FontEvidenzia_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\sidebar_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\W2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GridChecked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FrecciaSxN_256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FrecciaDxN_256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\SplashMatilde.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DeSelezionaTutti_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\ScannerAggiungi_256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\PaginaCancella_256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\PaginaIndietro_256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\PaginaAvanti_256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\PaginaRuotaSx_256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\PaginaRuotaDx_256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\ScannerImporta_256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Scanner.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\SvcConsensiSAC\ScciConsensiSAC.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\SvcConsensiSAC\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\SvcConsensiSAC\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\SvcConsensiSAC\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Refresh_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\xChecked_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ScciCommon\ScciCommon.csproj">
+      <Project>{c350a9fb-4907-4581-a8f1-3dcd18c02035}</Project>
+      <Name>ScciCommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ScciResource\ScciResource.csproj">
+      <Project>{9e2c78c5-f5bd-4c61-9158-788a2be4ccf7}</Project>
+      <Name>ScciResource</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AlertAllergia_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-expand-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-advertisement-page-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\W21.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\msg_info_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TileApriTutte_64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TileChiudiTutte_64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TileChiudiTutte_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TileApriTutte_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TileApriTutte_161.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TileChiudiTutte_161.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="DataConnectionDialog">
+      <Version>1.2.0</Version>
+    </PackageReference>
+    <PackageReference Include="UnicodeSrl.DatiClinici472">
+      <Version>2021.8.11.108</Version>
+    </PackageReference>
+    <PackageReference Include="UnicodeSrl.Framework">
+      <Version>2020.5.20.297</Version>
+    </PackageReference>
+    <PackageReference Include="UnicodeSrl.Framework.UI">
+      <Version>2020.6.10.277</Version>
+    </PackageReference>
+    <PackageReference Include="UnicodeSrl.ReMLibrary">
+      <Version>2021.7.19.5</Version>
+    </PackageReference>
+    <PackageReference Include="UnicodeSrl.ReMReportHandler">
+      <Version>2021.7.19.15</Version>
+    </PackageReference>
+    <PackageReference Include="UnicodeSrl.RtfLibrary">
+      <Version>2020.1.31.102</Version>
+    </PackageReference>
+    <PackageReference Include="cef.redist.x64">
+      <Version>91.1.21</Version>
+    </PackageReference>
+    <PackageReference Include="cef.redist.x86">
+      <Version>91.1.21</Version>
+    </PackageReference>
+    <PackageReference Include="CefSharp.Common">
+      <Version>91.1.211</Version>
+    </PackageReference>
+    <PackageReference Include="CefSharp.WinForms">
+      <Version>91.1.211</Version>
+    </PackageReference>
+    <PackageReference Include="UnicodeSrl.WpfControls">
+      <Version>2021.9.23.110</Version>
+    </PackageReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

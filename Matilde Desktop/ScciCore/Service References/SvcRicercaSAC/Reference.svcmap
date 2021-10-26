@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="2bd4f961-4b53-4474-8f56-8b385b23d0f9" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://ws-scci-main-test/ScciRicercaSAC.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ScciRicercaSAC.xsd" MetadataType="Schema" ID="0f78bd3a-3ff1-476f-a74b-e8b1f6160860" SourceId="1" SourceUrl="http://ws-scci-main-test/ScciRicercaSAC.svc?xsd=xsd0" />
+    <MetadataFile FileName="ScciRicercaSAC.disco" MetadataType="Disco" ID="1ba0eb6e-cba1-4d16-95bb-b732d528b229" SourceId="1" SourceUrl="http://ws-scci-main-test/ScciRicercaSAC.svc?disco" />
+    <MetadataFile FileName="ScciRicercaSAC1.xsd" MetadataType="Schema" ID="6099b1f8-0181-4dca-98f3-5565ae8e0a7c" SourceId="1" SourceUrl="http://ws-scci-main-test/ScciRicercaSAC.svc?xsd=xsd1" />
+    <MetadataFile FileName="ScciRicercaSAC.wsdl" MetadataType="Wsdl" ID="8d83ebb2-d3e0-4efa-9834-7108f68cbdec" SourceId="1" SourceUrl="http://ws-scci-main-test/ScciRicercaSAC.svc?wsdl" />
+    <MetadataFile FileName="ScciRicercaSAC2.xsd" MetadataType="Schema" ID="714ca9c9-38a3-438b-b155-93d595abc686" SourceId="1" SourceUrl="http://ws-scci-main-test/ScciRicercaSAC.svc?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

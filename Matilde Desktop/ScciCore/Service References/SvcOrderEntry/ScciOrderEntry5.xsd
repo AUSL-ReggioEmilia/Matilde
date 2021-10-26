@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/UnicodeSrl.Scci.DataContracts" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/UnicodeSrl.Scci.DataContracts" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://172.29.10.14:81/ScciOrderEntry.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/UnicodeSrl.Scci.Enums" />
+  <xs:complexType name="ArrayOfOESistemaErogante">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="OESistemaErogante" nillable="true" type="tns:OESistemaErogante" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfOESistemaErogante" nillable="true" type="tns:ArrayOfOESistemaErogante" />
+  <xs:complexType name="OESistemaErogante">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Codice" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CodiceAzienda" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Descrizione" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DescrizioneAzienda" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OESistemaErogante" nillable="true" type="tns:OESistemaErogante" />
+  <xs:complexType name="ArrayOfOEPrestazione">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="OEPrestazione" nillable="true" type="tns:OEPrestazione" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfOEPrestazione" nillable="true" type="tns:ArrayOfOEPrestazione" />
+  <xs:complexType name="OEPrestazione">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Codice" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Descrizione" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Erogante" nillable="true" type="tns:OESistemaErogante" />
+      <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/UnicodeSrl.Scci.Enums" minOccurs="0" name="Tipo" type="q1:OEPrestazioneTipo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OEPrestazione" nillable="true" type="tns:OEPrestazione" />
+  <xs:complexType name="OEOrdineTestata">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DataModifica" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="DataOraProgrammata" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="DataOrdine" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="DescrizioneSistemaRichiedente" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DescrizioneStatoValidazione" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Eroganti" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IdOrdine" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Nosologico" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NumeroOrdine" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NumeroPrestazioni" type="xs:int" />
+      <xs:element minOccurs="0" name="Operatore" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PazienteCF" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PazienteCognome" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PazienteDataNascita" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="PazienteId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PazienteNome" nillable="true" type="xs:string" />
+      <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/UnicodeSrl.Scci.Enums" minOccurs="0" name="Priorita" type="q2:OEPrioritaOrdine" />
+      <xs:element minOccurs="0" name="PrioritaDesc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Regime" nillable="true" type="xs:string" />
+      <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/UnicodeSrl.Scci.Enums" minOccurs="0" name="Stato" type="q3:OEStato" />
+      <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/UnicodeSrl.Scci.Enums" minOccurs="0" name="StatoValidazione" type="q4:OEValiditaOrdine" />
+      <xs:element minOccurs="0" name="UnitaOperativaAziendaCodice" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UnitaOperativaAziendaDescrizione" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UnitaOperativaCodice" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UnitaOperativaDescrizione" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OEOrdineTestata" nillable="true" type="tns:OEOrdineTestata" />
+  <xs:complexType name="OEOrdineDettaglio">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="OrdineTestata" nillable="true" type="tns:OEOrdineTestata" />
+      <xs:element minOccurs="0" name="Prestazioni" nillable="true" type="tns:ArrayOfOEOrdinePrestazione" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OEOrdineDettaglio" nillable="true" type="tns:OEOrdineDettaglio" />
+  <xs:complexType name="ArrayOfOEOrdinePrestazione">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="OEOrdinePrestazione" nillable="true" type="tns:OEOrdinePrestazione" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfOEOrdinePrestazione" nillable="true" type="tns:ArrayOfOEOrdinePrestazione" />
+  <xs:complexType name="OEOrdinePrestazione">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DatiAccessoriErogante" nillable="true" type="tns:ArrayOfOEDatoAccessorio" />
+      <xs:element minOccurs="0" name="DatiAccessoriRichiedente" nillable="true" type="tns:ArrayOfOEDatoAccessorio" />
+      <xs:element minOccurs="0" name="DescrizioneValidazione" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Prestazione" nillable="true" type="tns:OEPrestazione" />
+      <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/UnicodeSrl.Scci.Enums" minOccurs="0" name="StatoErogante" type="q5:OEStatoErogante" />
+      <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/UnicodeSrl.Scci.Enums" minOccurs="0" name="StatoRichiedente" type="q6:OEStatoRichiedente" />
+      <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/UnicodeSrl.Scci.Enums" minOccurs="0" name="StatoValidazione" type="q7:OEValiditaOrdine" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OEOrdinePrestazione" nillable="true" type="tns:OEOrdinePrestazione" />
+  <xs:complexType name="ArrayOfOEDatoAccessorio">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="OEDatoAccessorio" nillable="true" type="tns:OEDatoAccessorio" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfOEDatoAccessorio" nillable="true" type="tns:ArrayOfOEDatoAccessorio" />
+  <xs:complexType name="OEDatoAccessorio">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Codice" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Ripetizione" type="xs:int" />
+      <xs:element minOccurs="0" name="Tipo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Valore" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OEDatoAccessorio" nillable="true" type="tns:OEDatoAccessorio" />
+  <xs:complexType name="ArrayOfOEOrdineTestata">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="OEOrdineTestata" nillable="true" type="tns:OEOrdineTestata" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfOEOrdineTestata" nillable="true" type="tns:ArrayOfOEOrdineTestata" />
+  <xs:complexType name="ArrayOfOEDatiAccessoriDescrittore">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="OEDatiAccessoriDescrittore" nillable="true" type="tns:OEDatiAccessoriDescrittore" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfOEDatiAccessoriDescrittore" nillable="true" type="tns:ArrayOfOEDatiAccessoriDescrittore" />
+  <xs:complexType name="OEDatiAccessoriDescrittore">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Codice" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Descrizione" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Etichetta" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Gruppo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Obbligatorio" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Ordinamento" type="xs:int" />
+      <xs:element minOccurs="0" name="PrestazioniAssociate" nillable="true" type="tns:ArrayOfOEPrestazione" />
+      <xs:element minOccurs="0" name="Ripetibile" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Testata" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Tipo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ValidazioneMessaggio" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ValidazioneRexEx" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Valori" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OEDatiAccessoriDescrittore" nillable="true" type="tns:OEDatiAccessoriDescrittore" />
+</xs:schema>

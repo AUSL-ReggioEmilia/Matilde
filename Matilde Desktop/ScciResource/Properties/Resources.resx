@@ -1,0 +1,1741 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Add_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Add_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Add_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Add_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Add_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Add_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Close_All_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Close_All_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Close_All_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Close_All_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Close_All_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Close_All_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Configuration_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Configuration_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Configuration_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Configuration_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Configuration_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Configuration_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Configuration_Tools_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Configuration_Tools_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Configuration_Tools_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Configuration_Tools_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Configuration_Tools_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Configuration_Tools_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Delete_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Delete_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Delete_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Delete_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Delete_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Delete_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Export_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Export_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Export_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Export_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Export_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Export_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Hospital_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Hospital_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Hospital_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Hospital_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Hospital_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Hospital_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Log_Out_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Log_Out_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Log_Out_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Log_Out_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Log_Out_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Log_Out_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Printer_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Printer_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Printer_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Printer_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Printer_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Printer_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="View_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\View_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="View_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\View_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="View_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\View_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Folder_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Folder_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Folder_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Folder_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Folder_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Folder_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Symbol_Check_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Symbol Check_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Symbol_Restricted_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Symbol Restricted_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Refresh_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Refresh_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Refresh_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Refresh_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Refresh_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Refresh_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Login_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Login_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Login_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Login_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Login_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Login_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Modulo_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Modulo_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Modulo_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Modulo_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Modulo_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Modulo_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Azienda_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Azienda_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Azienda_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Azienda_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Azienda_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Azienda_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Modifica_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Modifica_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Modifica_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Modifica_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Modifica_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Modifica_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="UnitaAtomica_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\UnitaAtomica_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="UnitaAtomica_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\UnitaAtomica_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="UnitaAtomica_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\UnitaAtomica_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Diario_Clinico_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Diario_Clinico_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Diario_Clinico_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Diario_Clinico_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Diario_Infermieristico_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Diario_Infermieristico_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Diario_Infermieristico_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Diario_Infermieristico_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ParametroVitale_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ParametroVitale_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ParametroVitale_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ParametroVitale_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ParametroVitale_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ParametroVitale_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EvidenzaClinica_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EvidenzaClinica_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EvidenzaClinica_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EvidenzaClinica_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EvidenzaClinica_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EvidenzaClinica_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Report_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Report_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Report_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Report_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Report_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Report_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TestoPredefinito_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TestoPredefinito_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TestoPredefinito_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TestoPredefinito_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TestoPredefinito_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TestoPredefinito_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Maschera_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Maschera_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Maschera_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Maschera_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Maschera_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Maschera_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="News_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\News_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="News_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\News_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="News_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\News_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icona_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icona_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icona_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icona_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icona_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icona_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Genera_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Genera_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Genera_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Genera_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Genera_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Genera_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="UnitaOperativa_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\UnitaOperativa_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="UnitaOperativa_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\UnitaOperativa_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="UnitaOperativa_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\UnitaOperativa_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ViaDiSomministrazione_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ViaDiSomministrazione_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ViaDiSomministrazione_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ViaDiSomministrazione_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ViaDiSomministrazione_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ViaDiSomministrazione_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Prescrizione_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Prescrizione_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Prescrizione_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Prescrizione_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Prescrizione_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Prescrizione_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Allegato_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Allegato_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Allegato_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Allegato_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Allegato_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Allegato_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Stanza_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Stanza_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Stanza_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Stanza_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Stanza_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Stanza_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Appuntamento_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Appuntamento_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Appuntamento_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Appuntamento_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Appuntamento_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Appuntamento_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Scheda_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Scheda_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Scheda_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Scheda_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Scheda_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Scheda_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ruolo_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ruolo_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ruolo_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ruolo_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ruolo_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ruolo_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TaskInfermieristico_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TaskInfermieristico_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TaskInfermieristico_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TaskInfermieristico_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TaskInfermieristico_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TaskInfermieristico_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Episodio_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Episodio_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Episodio_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Episodio_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Episodio_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Episodio_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Letto_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Letto_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Letto_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Letto_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Settori_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Settori_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Settori_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Settori_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Settori_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Settori_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dizionari_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Dizionari_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dizionari_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Dizionari_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dizionari_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Dizionari_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Agenda_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Agenda_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Agenda_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Agenda_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Agenda_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Agenda_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AlertGenerico_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AlertGenerico_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AlertGenerico_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AlertGenerico_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AlertGenerico_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AlertGenerico_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AlertAllergia_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AlertAllergia_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AlertAllergia_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AlertAllergia_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AlertAllergia_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AlertAllergia_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CartellaClinica_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CartellaClinica_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CartellaClinica_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CartellaClinica_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CartellaClinica_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CartellaClinica_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ChiusuraCartella_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ChiusuraCartella_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ChiusuraCartella_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ChiusuraCartella_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ChiusuraCartella_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ChiusuraCartella_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Consulenza_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Consulenza_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Consulenza_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Consulenza_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Consulenza_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Consulenza_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pazienti_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Pazienti_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pazienti_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Pazienti_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pazienti_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Pazienti_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Worklist_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Worklist_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Worklist_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Worklist_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Worklist_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Worklist_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Wait" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Wait.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sistemi_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sistemi_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sistemi_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sistemi_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sistemi_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sistemi_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Copia_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Copia_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Copia_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Copia_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Copia_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Copia_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PazienteFemmina_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PazienteFemmina_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PazienteFemmina_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PazienteFemmina_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PazienteFemmina_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PazienteFemmina_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PazienteMaschio_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PazienteMaschio_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PazienteMaschio_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PazienteMaschio_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PazienteMaschio_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PazienteMaschio_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InRilievo_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\InRilievo_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InRilievo_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\InRilievo_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InRilievo_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\InRilievo_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ConnessoSi_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ConnessoSi_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ConnessoSi_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ConnessoSi_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ConnessoSi_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ConnessoSi_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Firma_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Firma_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Firma_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Firma_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Firma_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Firma_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DatoMancante_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DatoMancante_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DatoMancante_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DatoMancante_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DatoMancante_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DatoMancante_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ordine_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ordine_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ordine_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ordine_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ordine_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ordine_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Home_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Home_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Diario_Clinico_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Diario_Clinico_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Diario_Infermieristico_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Diario_Infermieristico_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LettoD_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LettoD_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LettoD_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LettoD_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FiltroApplicato_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FiltroApplicato_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FiltroApplicato_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FiltroApplicato_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FiltroApplicato_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FiltroApplicato_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Filtro_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Filtro_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Filtro_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Filtro_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Filtro_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Filtro_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ParametriVitaliGrafico_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ParametriVitaliGrafico_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ParametriVitaliGrafico_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ParametriVitaliGrafico_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ParametriVitaliGrafico_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ParametriVitaliGrafico_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="No_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\No_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="No_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\No_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="No_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\No_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Si_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Si_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Si_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Si_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Si_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Si_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Zoom_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Zoom_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FirmaMultipla_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FirmaMultipla_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FirmaMultipla_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FirmaMultipla_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FirmaMultipla_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FirmaMultipla_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sospendi_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sospendi_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sospendi_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sospendi_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sospendi_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sospendi_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AgendaGiornalieraLav_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AgendaGiornalieraLav_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AgendaGiornalieraLav_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AgendaGiornalieraLav_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AgendaGiornalieraLav_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AgendaGiornalieraLav_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AgendaGiornaliera_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AgendaGiornaliera_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AgendaGiornaliera_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AgendaGiornaliera_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AgendaGiornaliera_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AgendaGiornaliera_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AgendaMensile_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AgendaMensile_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AgendaMensile_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AgendaMensile_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AgendaMensile_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AgendaMensile_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AgendaOggi_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AgendaOggi_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AgendaOggi_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AgendaOggi_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AgendaOggi_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AgendaOggi_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AgendaSettimanale_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AgendaSettimanale_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AgendaSettimanale_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AgendaSettimanale_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AgendaSettimanale_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AgendaSettimanale_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AlertAllergiaD_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AlertAllergiaD_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AlertAllergiaD_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AlertAllergiaD_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AlertGenericoD_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AlertGenericoD_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AlertGenericoD_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AlertGenericoD_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AlertGenericoD_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AlertGenericoD_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AlertAllergiaD_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AlertAllergiaD_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FUT_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FUT_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FUT_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FUT_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FUT_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FUT_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FrecciaDx_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FrecciaDx_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FrecciaDx_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FrecciaDx_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FrecciaDx_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FrecciaDx_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FrecciaSx_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FrecciaSx_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FrecciaSx_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FrecciaSx_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FrecciaSx_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FrecciaSx_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Agende_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Agende_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Agende_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Agende_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Agende_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Agende_3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Agende_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Agende_4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Agende_6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Agende_6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AllegatoVirtuale_Aggiungi_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AllegatoVirtuale_Aggiungi_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AllegatoVirtuale_Aggiungi_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AllegatoVirtuale_Aggiungi_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AllegatoVirtuale_Aggiungi_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AllegatoVirtuale_Aggiungi_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AllegatoStampaEtichette_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AllegatoStampaEtichette_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DonwloadDocumneto_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DonwloadDocumneto_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DownloadDocumento_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DownloadDocumento_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DownloadDocumento_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DownloadDocumento_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RTF_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RTF_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RTF_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RTF_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RTF_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RTF_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AppuntamentoAggiungi_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AppuntamentoAggiungi_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AppuntamentoAnnulla_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AppuntamentoAnnulla_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AppuntamentoCancella_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AppuntamentoCancella_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AppuntamentoModifica_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AppuntamentoModifica_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NotaAggiungi_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NotaAggiungi_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NotaCancella_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NotaCancella_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NotaModifica_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NotaModifica_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Tracker_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Tracker_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ConnessoNo_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ConnessoNo_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FitH_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FitH_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FitToPage_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FitToPage_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PagGiu_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PagGiu_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PagSu_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PagSu_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ZoomIn_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ZoomIn_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ZoomOut_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ZoomOut_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CtrlIngrandisci_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CtrlIngrandisci_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CtrlIngrandisci_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CtrlIngrandisci_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CtrlIngrandisci_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CtrlIngrandisci_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CtrlRiduci_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CtrlRiduci_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CtrlRiduci_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CtrlRiduci_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CtrlRiduci_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CtrlRiduci_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LetteraDimissione_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LetteraDimissione_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LetteraDimissione_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LetteraDimissione_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LetteraDimissioni_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LetteraDimissioni_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Navigation_2_Down" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Navigation 2 Down.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Navigation_2_Up" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Navigation 2 Up.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AgendaElenco_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AgendaElenco_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EBM_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EBM_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EBM_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EBM_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EBM_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EBM_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ProfiloAggiungi_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ProfiloAggiungi_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ProfiloCancella_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ProfiloCancella_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ProfiloEspandi_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ProfiloEspandi_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RX_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RX_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EvidenzaClinicaAlert_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EvidenzaClinicaAlert_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SB_Giu" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SB_Giu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SB_PagGiu" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SB_PagGiu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SB_PagSu" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SB_PagSu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SB_Primo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SB_Primo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SB_Su" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SB_Su.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SB_Ultimo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SB_Ultimo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EvidenzaClinicaAlertDisable_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EvidenzaClinicaAlertDisable_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LettoD_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LettoD_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Letto_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Letto_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ModificaOrario_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ModificaOrario_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ModificaOrario_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ModificaOrario_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Mow_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Mow_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Mow_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Mow_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Mow_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Mow_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Matilde_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Matilde_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ModificaCheck_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ModificaCheck_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Matilde_128" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Matilde_128.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FormatoPDF_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormatoPDF_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FormatoPDF_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormatoPDF_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FormatoPDF_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormatoPDF_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Word" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Word.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Administration_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Administration_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Administration_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Administration_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Administration_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Administration_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CopiaPrescrizioni_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CopiaPrescrizioni_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Aggiungi_Continua_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Aggiungi_Continua_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Aggiungi_Singola_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Aggiungi_Singola_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Aggiungi_Somministrazione_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Aggiungi_Somministrazione_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Aggiungi_TerapiaRapida_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Aggiungi_TerapiaRapida_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Aggiungi_Terapia_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Aggiungi_Terapia_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MenuPopUp_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MenuPopUp_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Aperto_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Aperto_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Aperto_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Aperto_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Aperto_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Aperto_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Analyze_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Analyze_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Analyze_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Analyze_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Analyze_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Analyze_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Segnalibri_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Segnalibri_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Segnalibri_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Segnalibri_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Segnalibri_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Segnalibri_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Segnalibro_Aggiungi_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Segnalibro_Aggiungi_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Segnalibro_Aggiungi_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Segnalibro_Aggiungi_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Segnalibro_Cancella_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Segnalibro_Cancella_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Segnalibro_Cancella_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Segnalibro_Cancella_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SpostaInAltraCartella_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SpostaInAltraCartella_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Salva_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Salva_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Salva_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Salva_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Salva_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Salva_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="StatusFlagRed_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\StatusFlagRed_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="StatusFlagRed_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\StatusFlagRed_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="StatusFlagRed_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\StatusFlagRed_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pills_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Pills_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pills_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Pills_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pills_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Pills_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OcchioAperto_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OcchioAperto_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OcchioAperto_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OcchioAperto_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OcchioAperto_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OcchioAperto_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OcchioChiuso_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OcchioChiuso_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OcchioChiuso_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OcchioChiuso_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OcchioChiuso_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OcchioChiuso_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InRilievoRimuovi_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\InRilievoRimuovi_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AgendeSincronizza_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AgendeSincronizza_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EvidenzaClinicaImporta_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EvidenzaClinicaImporta_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EvidenzaClinicaImporta_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EvidenzaClinicaImporta_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OcchioApertoFreccia_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OcchioApertoFreccia_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OcchioApertoFreccia_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OcchioApertoFreccia_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PreferitiAggiungi_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PreferitiAggiungi_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PreferitiMiei_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PreferitiMiei_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PC_Desktop_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PC Desktop_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PC_Desktop_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PC Desktop_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PC_Desktop_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PC Desktop_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PreferitiAltri_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PreferitiAltri_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TesseraAttesa_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TesseraAttesa_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TesseraErrore_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TesseraErrore_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TesseraMancante_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TesseraMancante_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TesseraOk_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TesseraOk_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Tessera_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Tessera_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TesseraFirmaTutti_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TesseraFirmaTutti_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TesseraFirma_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TesseraFirma_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TesseraFirma_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TesseraFirma_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FirmaEseguitaTessera_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FirmaEseguitaTessera_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FirmaEseguitaTessera_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FirmaEseguitaTessera_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CancellaTondo_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CancellaTondo_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CancellaTondo_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CancellaTondo_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CancellaTondo_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CancellaTondo_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CancellaTessera_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CancellaTessera_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CancellaTessera_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CancellaTessera_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SospendiTessera_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SospendiTessera_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SospendiTessera_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SospendiTessera_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Integrazioni_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Integrazioni_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Integrazioni_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Integrazioni_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Integrazioni_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Integrazioni_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GrigliaContinua_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GrigliaContinua_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GrigliaContinua_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GrigliaContinua_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="StampaCartelleChiuse_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\StampaCartelleChiuse_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="StampaCartella_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\StampaCartella_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="StampaCartellaReferti_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\StampaCartellaReferti_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ProseguiTerapia_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ProseguiTerapia_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Obbligatorio_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Obbligatorio_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ModificaVersione_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ModificaVersione_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ModificaVersione_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ModificaVersione_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ModificaVersione_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ModificaVersione_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Contatori_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Contatori_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Contatori_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Contatori_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Contatori_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Contatori_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ChiusoD_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ChiusoD_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ChiusoD_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ChiusoD_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ChiusoD_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ChiusoD_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Chiuso_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Chiuso_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Chiuso_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Chiuso_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Chiuso_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Chiuso_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FirmaAggiungi_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FirmaAggiungi_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FirmaRimuovi_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FirmaRimuovi_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ErogazioneRapida_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ErogazioneRapida_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FirmaMultiplaFiltro_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FirmaMultiplaFiltro_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FirmaMultiplaFiltroSelezionato_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FirmaMultiplaFiltroSelezionato_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FiltriSpeciali_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FiltriSpeciali_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FiltriSpeciali_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FiltriSpeciali_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FiltriSpeciali_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FiltriSpeciali_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PreTrasferimento_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PreTrasferimento_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ProtocolloAttivita_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ProtocolloAttivita_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ProtocolloAttivita_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ProtocolloAttivita_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ProtocolloAttivita_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ProtocolloAttivita_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DeSelezionaTutti_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DeSelezionaTutti_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SelezionaTutti_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SelezionaTutti_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AssegnaNumero_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AssegnaNumero_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ModificaNumero_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ModificaNumero_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ChiamataAnnulla_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ChiamataAnnulla_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Chiamata_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Chiamata_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Import_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Import_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Import_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Import_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Import_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Import_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Distacco_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Distacco_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Selezioni_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Selezioni_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Selezioni_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Selezioni_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Selezioni_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Selezioni_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="infopaz_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\infopaz_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ReportHistory_128" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ReportHistory_128.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TerapiaOraleBN_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TerapiaOraleBN_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TerapiaOrale_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TerapiaOrale_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="screen_128" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\screen_128.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="screen_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\screen_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="screen_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\screen_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="screen_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\screen_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DizionariCSV_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DizionariCSV_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DizionariCSV_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DizionariCSV_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DizionariCSV_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DizionariCSV_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DizionariQuick_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DizionariQuick_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DizionariQuick_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DizionariQuick_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DizionariQuick_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DizionariQuick_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TaskInfermieristicoAggiungi_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TaskInfermieristicoAggiungi_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TaskInfermieristicoAggiungi_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TaskInfermieristicoAggiungi_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TaskInfermieristicoAggiungi_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TaskInfermieristicoAggiungi_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CartelleInVisione_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CartelleInVisione_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CartelleInVisione_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CartelleInVisione_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CartelleInVisione_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CartelleInVisione_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="convert_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\convert_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="convert_128" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\convert_128.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="convert_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\convert_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="convert_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\convert_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Key_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Key_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Key_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Key_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Key_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Key_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Wizard_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Wizard_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Wizard_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Wizard_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Wizard_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Wizard_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MatildeHome_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MatildeHome_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MatildeHome_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MatildeHome_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MatildeHome_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MatildeHome_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FolderAggiungi_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FolderAggiungi_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AllegatoElettronicoImporta_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AllegatoElettronicoImporta_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AllegatoElettronicoImporta_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AllegatoElettronicoImporta_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AllegatoElettronicoImporta_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AllegatoElettronicoImporta_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AllegatoElettronico_Aggiungi_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AllegatoElettronico_Aggiungi_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AllegatoElettronico_Aggiungi_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AllegatoElettronico_Aggiungi_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AllegatoElettronico_Aggiungi_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AllegatoElettronico_Aggiungi_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InProgress_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\InProgress_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InProgress_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\InProgress_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InProgress_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\InProgress_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FolderCartella_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FolderCartella_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FolderCartella_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FolderCartella_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FolderCartella_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FolderCartella_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FolderPaziente_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FolderPaziente_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FolderPaziente_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FolderPaziente_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FolderPaziente_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FolderPaziente_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SplashManagement" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SplashManagement.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ScannerImporta_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ScannerImporta_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NuovaRevisione_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NuovaRevisione_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NuovaRevisione_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NuovaRevisione_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NuovaRevisione_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NuovaRevisione_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FirmaCartelleAperte_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FirmaCartelleAperte_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FirmaCartelleAperte_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FirmaCartelleAperte_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FirmaCartelleAperte_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FirmaCartelleAperte_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="StampaCartellaApertaChiusa_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\StampaCartellaApertaChiusa_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="StampaCartellaApertaChiusa_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\StampaCartellaApertaChiusa_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="StampaCartellaApertaChiusa_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\StampaCartellaApertaChiusa_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="xChecked_48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\xChecked_48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Consegne_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Consegne_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Consegne_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Consegne_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Consegne_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Consegne_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ApertoDFirma_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ApertoDFirma_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ApertoDFirma_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ApertoDFirma_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ApertoDFirma_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ApertoDFirma_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ApertoFirma_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ApertoFirma_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ApertoFirma_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ApertoFirma_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ApertoFirma_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ApertoFirma_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ChiusoDFirma_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ChiusoDFirma_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ChiusoDFirma_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ChiusoDFirma_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ChiusoDFirma_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ChiusoDFirma_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ChiusoFirma_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ChiusoFirma_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ChiusoFirma_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ChiusoFirma_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ChiusoFirma_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ChiusoFirma_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LettoDAnnullato_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LettoDAnnullato_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LettoDAnnullato_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LettoDAnnullato_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LettoDAnnullato_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LettoDAnnullato_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Differenze_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Differenze_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Differenze_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Differenze_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Differenze_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Differenze_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Wait_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Wait_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Wait_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Wait_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Wait_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Wait_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FirmaMultiplaRAP_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FirmaMultiplaRAP_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TesseraFirmaTuttiRAP_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TesseraFirmaTuttiRAP_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FirmaMultiplaFiltroRAP_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FirmaMultiplaFiltroRAP_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FirmaMultiplaFiltroSelezionatoRAP_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FirmaMultiplaFiltroSelezionatoRAP_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AgendaGiornalieraLav5_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AgendaGiornalieraLav5_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AgendaGiornalieraLav5_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AgendaGiornalieraLav5_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AgendaGiornalieraLav5_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AgendaGiornalieraLav5_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AperturaMatilde" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AperturaMatilde.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ChiusuraMatilde" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ChiusuraMatilde.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="AltreFunzioni" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AltreFunzioni.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ConsegnePaziente_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ConsegnePaziente_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ConsegnePaziente_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ConsegnePaziente_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ConsegnePaziente_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ConsegnePaziente_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RuoloAggiungi_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RuoloAggiungi_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RuoloAggiungi_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RuoloAggiungi_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RuoloAggiungi_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RuoloAggiungi_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RuoloCancella_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RuoloCancella_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RuoloCancella_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RuoloCancella_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RuoloCancella_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RuoloCancella_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Consensi_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Consensi_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Consensi_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Consensi_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Consensi_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Consensi_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FiltroCancella_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FiltroCancella_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OrdineMonitor_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OrdineMonitor_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OrdineMonitor_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OrdineMonitor_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OrdineMonitor_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OrdineMonitor_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SchedaCartellaAmbulatorialeAperta_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SchedaCartellaAmbulatorialeAperta_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SchedaCartellaAmbulatorialeChiusa_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SchedaCartellaAmbulatorialeChiusa_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SchedaCartellaAmbulatorialeAperta_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SchedaCartellaAmbulatorialeAperta_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SchedaCartellaAmbulatorialeAperta_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SchedaCartellaAmbulatorialeAperta_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PercorsoCartellaAmbulatoriale_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PercorsoCartellaAmbulatoriale_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PercorsoCartellaAmbulatoriale_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PercorsoCartellaAmbulatoriale_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PercorsoCartellaAmbulatoriale_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PercorsoCartellaAmbulatoriale_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LogoCE_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LogoCE_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LogoCE_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LogoCE_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LogoCE_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LogoCE_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Help_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Help_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Help_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Help_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Help_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Help_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Updater_128" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Updater_128.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+</root>

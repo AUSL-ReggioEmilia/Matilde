@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="ScciRicoveriDWH" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="WSHttpBinding_IScciRicoveriDWH_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <wsoma:OptimizedMimeSerialization xmlns:wsoma="http://schemas.xmlsoap.org/ws/2004/09/policy/optimizedmimeserialization" />
+        <wsaw:UsingAddressing />
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsp:Policy wsu:Id="WSHttpBinding_IScciRicoveriDWH1_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <wsoma:OptimizedMimeSerialization xmlns:wsoma="http://schemas.xmlsoap.org/ws/2004/09/policy/optimizedmimeserialization" />
+        <sp:TransportBinding xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <wsp:Policy>
+            <sp:TransportToken>
+              <wsp:Policy>
+                <sp:HttpsToken RequireClientCertificate="false" />
+              </wsp:Policy>
+            </sp:TransportToken>
+            <sp:AlgorithmSuite>
+              <wsp:Policy>
+                <sp:Basic256 />
+              </wsp:Policy>
+            </sp:AlgorithmSuite>
+            <sp:Layout>
+              <wsp:Policy>
+                <sp:Strict />
+              </wsp:Policy>
+            </sp:Layout>
+            <sp:IncludeTimestamp />
+          </wsp:Policy>
+        </sp:TransportBinding>
+        <sp:EndorsingSupportingTokens xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <wsp:Policy>
+            <sp:SecureConversationToken sp:IncludeToken="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy/IncludeToken/AlwaysToRecipient">
+              <wsp:Policy>
+                <sp:BootstrapPolicy>
+                  <wsp:Policy>
+                    <sp:SignedParts>
+                      <sp:Body />
+                      <sp:Header Name="To" Namespace="http://www.w3.org/2005/08/addressing" />
+                      <sp:Header Name="From" Namespace="http://www.w3.org/2005/08/addressing" />
+                      <sp:Header Name="FaultTo" Namespace="http://www.w3.org/2005/08/addressing" />
+                      <sp:Header Name="ReplyTo" Namespace="http://www.w3.org/2005/08/addressing" />
+                      <sp:Header Name="MessageID" Namespace="http://www.w3.org/2005/08/addressing" />
+                      <sp:Header Name="RelatesTo" Namespace="http://www.w3.org/2005/08/addressing" />
+                      <sp:Header Name="Action" Namespace="http://www.w3.org/2005/08/addressing" />
+                    </sp:SignedParts>
+                    <sp:EncryptedParts>
+                      <sp:Body />
+                    </sp:EncryptedParts>
+                    <sp:TransportBinding>
+                      <wsp:Policy>
+                        <sp:TransportToken>
+                          <wsp:Policy>
+                            <sp:HttpsToken RequireClientCertificate="false" />
+                          </wsp:Policy>
+                        </sp:TransportToken>
+                        <sp:AlgorithmSuite>
+                          <wsp:Policy>
+                            <sp:Basic256 />
+                          </wsp:Policy>
+                        </sp:AlgorithmSuite>
+                        <sp:Layout>
+                          <wsp:Policy>
+                            <sp:Strict />
+                          </wsp:Policy>
+                        </sp:Layout>
+                        <sp:IncludeTimestamp />
+                      </wsp:Policy>
+                    </sp:TransportBinding>
+                    <sp:EndorsingSupportingTokens>
+                      <wsp:Policy>
+                        <sp:SpnegoContextToken sp:IncludeToken="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy/IncludeToken/AlwaysToRecipient">
+                          <wsp:Policy />
+                        </sp:SpnegoContextToken>
+                      </wsp:Policy>
+                    </sp:EndorsingSupportingTokens>
+                    <sp:Wss11>
+                      <wsp:Policy />
+                    </sp:Wss11>
+                    <sp:Trust10>
+                      <wsp:Policy>
+                        <sp:MustSupportIssuedTokens />
+                        <sp:RequireClientEntropy />
+                        <sp:RequireServerEntropy />
+                      </wsp:Policy>
+                    </sp:Trust10>
+                  </wsp:Policy>
+                </sp:BootstrapPolicy>
+              </wsp:Policy>
+            </sp:SecureConversationToken>
+          </wsp:Policy>
+        </sp:EndorsingSupportingTokens>
+        <sp:Wss11 xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <wsp:Policy />
+        </sp:Wss11>
+        <sp:Trust10 xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <wsp:Policy>
+            <sp:MustSupportIssuedTokens />
+            <sp:RequireClientEntropy />
+            <sp:RequireServerEntropy />
+          </wsp:Policy>
+        </sp:Trust10>
+        <wsaw:UsingAddressing />
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://ws-scci-main-test/ScciRicoveriDWH.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://ws-scci-main-test/ScciRicoveriDWH.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://ws-scci-main-test/ScciRicoveriDWH.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/UnicodeSrl.Scci.DataContracts" />
+      <xsd:import schemaLocation="http://ws-scci-main-test/ScciRicoveriDWH.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/WsSCCI" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IScciRicoveriDWH_RicoveroPerId_InputMessage">
+    <wsdl:part name="parameters" element="tns:RicoveroPerId" />
+  </wsdl:message>
+  <wsdl:message name="IScciRicoveriDWH_RicoveroPerId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RicoveroPerIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IScciRicoveriDWH_RicercaRicoveriDWH_InputMessage">
+    <wsdl:part name="parameters" element="tns:RicercaRicoveriDWH" />
+  </wsdl:message>
+  <wsdl:message name="IScciRicoveriDWH_RicercaRicoveriDWH_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RicercaRicoveriDWHResponse" />
+  </wsdl:message>
+  <wsdl:message name="IScciRicoveriDWH_RicercaDatiLabDWH_InputMessage">
+    <wsdl:part name="parameters" element="tns:RicercaDatiLabDWH" />
+  </wsdl:message>
+  <wsdl:message name="IScciRicoveriDWH_RicercaDatiLabDWH_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RicercaDatiLabDWHResponse" />
+  </wsdl:message>
+  <wsdl:message name="IScciRicoveriDWH_RicercaDatiLabDWHUM_InputMessage">
+    <wsdl:part name="parameters" element="tns:RicercaDatiLabDWHUM" />
+  </wsdl:message>
+  <wsdl:message name="IScciRicoveriDWH_RicercaDatiLabDWHUM_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RicercaDatiLabDWHUMResponse" />
+  </wsdl:message>
+  <wsdl:message name="IScciRicoveriDWH_RicercaDatiLabDWHAll_InputMessage">
+    <wsdl:part name="parameters" element="tns:RicercaDatiLabDWHAll" />
+  </wsdl:message>
+  <wsdl:message name="IScciRicoveriDWH_RicercaDatiLabDWHAll_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RicercaDatiLabDWHAllResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IScciRicoveriDWH">
+    <wsdl:operation name="RicoveroPerId">
+      <wsdl:input wsaw:Action="http://tempuri.org/IScciRicoveriDWH/RicoveroPerId" message="tns:IScciRicoveriDWH_RicoveroPerId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IScciRicoveriDWH/RicoveroPerIdResponse" message="tns:IScciRicoveriDWH_RicoveroPerId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RicercaRicoveriDWH">
+      <wsdl:input wsaw:Action="http://tempuri.org/IScciRicoveriDWH/RicercaRicoveriDWH" message="tns:IScciRicoveriDWH_RicercaRicoveriDWH_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IScciRicoveriDWH/RicercaRicoveriDWHResponse" message="tns:IScciRicoveriDWH_RicercaRicoveriDWH_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RicercaDatiLabDWH">
+      <wsdl:input wsaw:Action="http://tempuri.org/IScciRicoveriDWH/RicercaDatiLabDWH" message="tns:IScciRicoveriDWH_RicercaDatiLabDWH_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IScciRicoveriDWH/RicercaDatiLabDWHResponse" message="tns:IScciRicoveriDWH_RicercaDatiLabDWH_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RicercaDatiLabDWHUM">
+      <wsdl:input wsaw:Action="http://tempuri.org/IScciRicoveriDWH/RicercaDatiLabDWHUM" message="tns:IScciRicoveriDWH_RicercaDatiLabDWHUM_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IScciRicoveriDWH/RicercaDatiLabDWHUMResponse" message="tns:IScciRicoveriDWH_RicercaDatiLabDWHUM_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RicercaDatiLabDWHAll">
+      <wsdl:input wsaw:Action="http://tempuri.org/IScciRicoveriDWH/RicercaDatiLabDWHAll" message="tns:IScciRicoveriDWH_RicercaDatiLabDWHAll_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IScciRicoveriDWH/RicercaDatiLabDWHAllResponse" message="tns:IScciRicoveriDWH_RicercaDatiLabDWHAll_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WSHttpBinding_IScciRicoveriDWH" type="tns:IScciRicoveriDWH">
+    <wsp:PolicyReference URI="#WSHttpBinding_IScciRicoveriDWH_policy" />
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="RicoveroPerId">
+      <soap12:operation soapAction="http://tempuri.org/IScciRicoveriDWH/RicoveroPerId" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RicercaRicoveriDWH">
+      <soap12:operation soapAction="http://tempuri.org/IScciRicoveriDWH/RicercaRicoveriDWH" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RicercaDatiLabDWH">
+      <soap12:operation soapAction="http://tempuri.org/IScciRicoveriDWH/RicercaDatiLabDWH" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RicercaDatiLabDWHUM">
+      <soap12:operation soapAction="http://tempuri.org/IScciRicoveriDWH/RicercaDatiLabDWHUM" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RicercaDatiLabDWHAll">
+      <soap12:operation soapAction="http://tempuri.org/IScciRicoveriDWH/RicercaDatiLabDWHAll" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WSHttpBinding_IScciRicoveriDWH1" type="tns:IScciRicoveriDWH">
+    <wsp:PolicyReference URI="#WSHttpBinding_IScciRicoveriDWH1_policy" />
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="RicoveroPerId">
+      <soap12:operation soapAction="http://tempuri.org/IScciRicoveriDWH/RicoveroPerId" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RicercaRicoveriDWH">
+      <soap12:operation soapAction="http://tempuri.org/IScciRicoveriDWH/RicercaRicoveriDWH" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RicercaDatiLabDWH">
+      <soap12:operation soapAction="http://tempuri.org/IScciRicoveriDWH/RicercaDatiLabDWH" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RicercaDatiLabDWHUM">
+      <soap12:operation soapAction="http://tempuri.org/IScciRicoveriDWH/RicercaDatiLabDWHUM" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RicercaDatiLabDWHAll">
+      <soap12:operation soapAction="http://tempuri.org/IScciRicoveriDWH/RicercaDatiLabDWHAll" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ScciRicoveriDWH">
+    <wsdl:port name="WSHttpBinding_IScciRicoveriDWH" binding="tns:WSHttpBinding_IScciRicoveriDWH">
+      <soap12:address location="http://ws-scci-main-test/ScciRicoveriDWH.svc" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>http://ws-scci-main-test/ScciRicoveriDWH.svc</wsa10:Address>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+    <wsdl:port name="WSHttpBinding_IScciRicoveriDWH1" binding="tns:WSHttpBinding_IScciRicoveriDWH1">
+      <soap12:address location="https://ws-scci-main-test.asmn.net/ScciRicoveriDWH.svc" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>https://ws-scci-main-test.asmn.net/ScciRicoveriDWH.svc</wsa10:Address>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
