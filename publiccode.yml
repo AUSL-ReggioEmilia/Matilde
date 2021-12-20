@@ -406,8 +406,7 @@ localisation:
   availableLanguages:
     - it
   localisationReady: false
-logo: |-
-  https://raw.githubusercontent.com/AUSL-ReggioEmilia/Matilde/master/MatildeLogo.png
+logo: MatildeLogo.png
 maintenance:
   contacts:
     - affiliation: AUSL Reggio Emilia
